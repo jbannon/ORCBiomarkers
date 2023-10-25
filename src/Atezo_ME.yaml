@@ -1,0 +1,8 @@
+EXPERIMENT_PARAMS:
+  drug: 'Atezo'
+  tissue: 'BLCA'
+  dataDir: "../data/expression"
+  genesetDir: "../data/genesets"
+  alphas: [0.5]
+  rngSeed: 12345
+  'unweighted'
