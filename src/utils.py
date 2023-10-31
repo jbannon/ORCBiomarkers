@@ -2,6 +2,11 @@ import sys
 from typing import List, Dict
 import networkx as nx
 
+
+
+DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["STAD","SKCM"]}
+
+
 def unpack_parameters(
     D:Dict
     ):
@@ -50,3 +55,18 @@ def harmonize_graph_and_geneset(
         H = H.subgraph(LCC_genes)
     
     return H
+
+
+def remap_LCC(
+    LCC_Graph:nx.Graph,
+    newFieldName:str = 'Gene'
+    ):
+    gene_to_idx  = {} 
+    idx_to_gene = {}
+    for idx, gene in enumerate(LCC_Graph.nodes):
+        gene_to_idx[gene] = idx
+        idx_to_gene[idx] = gene
+    
+    LCC_Graph = nx.relabel_nodes(LCC_Graph,gene_to_idx)
+    nx.set_node_attributes(LCC_Graph,idx_to_gene, newFieldName)
+    return LCC_Graph, gene_to_idx, idx_to_gene

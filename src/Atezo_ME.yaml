@@ -1,8 +1,36 @@
 EXPERIMENT_PARAMS:
-  drug: 'Atezo'
-  tissue: 'BLCA'
+  drugs: ['Atezo','Pembro']
+  rngSeed: 12345
+  alpha: 0.5
+  doOneHop: False
+  fdrThresh: 0.01
+  numUniqueGenes: 125
+  minTPM: 1
+  geneset: "COSMIC" # valid options: COSMIC, LINCS, DE
+
+DIRECTORIES:
   dataDir: "../data/expression"
   genesetDir: "../data/genesets"
-  alphas: [0.5]
-  rngSeed: 12345
-  'unweighted'
+  networkDir: "../data/networks/"
+  resultDir: "../results/"
+
+
+NETWORK_PARAMS:
+  normalizeWeights: True
+  scalingConstant: 1
+  graphTops: ['dense']
+  weighting: 'unweighted'
+
+
+OT_PARAMS:
+  sinkhorn: False
+  regParam: 0.01
+
+
+FIELD_NAMES:
+  weightField: "Weight"
+  renameField: "Gene"
+  densityField: "Density"
+  edgeCurvatureField: "ORC"
+  nodeCurvatureField: "NodeCurv"
+  normNodeCurvatureFiled: "NormNodeCurve"
