@@ -110,7 +110,7 @@ def main(
 		# for tissue in (tissueProg := tqdm.tqdm(utils.DRUG_TISSUE_MAP[drug],leave = False)):
 		for tissue in utils.DRUG_TISSUE_MAP[drug]:
 			# tissueProg.set_description("Working on {t}".format(t=tissue))
-			if drug == 'Nivo' and tissue == 'KIRC' and geneset =='DE':
+			if drug == 'Nivo' and tissue == "KIRC":
 				continue
 
 			exprFile = utils.make_file_path(dataDir,[drug, tissue],'expression','.csv')
