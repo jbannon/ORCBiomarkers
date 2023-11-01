@@ -3,10 +3,12 @@ EXPERIMENT_PARAMS:
   rngSeed: 12345
   alpha: 0.5
   doOneHop: False
-  fdrThresh: 0.05
+  fdrThresh: 0.01
   numUniqueGenes: 200
   minTPM: 0.001
   geneset: "DE" # valid options: COSMIC, LINCS, DE, MDSIG
+  nIters: 100
+  subsamplePct: 0.8
 
 DIRECTORIES:
   dataDir: "../data/expression"

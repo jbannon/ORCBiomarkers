@@ -75,13 +75,14 @@ def main(
 	regParam:float
 	
 	
-	drugs, rngSeed, alpha, doOneHop, fdrThresh, numGenes,  minTPM, geneset = \
+	drugs, rngSeed, alpha, doOneHop, fdrThresh, numGenes,  minTPM, geneset, nIters, subsamplePct = \
 		utils.unpack_parameters(config['EXPERIMENT_PARAMS']) 
 	
 	dataDir, genesetDir, networkDir,resultDir = utils.unpack_parameters(config['DIRECTORIES'])
 	
 
 	sinkhorn, regParam = utils.unpack_parameters(config["OT_PARAMS"])
+	
 	normalizeWeights, scalingConstant, graphTops, weighting =\
 		utils.unpack_parameters(config['NETWORK_PARAMS'])
 	
@@ -303,7 +304,7 @@ def main(
 			
 				statString = "alpha:\t{a}\nfdrThresh:\t{t}\nNumber Unique Genes:\t{g}".format(a=alpha,t=fdrThresh,g=numGenes)
 				statString = statString + "\nMinimum TPM:\t{m}".format(m=minTPM)
-				statString = statString + "\nSinkhorn:\t{s}".format(d)
+				statString = statString + "\nSinkhorn:\t{s}".format(s=sinkhorn)
 				statString = statString + "\nEpsilon\t{e}".format(e=regParam)
 				statname = resPath + "stats.txt"
 				with open(statname,"w") as ostream:

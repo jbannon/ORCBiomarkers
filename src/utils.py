@@ -5,7 +5,7 @@ import pandas as pd
 
 
 DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["SKCM","STAD"],
-    "Nivo":["SKCM","KIRC"], "Ipi":["SKCM"], "Ipi+Pembro":["SKCM"]}
+    "Nivo":["KIRC","SKCM"], "Ipi":["SKCM"], "Ipi+Pembro":["SKCM"]}
 
 
 

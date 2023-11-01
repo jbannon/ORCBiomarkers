@@ -1,5 +1,5 @@
 EXPERIMENT_PARAMS:
-  drugs: ['Atezo','Pembro']
+  drugs: ['Nivo','Atezo','Pembro','Ipi','Ipi+Pembro']
   rngSeed: 12345
   alpha: 0.5
   doOneHop: False
@@ -7,6 +7,8 @@ EXPERIMENT_PARAMS:
   numUniqueGenes: 200
   minTPM: 5
   geneset: "LINCS" # valid options: COSMIC, LINCS, DE, MDSIG
+  nIters: 100
+  subsamplePct: 0.8
 
 DIRECTORIES:
   dataDir: "../data/expression"
