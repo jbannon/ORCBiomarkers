@@ -69,6 +69,12 @@ def make_APSP_Matrix(
 		node1Lengths = path_lengths[node1]
 		for node2 in node1Lengths.keys():
 			D[node1,node2] = np.round(node1Lengths[node2],5)
+			# if D[node1,node2]==0 and node1!=node2:
+			# 	print(node1)
+			# 	print(node2)
+			# 	print(node1Lengths[node2])
+			# 	print(node1Lengths)
+			# 	sys.exit(1)
 							 #rounding to make sure D is symmetric
 			
 	# # slow b/c redundant
@@ -113,15 +119,6 @@ def compute_OR_curvature(
 			W = ot.emd2(a= m_u, b= m_v, M =D)
 
 		kappa =  1- (W/D[u,v])
-		# if kappa<=-10:
-		# 	print("----")
-		# 	print(kappa)
-		# 	print(W)
-		# 	print(D[u,v])
-		# 	print(W/D[u,v])
-		# 	print(m_u)
-		# 	print(m_v)
-		# 	sys.exit(1)
 		G[u][v][curvature_name] = np.round(kappa,2)
 
 		

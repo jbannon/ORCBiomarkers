@@ -3,10 +3,10 @@ EXPERIMENT_PARAMS:
   rngSeed: 12345
   alpha: 0.5
   doOneHop: False
-  fdrThresh: 0.05
+  fdrThresh: 0.01
   numUniqueGenes: 200
-  minTPM: 0.001
-  geneset: "DE" # valid options: COSMIC, LINCS, DE, MDSIG
+  minTPM: 5
+  geneset: "LINCS" # valid options: COSMIC, LINCS, DE, MDSIG
 
 DIRECTORIES:
   dataDir: "../data/expression"
@@ -18,13 +18,13 @@ DIRECTORIES:
 NETWORK_PARAMS:
   normalizeWeights: False
   scalingConstant: 100
-  graphTops: ['dense']
+  graphTops: ['tight']
   weighting: 'unweighted'
 
 
 OT_PARAMS:
   sinkhorn: False
-  regParam: 0.01
+  regParam: 0.5
 
 
 FIELD_NAMES:

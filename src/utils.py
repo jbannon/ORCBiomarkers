@@ -1,10 +1,43 @@
 import sys
 from typing import List, Dict
 import networkx as nx
+import pandas as pd
+
+
+DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["SKCM","STAD"],
+    "Nivo":["SKCM","KIRC"], "Ipi":["SKCM"], "Ipi+Pembro":["SKCM"]}
 
 
 
-DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["STAD","SKCM"]}
+def fetch_geneset(
+    geneset:str,
+    gsDir:str,
+    drug:str, 
+    tissue:str,
+    fdrThresh:float,
+    nGenes:int = 150
+    ) -> List[str]:
+    if geneset.upper()=="DE":
+        diffExpFile = make_file_path(gsDir,[],"{d}_{t}_DE".format(d=drug, t=tissue),".csv")
+        DE = pd.read_csv(diffExpFile)
+        DE = DE[DE['Thresh.Value']==fdrThresh]
+        
+        q = (1.0*nGenes)/len(pd.unique(DE['Gene']))
+        thresh = 1-q
+        
+        qval = DE['Count'].quantile(thresh)
+        DE =  DE[DE['Count'] >= qval]
+        gene_list = list(DE['Gene'].values)
+        
+    else:
+        fname = gsDir+geneset.upper()+".txt"
+        with open(fname, 'r') as istream:
+            lines = istream.readlines()
+            lines = [x.rstrip() for x in lines]
+        gene_list = lines
+        qval = None
+    return gene_list, qval
+
 
 
 def unpack_parameters(

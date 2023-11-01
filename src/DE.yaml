@@ -1,5 +1,5 @@
 EXPERIMENT_PARAMS:
-  drugs: ['Atezo','Pembro']
+  drugs: ['Atezo','Pembro','Nivo','Ipi','Ipi+Pembro']
   rngSeed: 12345
   alpha: 0.5
   doOneHop: False
@@ -17,7 +17,7 @@ DIRECTORIES:
 
 NETWORK_PARAMS:
   normalizeWeights: False
-  scalingConstant: 100
+  scalingConstant: 1
   graphTops: ['dense']
   weighting: 'unweighted'
 
