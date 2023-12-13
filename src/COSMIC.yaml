@@ -1,14 +1,15 @@
 EXPERIMENT_PARAMS:
-  drugs: ['Nivo','Atezo','Pembro','Ipi','Ipi+Pembro']
+  drugs: ['Atezo','Pembro','Nivo','Ipi','erlotinib','crizotinib','Ipi+Pembro']
   rngSeed: 12345
-  alpha: 0.5
+  alpha: 0.9
   doOneHop: False
   fdrThresh: 0.01
-  numUniqueGenes: 200
+  cutoff: 'EB'
   minTPM: 1
   geneset: "COSMIC" # valid options: COSMIC, LINCS, DE, MDSIG
   nIters: 100
   subsamplePct: 0.8
+  probThresh: 0.67
 
 DIRECTORIES:
   dataDir: "../data/expression"
@@ -16,17 +17,16 @@ DIRECTORIES:
   networkDir: "../data/networks/"
   resultDir: "../results/"
 
-
 NETWORK_PARAMS:
   normalizeWeights: False
-  scalingConstant: 100
-  graphTops: ['sparse']
+  scalingConstant: 1
+  graphTops: ['dense','sparse']
   weighting: 'unweighted'
 
 
 OT_PARAMS:
   sinkhorn: False
-  regParam: 3
+  regParam: 0.01
 
 
 FIELD_NAMES:

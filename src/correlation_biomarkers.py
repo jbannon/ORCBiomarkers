@@ -1,8 +1,3 @@
-from scipy import stats
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score
-from sklearn.model_selection import train_test_split, GridSearchCV
 from collections import defaultdict
 import matplotlib.pyplot as plt
 import argparse
@@ -17,13 +12,10 @@ import ot
 import os
 import yaml 
 import utils
-# import statsmodels.stats.multitest.multipletests
 import pickle
 import NetworkCurvature as nc
 import statsmodels.stats.multitest as mt
-import seaborn as sns
 from scipy.stats import mannwhitneyu, wilcoxon
-from sklearn.linear_model import LogisticRegression
 import tqdm
 
 
@@ -78,14 +70,16 @@ def main(
 	regParam:float
 	
 	
-	
-	drugs, rngSeed, alpha, doOneHop, fdrThresh, numGenes,  minTPM, geneset, nIters, subsamplePct = \
+	drugs, rngSeed, alpha, doOneHop, fdrThresh, cutoff,  minTPM, geneset, nIters, subsamplePct, probThresh = \
 		utils.unpack_parameters(config['EXPERIMENT_PARAMS']) 
 	
-	dataDir, genesetDir, networkDir,resultDir = utils.unpack_parameters(config['DIRECTORIES'])
-	
+	hopString = "OneHop" if doOneHop else "NoHop"
 
+	dataDir, genesetDir, networkDir,resultDir = utils.unpack_parameters(config['DIRECTORIES'])
+
+	
 	sinkhorn, regParam = utils.unpack_parameters(config["OT_PARAMS"])
+	
 	normalizeWeights, scalingConstant, graphTops, weighting =\
 		utils.unpack_parameters(config['NETWORK_PARAMS'])
 	
@@ -93,65 +87,52 @@ def main(
 		utils.unpack_parameters(config['FIELD_NAMES'])
 
 	
-	
-	# np.random.seed(rngSeed)
-
-	
-	
-	
-
-	
 	rng = np.random.default_rng(rngSeed)
-	# for drug in (drugProg:=tqdm.tqdm(drugs)):
-	for drug in drugs:
-		print(drug)
-		# drugProg.set_description("Working on {d}".format(d=drug))
+	
+
+	for drug in (drugProg:=tqdm.tqdm(drugs)):
+		drugProg.set_description("Working on {d}".format(d=drug))
 		
-		# for tissue in (tissueProg := tqdm.tqdm(utils.DRUG_TISSUE_MAP[drug],leave = False)):
-		for tissue in utils.DRUG_TISSUE_MAP[drug]:
-			# tissueProg.set_description("Working on {t}".format(t=tissue))
+		datasetString = utils.DRUG_DATASET_MAP[drug]
+		for tissue in (tissueProg := tqdm.tqdm(utils.DRUG_TISSUE_MAP[drug],leave = False)):
 			if drug == 'Nivo' and tissue == "KIRC":
 				continue
-
-			exprFile = utils.make_file_path(dataDir,[drug, tissue],'expression','.csv')
-			# print(exprFile)
-			respFile = utils.make_file_path(dataDir,[drug,tissue],'response','.csv')
 			
-			# print(diffExpFile)
-			# print(respFile)
 
-
-			resp = pd.read_csv(respFile)
+			tissueProg.set_description("Working on {t}".format(t=tissue))
 			
 			
+
+			
+			exprFile = utils.make_file_path(dataDir,[datasetString,drug, tissue],'expression','.csv')
+			respFile = utils.make_file_path(dataDir,[datasetString,drug,tissue],'response','.csv')
+			
+			resp = pd.read_csv(respFile)	
+
 			expr = pd.read_csv(exprFile)
-			# print(expr.shape)
+			
 			trimmedExpr = expr[expr.columns[1:]]
 			trimmedExpr = (trimmedExpr>=minTPM).all(axis=0)
+			
 			keep_genes = list(trimmedExpr[trimmedExpr].index)
 			keep_cols = ['Run_ID'] + keep_genes
 
 			expr = expr[keep_cols]
 
+
+			gene_list, qv = utils.fetch_geneset(geneset,genesetDir,drug,tissue,fdrThresh,cutoff,probThresh)
+
 			
-			gene_list, qv = utils.fetch_geneset(geneset,genesetDir,drug,tissue,fdrThresh,numGenes)
 			
-			# print(expr.shape)
-			
-			
-			# print(gene_list)
-			# print("\n")
-			# print(len(gene_list))
 			common_genes = [x for x in gene_list if x in expr.columns[1:]]
-			# print(len(common_genes))
-			# continue
-			#for topology in (topProb:=tqdm.tqdm(graphTops, leave=False)):
-			for topology in graphTops:
-				# topProb.set_description("working on {t} topology".format(t=topology))
 		
-				networkFile = utils.make_file_path(networkDir,[topology],weighting,".pickle")
+			
+			for topology in (topProg:=tqdm.tqdm(graphTops, leave=False)):
+				topProg.set_description("working on {t} topology".format(t=topology))
 		
-				resPath = "".join([resultDir,"/".join(["biomarkers","correlation",geneset,drug,tissue, topology]),"/"])
+				networkFile = utils.make_file_path(networkDir,[datasetString,topology],weighting,".pickle")
+		
+				resPath = "".join([resultDir,"/".join(["biomarkers","correlation",geneset,drug,tissue, str(cutoff),topology,hopString]),"/"])
 				os.makedirs(resPath,exist_ok = True)
 		
 				with open(networkFile,"rb") as istream:
@@ -160,8 +141,7 @@ def main(
 			
 
 				issues = list(set(expr.columns[1:]).difference(set(gene_list)))
-				# print("Gene list length: {L}".format(L =len(gene_list)))
-				# print("Common Genes length: {L}".format(L =len(common_genes)))
+				
 
 
 				if doOneHop:
@@ -175,8 +155,8 @@ def main(
 
 			
 				LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes)
-				# print("\n")
-				# print(LCC_Graph)
+				if len(LCC_Graph.edges())<1:
+					continue
 				subsetExpression = expr[['Run_ID']+[x for x in LCC_Graph.nodes()]]
 			
 				data = subsetExpression.merge(resp, on = 'Run_ID')
@@ -184,7 +164,7 @@ def main(
 			
 			
 				LCC_Graph, gene_to_idx, idx_to_gene = utils.remap_LCC(LCC_Graph,renameField)
-				# print(LCC_Graph)
+				
 				edgeCurvatures = defaultdict(list)
 				nodeCurvatures = defaultdict(list)
 
@@ -205,7 +185,7 @@ def main(
 						for edge in Graph.edges():
 							node1, node2 = edge[0], edge[1]
 							gene1, gene2 = genes[node1],genes[node2]
-							corr,pval =stats.spearmanr(np.log2(dataset[gene1]+1),np.log2(dataset[gene2]+1))
+							corr, pval =stats.spearmanr(np.log2(dataset[gene1]+1),np.log2(dataset[gene2]+1))
 							weight = np.round(0.5*(1+corr),5)
 							total_edge_weight += weight
 							Graph[node1][node2][weightField] = weight
@@ -220,9 +200,9 @@ def main(
 							weight = weightField, 
 							measure_name = densityField)
 						D = nc.make_APSP_Matrix(Graph,weighted = True, weight=weightField)
-						# print("computing curvatures")
+						
 						nc.compute_OR_curvature(Graph,D,densityField, edgeCurvatureField, sinkhorn, regParam)
-						# print("computing node curvatures")
+						
 						nc.compute_node_curvatures(Graph, weight = weightField,
 							edge_curv = edgeCurvatureField, 
 							node_curv = nodeCurvField,
@@ -230,10 +210,12 @@ def main(
 					
 						for edge in Graph.edges(data=True):
 							gene1, gene2 = genes[edge[0]],genes[edge[1]]
-							edgeString = gene1+"-"+gene2
+							edgeString = gene1+";"+gene2
 							edgeCurvatures['iter'].append(i)
-							edgeCurvatures['edge'].append(edgeString)
-							edgeCurvatures['ORC'].append(edge[2][edgeCurvatureField])
+							edgeCurvatures['Gene1'].append(gene1)
+							edgeCurvatures['Gene2'].append(gene2)
+							edgeCurvatures['Edge'].append(edgeString)
+							edgeCurvatures['Curvature'].append(edge[2][edgeCurvatureField])
 							edgeCurvatures['Response'].append(r)
 					
 
@@ -241,11 +223,93 @@ def main(
 							gene = node[1][renameField]
 							nodeCurvatures['iter'].append(i)
 							nodeCurvatures['Gene'].append(gene)
-							nodeCurvatures['NodeCurve'].append(node[1][nodeCurvField])
-							nodeCurvatures['NormNodeCurve'].append(node[1][normNodeCurvField])
+							nodeCurvatures['Raw'].append(node[1][nodeCurvField])
+							nodeCurvatures['Normalized'].append(node[1][normNodeCurvField])
 							nodeCurvatures['Response'].append(r)
-				# print(resPath)	
-				statString = "alpha:\t{a}\nfdrThresh:\t{t}\nNumber Unique Genes:\t{g}".format(a=alpha,t=fdrThresh,g=numGenes)
+				
+
+
+				edge_data = pd.DataFrame(edgeCurvatures)
+				node_data = pd.DataFrame(nodeCurvatures)
+				
+				edge_res = defaultdict(list)
+				pvals = []
+				
+				# print(edge_data)
+				for e in pd.unique(edge_data['Edge']):
+					tempR = edge_data[edge_data['Edge'] == e]
+					tempR = tempR[tempR['Response'] == 1]
+					tempNR = edge_data[edge_data['Edge'] == e]
+					tempNR = tempNR[tempNR['Response'] == 0 ]
+					
+
+					u, p = mannwhitneyu(tempR['Curvature'].values,tempNR['Curvature'].values,alternative = 'two-sided')
+					pvals.append(p)
+					edge_res['Edge'].append(e)
+					edge_res['U'].append(u)
+					edge_res['pval'].append(p)
+			
+				
+
+				res = mt.multipletests(pvals,method = 'fdr_bh')
+				edge_res['adj_pvals'] = res[1]
+				edge_res = pd.DataFrame(edge_res)
+
+				node_res = defaultdict(list)
+				norm_res = defaultdict(list)
+				
+				node_pvals = []
+				norm_pvals = []
+				
+				for n in pd.unique(node_data['Gene']):
+					tempR = node_data[node_data['Gene'] == n]
+					tempR = tempR[tempR['Response'] == 1]
+					tempNR = node_data[node_data['Gene']==n]
+					tempNR = tempNR[tempNR['Response']==0]
+					u, p = mannwhitneyu(tempR['Normalized'].values,tempNR['Normalized'].values,alternative = 'two-sided')
+					norm_pvals.append(p)
+					norm_res['Gene'].append(n)
+					norm_res['U'].append(u)
+					norm_res['pval'].append(p)
+
+					u, p = mannwhitneyu(tempR['Raw'].values,tempNR['Raw'].values,alternative = 'two-sided')
+					node_pvals.append(p)
+					node_res['Gene'].append(n)
+					node_res['U'].append(u)
+					node_res['pval'].append(p)
+
+			
+				res = mt.multipletests(node_pvals,method = 'fdr_bh')
+				node_res['adj_pvals'] = res[1]
+			
+				res = mt.multipletests(norm_pvals,method = 'fdr_bh')
+				norm_res['adj_pvals'] = res[1]
+			
+				node_res = pd.DataFrame(node_res)
+				norm_res = pd.DataFrame(norm_res)
+			
+				statString = "alpha:\t{a}\nfdrThresh:\t{t}\nCutoff:\t{g}".format(a=alpha,t=fdrThresh,g=cutoff)
+				statString = statString + "\nMinimum TPM:\t{m}".format(m=minTPM)
+				statString = statString + "\nSinkhorn:\t{s}".format(s=sinkhorn)
+				statString = statString + "\nEpsilon\t{e}".format(e=regParam)
+				statname = resPath + "stats.txt"
+				
+
+				with open(statname,"w") as ostream:
+					ostream.write(statString)
+				
+				norm_res.to_csv(resPath+"normalized_node_curvature_pvals.csv")
+				
+				node_res.to_csv(resPath+"node_curvature_pvals.csv")
+				
+				edge_res.to_csv(resPath+"edge_curvature_pvals.csv")
+				
+				edge_data.to_csv(resPath+"edge_curavtures.csv")
+				
+				node_data.to_csv(resPath+"node_curavtures.csv")
+
+
+				statString = "alpha:\t{a}\nfdrThresh:\t{t}\nCutoff:\t{g}".format(a=alpha,t=fdrThresh,g=cutoff)
 				statString = statString + "\nMinimum TPM:\t{m}".format(m=minTPM)
 				statString = statString + "\nSinkhorn:\t{s}".format(s=sinkhorn)
 				statString = statString + "\nEpsilon\t{e}".format(e=regParam)
@@ -260,6 +324,7 @@ def main(
 				nodeDF.to_csv(resPath + "node_curvatures.csv")
 				edgeDF = pd.DataFrame(edgeCurvatures)
 				edgeDF.to_csv(resPath + "edge_curvatures.csv")
+
 				
 
 

@@ -106,6 +106,7 @@ def compute_OR_curvature(
 	epsilon: float = 0.01
 	) -> None:
 	
+
 	assert epsilon>0, 'epsilon must be positive'
 
 	for edge in G.edges():
@@ -115,7 +116,6 @@ def compute_OR_curvature(
 		if sinkhorn:
 			W = ot.sinkhorn(a= m_u, b= m_v,M= D,reg = epsilon)
 		else:
-			
 			W = ot.emd2(a= m_u, b= m_v, M =D)
 
 		kappa =  1- (W/D[u,v])
