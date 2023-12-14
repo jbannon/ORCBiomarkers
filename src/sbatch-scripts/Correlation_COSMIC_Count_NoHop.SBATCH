@@ -5,8 +5,8 @@
 #SBATCH --cpus-per-task=3
 #SBATCH --time=72:00:00
 #SBATCH --mem=50GB
-#SBATCH --job-name=MA-C
-#SBATCH --output=./slurmouts/MA-C_%j.out
+#SBATCH --job-name=COCONH
+#SBATCH --output=./slurmouts/Correlation_COSMIC_Count_NoHop_%j.out
 
 module purge
 
@@ -14,4 +14,4 @@ module purge
 singularity exec --nv \
 	    --overlay /scratch/jjb509/ORCBiomarkers/src/ORC-Overlay.ext3:ro \
 	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif\
-	    /bin/bash -c "source /ext3/env.sh; python mass_action_biomarkers.py -config COSMIC.yaml"
+	    /bin/bash -c "source /ext3/env.sh; python correlation_biomarkers.py -config ./configs/COSMIC_COUNT.yaml"

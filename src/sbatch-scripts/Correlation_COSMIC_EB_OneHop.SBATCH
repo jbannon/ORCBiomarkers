@@ -5,8 +5,8 @@
 #SBATCH --cpus-per-task=3
 #SBATCH --time=72:00:00
 #SBATCH --mem=50GB
-#SBATCH --job-name=COEBOH
-#SBATCH --output=./slurmouts/CO-C_%j.out
+#SBATCH --job-name=COCOEBOH
+#SBATCH --output=./slurmouts/Correlation_COSMIC_EB_OneHop_%j.out
 
 module purge
 

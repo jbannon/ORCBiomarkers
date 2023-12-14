@@ -2,7 +2,7 @@ EXPERIMENT_PARAMS:
   drugs: ['Atezo','Pembro','Nivo','Ipi','erlotinib','crizotinib','Ipi+Pembro']
   rngSeed: 12345
   alpha: 0.9
-  doOneHop: False
+  doOneHop: True
   fdrThresh: 0.01
   cutoff: 125
   minTPM: 1
