@@ -9,7 +9,7 @@ EXPERIMENT_PARAMS:
   geneset: "DE" # valid options: COSMIC, LINCS, DE, MDSIG
   nIters: 100
   subsamplePct: 0.8
-  probThresh: 0.67
+  probThresh: 0.70
 
 DIRECTORIES:
   dataDir: "../data/expression"

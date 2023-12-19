@@ -155,6 +155,8 @@ def main(
 
 			
 				LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes)
+				print(LCC_Graph)
+				continue
 				if len(LCC_Graph.edges())<1:
 					continue
 				subsetExpression = expr[['Run_ID']+[x for x in LCC_Graph.nodes()]]

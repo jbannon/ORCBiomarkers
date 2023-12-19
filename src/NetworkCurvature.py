@@ -5,7 +5,7 @@ import numpy as np
 import networkx as nx
 import ot
 import tqdm 
-
+import time
 
 def compute_node_curvatures(
 	G:nx.Graph,
@@ -109,12 +109,22 @@ def compute_OR_curvature(
 
 	assert epsilon>0, 'epsilon must be positive'
 
+	
+	
+	
+
+
 	for edge in G.edges():
 		u,v = edge[0],edge[1]
 		m_u = G.nodes[u][density]
 		m_v = G.nodes[v][density]
+
+
 		if sinkhorn:
-			W = ot.sinkhorn(a= m_u, b= m_v,M= D,reg = epsilon)
+			
+			W = ot.sinkhorn2(a= m_u, b= m_v,M= D,reg = epsilon,warn = False)
+			
+			
 		else:
 			W = ot.emd2(a= m_u, b= m_v, M =D, numItermax=1000000)
 

@@ -9,7 +9,7 @@ EXPERIMENT_PARAMS:
   geneset: "DE" # valid options: COSMIC, LINCS, DE, MDSIG
   nIters: 100
   subsamplePct: 0.8
-  probThresh: 0.67
+  probThresh: 0.70
 
 DIRECTORIES:
   dataDir: "../data/expression"
@@ -25,8 +25,8 @@ NETWORK_PARAMS:
 
 
 OT_PARAMS:
-  sinkhorn: False
-  regParam: 0.01
+  sinkhorn: True
+  regParam: 0.5
 
 
 FIELD_NAMES:

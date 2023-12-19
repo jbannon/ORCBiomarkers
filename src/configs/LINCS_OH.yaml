@@ -20,13 +20,13 @@ DIRECTORIES:
 NETWORK_PARAMS:
   normalizeWeights: False
   scalingConstant: 1
-  graphTops: ['sparse','dense']
+  graphTops: ['tight']
   weighting: 'unweighted'
 
 
 OT_PARAMS:
-  sinkhorn: False
-  regParam: 0.01
+  sinkhorn: True
+  regParam: 2
 
 
 FIELD_NAMES:
