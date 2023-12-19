@@ -1,7 +1,7 @@
 EXPERIMENT_PARAMS:
-  drugs: ['Atezo','Pembro','Nivo','Ipi','erlotinib','crizotinib','Ipi+Pembro']
+  drugs: ['Atezo','Pembro','Nivo','erlotinib','crizotinib']
   rngSeed: 12345
-  alpha: 0.9
+  alpha: 0.5
   doOneHop: True
   fdrThresh: 0.01
   cutoff: 'EB'
@@ -20,7 +20,7 @@ DIRECTORIES:
 NETWORK_PARAMS:
   normalizeWeights: False
   scalingConstant: 1
-  graphTops: ['dense','sparse']
+  graphTops: ['sparse','dense']
   weighting: 'unweighted'
 
 

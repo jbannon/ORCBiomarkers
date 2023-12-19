@@ -13,6 +13,5 @@ module purge
 
 singularity exec --nv \
 	    --overlay /scratch/jjb509/ORCBiomarkers/src/ORC-Overlay.ext3:ro \
-	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sii
-df\
+	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif\
 	    /bin/bash -c "source /ext3/env.sh; python mass_action_biomarkers.py -config ./configs/DE_OH.yaml"
