@@ -116,7 +116,7 @@ def compute_OR_curvature(
 		if sinkhorn:
 			W = ot.sinkhorn(a= m_u, b= m_v,M= D,reg = epsilon)
 		else:
-			W = ot.emd2(a= m_u, b= m_v, M =D)
+			W = ot.emd2(a= m_u, b= m_v, M =D, numItermax=1000000)
 
 		kappa =  1- (W/D[u,v])
 		G[u][v][curvature_name] = np.round(kappa,2)
