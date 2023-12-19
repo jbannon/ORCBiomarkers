@@ -42,29 +42,40 @@ def main(
 	rng_seed: int 
 	fdr_threshold: float
 	count_cutoff: int
-	# connectivity: s/tr = 'sparse' 
-	weighting: str = 'unweighted'
+	
+	rng_seed:int = 12345
 	np.random.seed(rng_seed)
 
 
 
-	expr = pd.read_csv("../data/expression/{d}/{t}/expression.csv".format(d=drug,t=tissue))
-	resp = pd.read_csv("../data/expression/{d}/{t}/response.csv".format(d=drug,t=tissue))
-	DE = pd.read_csv("../data/genesets/{d}_{t}_DE.csv".format(d=drug,t=tissue),index_col = 0)
+	expr = pd.read_csv("../data/expression/cri/{d}/{t}/expression.csv".format(d=drug,t=tissue))
+	resp = pd.read_csv("../data/expression/cri/{d}/{t}/response.csv".format(d=drug,t=tissue))
+	
+
+	edge_pvs = pd.read_csv("../results/biomarkers/correlation/COSMIC/Atezo/BLCA/EB/dense/NoHop/edge_curvature_pvals.csv")
+	node_pvs = pd.read_csv("../results/biomarkers/correlation/COSMIC/Atezo/BLCA/EB/dense/NoHop/node_curvature_pvals.csv")
+	norm_node_pvs = pd.read_csv("../results/biomarkers/correlation/COSMIC/Atezo/BLCA/EB/dense/NoHop/node_curvature_pvals.csv")
 
 
 
-	DRUG_TARGET_MAP = {'Atezo':'PD-L1','Pembro':'PD1','Nivo':'PD1','Ipi':'CTLA4'}
+	thresh = 0.1
 
+	edge_genes = edge_pvs[edge_pvs['adj_pvals']<=thresh]
+	edges = edge_genes['Edge'].values
+	edgeNodes = []
+	for edge in edges:
+		nodes = [x for x in edge.split(";")]
+		for node in nodes:
+			edgeNodes.append(node)
 
-	TARGET_GENE_MAP = {'PD-L1':'CD274', 'PD1':'PDCD1', 'CTLA4':'CTLA4'}
-
-
+	edgeGenes = list(pd.unique(edgeNodes))
 	results = defaultdict(list)
-	random_genes = np.random.choice(expr.columns[1:],6,replace=False)
+	random_genes = np.random.choice(expr.columns[1:],len(edgeGenes),replace=False)
+
+
 	for balance in tqdm.tqdm([True,False]):
 		for name, geneset in zip(["target","orc-edge",'random'],[['CD274'], 
-			['KIF2C','CDC25C', 'MCM6','RFC3', 'MAD2L1','SPC25'],
+			edgeGenes,
 			random_genes]):
 			
 			X = np.log2(expr[geneset].values+1)
@@ -78,7 +89,7 @@ def main(
 				cw = None
 			model = Pipeline([('preproc',StandardScaler()),('clf',LogisticRegression(class_weight = cw ))])
 
-			for k in tqdm.tqdm(range(100),leave=False):
+			for k in tqdm.tqdm(range(50),leave=False):
 				X_train, X_test, y_train, y_test = train_test_split(X,y)
 				
 
@@ -100,7 +111,9 @@ def main(
 	for b in pd.unique(df['balanced']):
 		temp = df[df['balanced']==b]
 		sns.boxplot(x='geneset', y = 'acc',data = temp)
-		plt.show()
+		plt.title("{d}\t{t}\t{bal}".format(d=drug,t=tissue,bal=b))
+		plt.savefig("atezo_{b}.png".format(b=b))
+		plt.close()
 
 
 

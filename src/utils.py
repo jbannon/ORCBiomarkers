@@ -24,6 +24,11 @@ DRUG_DATASET_MAP = {
 }
 
 
+DRUG_TARGET_MAP = {'Atezo':'PD-L1','Pembro':'PD1','Nivo':'PD1','Ipi':'CTLA4'}
+
+
+TARGET_GENE_MAP = {'PD-L1':'CD274', 'PD1':'PDCD1', 'CTLA4':'CTLA4'}
+
 
 def fetch_geneset(
     geneset:str,

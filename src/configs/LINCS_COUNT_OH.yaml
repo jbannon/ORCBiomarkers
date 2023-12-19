@@ -1,0 +1,38 @@
+EXPERIMENT_PARAMS:
+  drugs: ['Atezo','Pembro','Nivo','Ipi','erlotinib','crizotinib','Ipi+Pembro']
+  rngSeed: 12345
+  alpha: 0.9
+  doOneHop: True
+  fdrThresh: 0.01
+  cutoff: 125
+  minTPM: 1
+  geneset: "LINCS" # valid options: COSMIC, LINCS, DE, MDSIG
+  nIters: 100
+  subsamplePct: 0.8
+  probThresh: 0.67
+
+DIRECTORIES:
+  dataDir: "../data/expression"
+  genesetDir: "../data/genesets/"
+  networkDir: "../data/networks/"
+  resultDir: "../results/"
+
+NETWORK_PARAMS:
+  normalizeWeights: False
+  scalingConstant: 1
+  graphTops: ['dense','sparse']
+  weighting: 'unweighted'
+
+
+OT_PARAMS:
+  sinkhorn: False
+  regParam: 0.01
+
+
+FIELD_NAMES:
+  weightField: "Weight"
+  renameField: "Gene"
+  densityField: "Density"
+  edgeCurvatureField: "ORC"
+  nodeCurvatureField: "NodeCurv"
+  normNodeCurvatureFiled: "NormNodeCurve"
