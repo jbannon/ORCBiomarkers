@@ -155,8 +155,7 @@ def main(
 
 
 				LCC_Graph, gene_to_idx, idx_to_gene = utils.remap_LCC(LCC_Graph,renameField)
-				print(LCC_Graph)
-				continue
+				
 				if len(LCC_Graph.edges)<1:
 					continue
 				
