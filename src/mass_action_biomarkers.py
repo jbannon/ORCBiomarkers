@@ -73,6 +73,7 @@ def main(
 	drugs, rngSeed, alpha, doOneHop, fdrThresh, cutoff,  minTPM, geneset, nIters, subsamplePct, probThresh = \
 		utils.unpack_parameters(config['EXPERIMENT_PARAMS']) 
 	
+	
 	dataDir, genesetDir, networkDir,resultDir = utils.unpack_parameters(config['DIRECTORIES'])
 	
 	hopString = "OneHop" if doOneHop else "NoHop"
@@ -112,7 +113,7 @@ def main(
 			expr = expr[keep_cols]
 
 	
-			gene_list, qv = utils.fetch_geneset(geneset,genesetDir,drug,tissue,fdrThresh,str(cutoff),probThresh)
+			gene_list, qv = utils.fetch_geneset(geneset,genesetDir,drug,tissue,fdrThresh,cutoff,probThresh)
 			
 			
 			common_genes = [x for x in gene_list if x in expr.columns[1:]]
