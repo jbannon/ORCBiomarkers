@@ -1,0 +1,47 @@
+WARNING: Could not find any nv files on this host!
+  0%|          | 0/5 [00:00<?, ?it/s]Working on Atezo:   0%|          | 0/5 [00:00<?, ?it/s]
+  0%|          | 0/2 [00:00<?, ?it/s][A
+Working on KIRC:   0%|          | 0/2 [00:00<?, ?it/s][A
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A
+
+working on sparse topology:   0%|          | 0/2 [00:00<?, ?it/s][A[A
+
+working on dense topology:   0%|          | 0/2 [00:00<?, ?it/s] [A[A
+
+working on dense topology: 100%|██████████| 2/2 [00:00<00:00,  8.20it/s][A[A
+
+                                                                        [A[A
+Working on KIRC:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it][A
+Working on BLCA:  50%|█████     | 1/2 [00:01<00:01,  1.68s/it][A
+
+  0%|          | 0/2 [00:00<?, ?it/s][A[A
+
+working on sparse topology:   0%|          | 0/2 [00:00<?, ?it/s][A[A
+
+
+  0%|          | 0/100 [00:00<?, ?it/s][A[A[A/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:496: RuntimeWarning: divide by zero encountered in divide
+  Kp = (1 / a).reshape(-1, 1) * K
+/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:511: UserWarning: Warning: numerical errors at iteration 0
+  warnings.warn('Warning: numerical errors at iteration %d' % ii)
+
+
+
+  1%|          | 1/100 [03:29<5:45:14, 209.24s/it][A[A[A/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:496: RuntimeWarning: divide by zero encountered in divide
+  Kp = (1 / a).reshape(-1, 1) * K
+/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:511: UserWarning: Warning: numerical errors at iteration 0
+  warnings.warn('Warning: numerical errors at iteration %d' % ii)
+
+
+
+  2%|▏         | 2/100 [06:59<5:42:53, 209.93s/it][A[A[A/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:496: RuntimeWarning: divide by zero encountered in divide
+  Kp = (1 / a).reshape(-1, 1) * K
+/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:511: UserWarning: Warning: numerical errors at iteration 0
+  warnings.warn('Warning: numerical errors at iteration %d' % ii)
+
+
+
+  3%|▎         | 3/100 [10:22<5:34:29, 206.90s/it][A[A[A/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:496: RuntimeWarning: divide by zero encountered in divide
+  Kp = (1 / a).reshape(-1, 1) * K
+/ext3/miniconda3/lib/python3.11/site-packages/ot/bregman.py:511: UserWarning: Warning: numerical errors at iteration 0
+  warnings.warn('Warning: numerical errors at iteration %d' % ii)
