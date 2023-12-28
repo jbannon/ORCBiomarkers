@@ -1,0 +1,6 @@
+alpha:	0.5
+fdrThresh:	0.01
+Cutoff:	EB
+Minimum TPM:	1
+Sinkhorn:	False
+Epsilon	2
