@@ -6,9 +6,10 @@
 #SBATCH --time=96:00:00
 #SBATCH --mem=50GB
 #SBATCH --job-name=CCEN
-#SBATCH --output=./slurmouts/MassAction_DiffExp_EB_NoHop_%j.out
+#SBATCH --output=./slurmouts/Correlation_COSMIC_EB_NoHop_%j.out
 #SBATCH --mail-type=TIME_LIMIT,BEGIN,END,FAIL
 #SBATCH --mail-user=jjb509@nyu.edu
+
 
 module purge
 
@@ -16,4 +17,4 @@ module purge
 singularity exec --nv \
 	    --overlay /scratch/jjb509/ORCBiomarkers/src/ORC-Overlay.ext3:ro \
 	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif\
-	    /bin/bash -c "source /ext3/env.sh; python mass_action_biomarkers.py -config ./configs/DE.yaml"
+	    /bin/bash -c "source /ext3/env.sh; python correlation_biomarkers.py -config ./configs/COSMIC.yaml"

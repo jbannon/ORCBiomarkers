@@ -7,6 +7,9 @@
 #SBATCH --mem=50GB
 #SBATCH --job-name=CODECOOH
 #SBATCH --output=./slurmouts/Correlation_DiffExp_Count_OH_%j.out
+#SBATCH --mail-type=TIME_LIMIT,BEGIN,END,FAIL
+#SBATCH --mail-user=jjb509@nyu.edu
+
 
 module purge
 

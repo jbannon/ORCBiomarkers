@@ -7,6 +7,9 @@
 #SBATCH --mem=50GB
 #SBATCH --job-name=CODECONH
 #SBATCH --output=./slurmouts/Correlation_LINCS_Count_NoHop_%j.out
+#SBATCH --mail-type=TIME_LIMIT,BEGIN,END,FAIL
+#SBATCH --mail-user=jjb509@nyu.edu
+
 
 module purge
 
