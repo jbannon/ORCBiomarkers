@@ -42,6 +42,10 @@ def fetch_drug_targets(
     ) -> List[str]:
     if drug in DRUG_TARGET_MAP.keys():
         targets = [TARGET_GENE_MAP[DRUG_TARGET_MAP[drug]]]
+    elif drug == "Ipi+Pembro":
+        t1 = TARGET_GENE_MAP[DRUG_TARGET_MAP["Ipi"]]
+        t2 = TARGET_GENE_MAP[DRUG_TARGET_MAP["Pembro"]]
+        targets = [t1,t2]
     else:
         fname = "../data/genesets/{d}_targets.txt".format(d=drug)
         with open(fname, "r") as istream:
@@ -164,9 +168,9 @@ def harmonize_graph_and_geneset(
 
     
     common_genes = [x for x in list(G.nodes) if x in gene_set]
- 
+    
     G.remove_nodes_from([n for n in G.nodes if n not in common_genes])
- 
+
     LCC_genes = sorted(list(max(nx.connected_components(G), key=len)))
     G.remove_nodes_from([n for n in G.nodes if n not in LCC_genes])
     
