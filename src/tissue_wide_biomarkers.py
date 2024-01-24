@@ -46,6 +46,7 @@ def main(config:Dict):
 	# drug_target = utils.TARGET_GENE_MAP[utils.DRUG_TARGET_MAP[drug]]
 
 	for tissue in tissues:
+		print('starting {t}'.format(t=tissue))
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, tissue],'expression','.csv')
 		response_file = utils.make_file_path(data_dir,[dataset_string,drug,tissue],'response','.csv')
 		diff_exp_file = utils.make_file_path(geneset_dir,[],"{d}_{t}_DE".format(d=drug, t=tissue),".csv")
@@ -87,7 +88,7 @@ def main(config:Dict):
 		network_file = utils.make_file_path(network_dir,[dataset_string,topology],weighting,".pickle")
 		with open(network_file,"rb") as istream:
 			PPI_Graph = pickle.load(istream)
-		
+
 		if do_hops:
 			for hop in range(num_hops):
 			# print("doing one hop")
@@ -101,6 +102,11 @@ def main(config:Dict):
 		
 		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes)
 		
+		if len(LCC_Graph.edges)==0:
+			with open(res_path+"empty_graph.txt","w") as ostream:
+				ostream.writelines(["graph had no edges"])
+			continue
+
 		subset_expression = expression[['Run_ID']+[x for x in LCC_Graph.nodes()]]
 		data = subset_expression.merge(response, on = 'Run_ID')	
 		LCC_Graph, gene_to_idx, idx_to_gene = utils.rename_nodes(LCC_Graph,rename_field)
@@ -108,7 +114,7 @@ def main(config:Dict):
 
 		edge_curvatures = defaultdict(list)
 		node_curvatures = defaultdict(list)
-			
+
 		for index, row in tqdm.tqdm(data.iterrows(),total=data.shape[0],leave=False):
 			G = LCC_Graph.copy()
 			sample_response = row["Response"]
