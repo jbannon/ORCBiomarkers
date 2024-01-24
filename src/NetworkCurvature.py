@@ -6,7 +6,7 @@ import networkx as nx
 import ot
 import tqdm 
 import time
-from GraphRicciCurvature.OllivierRicci import OllivierRicci
+
 
 # @lru_cache(1000000)
 def _make_all_pairs_shortest_path_matrix(
