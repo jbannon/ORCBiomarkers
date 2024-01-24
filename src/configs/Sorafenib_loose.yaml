@@ -3,7 +3,7 @@ EXPERIMENT_PARAMS:
   tissues: ['LUAD','BRCA','SKCM']
   rng_seed: 12345
   alpha: 0.5
-  do_hops: False
+  do_hops: True
   num_hops: 1
   fdrThresh: 0.1
   minTPM: 0.0
