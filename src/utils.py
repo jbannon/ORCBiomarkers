@@ -5,8 +5,13 @@ from typing import List, Dict, Union
 import networkx as nx
 import pandas as pd
 from collections import defaultdict
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
 
-DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["SKCM","STAD"],
+
+DRUG_TISSUE_MAP = {"Atezo":["KIRC","BLCA"],"Pembro":["STAD"],
     "Nivo":["KIRC","SKCM"], "Ipi":["SKCM"], "Ipi+Pembro":["SKCM"],
     "erlotinib":['LUAD'],"crizotinib":['LUAD'],'sorafenib':["LUAD"],'sunitinib':["LUAD"]}
 
@@ -30,6 +35,47 @@ DRUG_TARGET_MAP = {'Atezo':'PD-L1','Pembro':'PD1','Nivo':'PD1','Ipi':'CTLA4'}
 TARGET_GENE_MAP = {'PD-L1':'CD274', 'PD1':'PDCD1', 'CTLA4':'CTLA4'}
 
 
+
+
+def fetch_drug_targets(
+    drug:str
+    ) -> List[str]:
+    if drug in DRUG_TARGET_MAP.keys():
+        targets = [TARGET_GENE_MAP[DRUG_TARGET_MAP[drug]]]
+    else:
+        fname = "../data/genesets/{d}_targets.txt".format(d=drug)
+        with open(fname, "r") as istream:
+            lines = istream.readlines()
+        targets = [x.rstrip() for x in lines]
+
+    return targets
+
+
+def process_pvalue_data(
+    pval_df:pd.DataFrame,
+    gene_col:str, 
+    pval_thresh:float,
+    pval_col:str = 'adj_pvals',
+    )->List[str]:
+    
+
+    
+    pval_df = pval_df[pval_df[pval_col]<=pval_thresh]
+
+    
+    genes = pval_df[gene_col].values
+    gene_list = []
+    
+
+    for gene in genes:
+        nodes = [x for x in gene.split(";")]
+        # we split if it's an edge
+        for g in nodes:
+            gene_list.append(g)
+
+    gene_list = list(pd.unique(gene_list))
+    return gene_list
+    
 def fetch_geneset(
     geneset:str,
     gsDir:str,
@@ -91,17 +137,17 @@ def unpack_parameters(
 
 def make_file_path(
     base_dir:str, 
-    pathNames:List[str], 
+    path_names:List[str], 
     fname:str, 
     ext:str
     )->str:
     
-    pathNames.append("")
+    path_names.append("")
     ext = ext if ext[0]=="." else "." + ext
 
     base_dir = base_dir[:-1] if base_dir[-1]=="/" else base_dir
     path = [base_dir]
-    path.extend(pathNames)
+    path.extend(path_names)
     path ="/".join([x for x in path])
     
     file_path = "".join([path,fname,ext])
@@ -116,42 +162,39 @@ def harmonize_graph_and_geneset(
     ) -> nx.Graph:
     
 
+    
     common_genes = [x for x in list(G.nodes) if x in gene_set]
-
-
-
-    H = G.subgraph(common_genes)
+ 
+    G.remove_nodes_from([n for n in G.nodes if n not in common_genes])
+ 
+    LCC_genes = sorted(list(max(nx.connected_components(G), key=len)))
+    G.remove_nodes_from([n for n in G.nodes if n not in LCC_genes])
     
-    if len(H.nodes)>0:
-        if not nx.is_connected(H):
-            
-            LCC_genes = max(nx.connected_components(H), key=len)
-            H = H.subgraph(LCC_genes)
     
-    return H
+    
+    return G
 
 
-def remap_LCC(
-    LCC_Graph:nx.Graph,
-    newFieldName:str = 'Gene'
+def rename_nodes(
+    G:nx.Graph,
+    new_field_name:str = 'Gene'
     ):
     gene_to_idx  = {} 
     idx_to_gene = {}
-    for idx, gene in enumerate(LCC_Graph.nodes):
+    for idx, gene in enumerate(G.nodes):
         gene_to_idx[gene] = idx
         idx_to_gene[idx] = gene
-    
-    LCC_Graph = nx.relabel_nodes(LCC_Graph,gene_to_idx)
-    nx.set_node_attributes(LCC_Graph,idx_to_gene, newFieldName)
-    return LCC_Graph, gene_to_idx, idx_to_gene
+    G = nx.relabel_nodes(G,gene_to_idx)
+    nx.set_node_attributes(G,idx_to_gene, new_field_name)
+    return G, gene_to_idx, idx_to_gene
 
 
 
 
-def empiricalBayesGeneSelection(
+def empirical_bayes_gene_selection(
     df:pd.DataFrame,
     probThresh:float,
-    cutType:str,
+    cutType:str = "EB",
     conf:float = 0.9,
     nRuns:int = 200):
     
@@ -198,4 +241,26 @@ def empiricalBayesGeneSelection(
     
 
 
+
+def make_model_and_param_grid(
+    model_name:str,
+    reg_min:float,
+    reg_max:float,
+    reg_step:float,
+    model_max_iters:int
+    ):
+    
+    preproc = ('preproc',StandardScaler())
+    
+    if model_name == 'LogisticRegression':
+        classifier = ('clf',LogisticRegression(class_weight = 'balanced',max_iter = model_max_iters))
+    elif model_name == 'LinearSVM':
+        classifier = ('clf',LinearSVC(class_weight = 'balanced',max_iter = model_max_iters))
+    
+
+    param_grid = {'clf__C':np.arange(reg_min,reg_max,reg_step)}                            
+    
+    model = Pipeline([preproc,classifier])
+
+    return model, param_grid
 

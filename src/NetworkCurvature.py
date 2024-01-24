@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, Tuple
 import matplotlib.pyplot as plt
 import sys
 import numpy as np
@@ -6,177 +6,244 @@ import networkx as nx
 import ot
 import tqdm 
 import time
+from GraphRicciCurvature.OllivierRicci import OllivierRicci
 
-def compute_node_curvatures(
+# @lru_cache(1000000)
+def _make_all_pairs_shortest_path_matrix(
 	G:nx.Graph,
-	weight:str = 'weight',
-	edge_curv:str = 'ORC',
-	node_curv:str = 'node_curvature',
-	norm_node_curv:str  = 'normalized_curvature'
-	)->None:
-	
-	for node in G.nodes():
-		normalized_curvature = 0 
-		raw_curvature = 0 
-		for x in G.neighbors(node):
-			term_weight = G[node][x][weight]
-			sum_term = G[node][x][edge_curv]
-			raw_curvature += sum_term
-			normalized_curvature += sum_term*term_weight
-		nx.set_node_attributes(G,{node:raw_curvature}, node_curv)
-		nx.set_node_attributes(G,{node:normalized_curvature},norm_node_curv)
-
-def assign_densities(
-	G:nx.Graph,
-	alpha:float = 0.5,
-	weight:str = 'weight',
-	measure_name:str = 'density'
-	) -> None:
-	
-	assert 0<=alpha<=1, 'alpha must be between 0 and 1'
-	attrs = nx.get_node_attributes(G,'Gene')
-	for node in G.nodes():
-		density = np.zeros(len(G.nodes()))
-		density[node] = alpha
-		node_degree = G.degree(node,weight = weight)
-		# print("NODE:\t{n}\tDEGREE:\t{d}".format(n=node, d=node_degree))
-
-		for x in G.neighbors(node):
-			density[x] = (1-alpha)*( (G[node][x][weight])/node_degree)
-
-		nx.set_node_attributes(G,{node:np.ascontiguousarray(density)},measure_name)
-	
-
-	
-
-def make_APSP_Matrix(
-	G:nx.Graph,
-	weighted:bool = True,
 	weight:str = 'weight'
 	) -> np.ndarray:
 	
-
+	s = time.time()
 	N = len(G.nodes)
 	D = np.zeros((N,N))
-	
-	if not weighted:
-		weight = None
 
-	
 
 	path_lengths = dict(nx.all_pairs_dijkstra_path_length(G,weight=weight))
 	for node1 in path_lengths.keys():
 		node1Lengths = path_lengths[node1]
 		for node2 in node1Lengths.keys():
 			D[node1,node2] = np.round(node1Lengths[node2],5)
-			# if D[node1,node2]==0 and node1!=node2:
-			# 	print(node1)
-			# 	print(node2)
-			# 	print(node1Lengths[node2])
-			# 	print(node1Lengths)
-			# 	sys.exit(1)
-							 #rounding to make sure D is symmetric
-			
-	# # slow b/c redundant
-	# for n1 in G.nodes():
-	# 	for n2 in G.nodes():
-	# 		D[n1,n2] = np.round(nx.dijkstra_path_length(G,n1,n2,weight = weight),7)
-
+	e = time.time()
+	# print("apsp took {t}".format(t=e-s))
 	if not (D==D.T).all():
-		print('symmetry error')
-		print(D==D.T)
 		issues = np.where(D!=D.T)
-		print(D[issues[0][0],issues[1][0]])
-		print(D[issues[1][0],issues[0][0]])
+		print("symmetry issue")
 		sys.exit(1)
 
-	return np.ascontiguousarray(D)
-
-	
+	return D
 
 
 
-
-def compute_OR_curvature(
+def _assign_single_node_density(
 	G:nx.Graph,
-	D:np.ndarray,
-	density:str = 'density',
-	curvature_name:str =  'ORC',
-	sinkhorn: bool = False,
-	epsilon: float = 0.01
+	node:int,
+	weight:str = 'weight',
+	alpha:float = 0.5,
+	measure_name:str = 'density',
+	min_degree_value:float = 1E-5
 	) -> None:
 	
-
-	assert epsilon>0, 'epsilon must be positive'
-
 	
 	
+	neighbors_and_weights = []
+	for neighbor in G.neighbors(node):
+		edge_weight = G[node][neighbor][weight]
+		neighbors_and_weights.append((neighbor,edge_weight))
+	
+	node_degree = sum([x[1] for x in neighbors_and_weights])
+	nbrs = [x[0] for x in neighbors_and_weights]
+
+	if node_degree>min_degree_value:
+		
+		pmf = [(1.0-alpha)*w/node_degree for _,w in neighbors_and_weights]
+		labeled_pmf = [(nbr,(1.0-alpha)*w/node_degree) for nbr, w in neighbors_and_weights]
+	else:
+		# assign equal weight to all neighbors
+		pmf = [(1.0-alpha)/len(neighbors_and_weights)]*len(neighbors_and_weights)
+		labeled_pmf = [(nbr,(1.0-alpha)/len(neighbors_and_weights)) for nbr, w in neighbors_and_weights]
+	
+	nx.set_node_attributes(G,{node:{x:y for x,y in labeled_pmf}},measure_name)
+	
+	
+	return pmf + [alpha], nbrs + [node]
 	
 
 
-	for edge in G.edges():
-		u,v = edge[0],edge[1]
-		m_u = G.nodes[u][density]
-		m_v = G.nodes[v][density]
+def _compute_single_edge_curvature(
+	G:nx.Graph,
+	node1:int, 
+	node2:int, 
+	weight:str = "weight",
+	alpha:float = 0.5,
+	measure_name:str = 'density',
+	min_degree_value:float = 1E-5,
+	min_distance:float = 1E-7,
+	path_method:str = "all_pairs",
+	APSP_Matrix = None,
+	sinkhorn_thresh:int = 2000,
+	epsilon:float = 1
+	)-> Tuple[Tuple[int,int],float]:
+	
+
+	# print("in single edge")
+
+	pmf_x, nbrs_x = _assign_single_node_density(G,node1,weight, alpha, measure_name, min_degree_value)
+	pmf_y, nbrs_y = _assign_single_node_density(G,node2, weight, alpha, measure_name, min_degree_value)
+	
+	if path_method == "all_pairs" and APSP_Matrix is None:
+		path_method = "pairwise"
+	
+	if path_method == 'pairwise':
+		D = []
+		for x_nbr in nbrs_x:
+			temp_distances = []
+			for y_nbr in nbrs_y:
+				distance, path = nx.bidirectional_dijkstra(G, x_nbr,y_nbr)
+				temp_distances.append(distance)
+			D.append(temp_distances)
+		D = np.array(D)
+	else:
+		D = APSP_Matrix[np.ix_(nbrs_x, nbrs_y)]
+
+	
+	node1_to_node2_distance, _ = nx.bidirectional_dijkstra(G, node1,node2)
 
 
-		if sinkhorn:
-			
-			W = ot.sinkhorn2(a= m_u, b= m_v,M= D,reg = epsilon,warn = False)
-			
-			
-		else:
-			W = ot.emd2(a= m_u, b= m_v, M =D, numItermax=1000000)
+	if max(D.shape[0],D.shape[1])>=sinkhorn_thresh:
+		OT_distance = ot.sinkhorn2(pmf_x, pmf_y, D,epsilon)
+	else:
+		OT_distance = ot.emd2(pmf_x, pmf_y,D)
+	if node1_to_node2_distance < min_distance:
+		kappa = 0
+	else:
+		kappa = 1 - OT_distance/node1_to_node2_distance
+	
 
-		kappa =  1- (W/D[u,v])
-		G[u][v][curvature_name] = np.round(kappa,2)
+	return ((node1,node2),kappa)
 
+	
+
+
+def _compute_node_curvatures(
+	G:nx.Graph,
+	weight:str = 'weight',
+	measure_name:str = 'density',
+	edge_curve:str = 'ricci_curvature',
+	node_curve:str = 'node_curvature',
+	norm_node_curve:str  = 'node_curvature_normalized'
+	)->None:
+	
+	for node, measure in G.nodes(data = True):
+		
+		normalized_curvature = 0 
+		raw_curvature = 0 
+		local_measure = measure[measure_name]
 		
 
+		for x in G.neighbors(node):
+			term_weight = local_measure[x]
+
+			sum_term = G[node][x][edge_curve]
+			raw_curvature += sum_term
+			normalized_curvature += sum_term*term_weight
+		nx.set_node_attributes(G,{node:raw_curvature}, node_curve)
+		nx.set_node_attributes(G,{node:normalized_curvature},norm_node_curve)
+
+
+def _compute_or_flow():
+	pass
+
+
+class OllivierRicciCurvature:
+	def __init__(
+		self,
+		G:nx.Graph,
+		alpha:float = 0.5,
+		weight_field:str = "weight",
+		path_method:str = "pairwise",
+		curvature_field:str = "ricci_curvature",
+		node_field:str = "node_curvature",
+		norm_node_field:str = "node_curvature_normalized",
+		measure_name:str = 'density',
+		min_distance:float = 1E-5,
+		min_degree:float = 1E-5,
+		sinkhorn_thresh:int = 2000,
+		epsilon:float = 1.0
+		) ->None:
 		
+		self.G = G.copy()
+		self.alpha = alpha
+		self.weight_field = weight_field
+		self.path_method = path_method
+		self.curvature_field = curvature_field
+		self.node_field = node_field
+		self.norm_node_field = norm_node_field
+		self.measure_name = measure_name
+		self.min_distance = min_distance
+		self.min_degree = min_degree
+		self.sinkhorn_thresh = sinkhorn_thresh
+		self.epsilon = epsilon
+		self.edge_curvatures_computed = False
+		self.node_curvatures_computed = False
+		self.APSP_Matrix = None
 
-	
-if __name__ == '__main__':
-	rng = np.random.default_rng(seed=12345)
-	G = nx.fast_gnp_random_graph(10,0.3,rng)
-	np.random.seed(12345)
-	for edge in G.edges():
-		G[edge[0]][edge[1]]['weight'] = np.random.uniform(1,2)
-		G[edge[0]][edge[1]]['ORC'] = None
+		if not nx.get_edge_attributes(self.G, self.weight_field):
+			for (v1, v2) in self.G.edges():
+				self.G[v1][v2][self.weight_field] = 1.0
+
+
+		if self.path_method == 'all_pairs':
+			self.APSP_Matrix = _make_all_pairs_shortest_path_matrix(self.G,self.weight_field).copy()
+
+		self.verbose = True
+
+	def compute_edge_curvatures(
+		self
+		) -> None:
 		
+		curvatures = {}
+		for edge in (tqdm.tqdm(self.G.edges(),leave=False) if self.verbose else self.G.edges()):
+			node1, node2 = edge[0],edge[1]
+			
+			curv_tuple = _compute_single_edge_curvature(
+				G = self.G,
+				node1 = node1,
+				node2 = node2,
+				weight = self.weight_field,
+				alpha = self.alpha,
+				measure_name = self.measure_name,
+				min_degree_value = self.min_degree,
+				min_distance = self.min_distance,
+				path_method = self.path_method,
+				APSP_Matrix = self.APSP_Matrix,
+				sinkhorn_thresh = self.sinkhorn_thresh,
+				epsilon = self.epsilon
+				)
 
-	D = make_APSP_Matrix(G)
-	assign_densities(G)
-	compute_OR_curvature(G,D)
-
-	pos = nx.spring_layout(G)
-	nx.draw(G,pos)
-	labels = nx.get_edge_attributes(G,'ORC')
-	nx.draw_networkx_edge_labels(G,pos,edge_labels=labels)
-	plt.show()
-
-
-	
-
-
-	G = nx.barbell_graph(4,1)
-	for edge in G.edges():
-		G[edge[0]][edge[1]]['weight'] = np.random.uniform(1,2)
-		G[edge[0]][edge[1]]['ORC'] = None
-	D = make_APSP_Matrix(G)
-	assign_densities(G)
-	compute_OR_curvature(G,D)
-	edges,weights = zip(*nx.get_edge_attributes(G,'ORC').items())
-
-
-	pos=nx.circular_layout(G)
-	pos = nx.spring_layout(G,k=5,pos=pos,seed=12345)
-	nx.draw(G, pos,node_color='b', edgelist=edges, edge_color=weights,width = 2.5,with_labels=True)
-	labels = nx.get_edge_attributes(G,'ORC')
-
-	nx.draw_networkx_edge_labels(G,pos,edge_labels=labels,bbox=dict(boxstyle = 'round',facecolor='white',edgecolor='black'),rotate=True)
-	plt.legend()
-	plt.show()
-
+			curvatures[curv_tuple[0]] = curv_tuple[1]
+		nx.set_edge_attributes(self.G, curvatures, self.curvature_field)
+		self.edge_curvatures_computed = True
 
 	
+	def compute_node_curvatures(self) -> None:
+		if not self.edge_curvatures_computed:
+			self.compute_edge_curvatures()
+		
+		_compute_node_curvatures(
+			G = self.G,
+			weight = self.weight_field,
+			measure_name= self.measure_name,
+			edge_curve = self.curvature_field,
+			node_curve = self.node_field,
+			norm_node_curve = self.norm_node_field
+			)
+		self.node_curvatures_computed = True
+	
+	def compute_curvatures(self)-> None:
+		self.compute_edge_curvatures()
+		self.compute_node_curvatures()
+
+
+
+
