@@ -116,9 +116,7 @@ def main(
 		# should be fine if we do a pandas unique for the LCC nodes, drug targets, and pre-common
 
 		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
-		print(tissue)
-		print(LCC_Graph)
-		continue
+		
 		stat_string += "\n\tGraph has {n} nodes and {e} edges".format(n = len(LCC_Graph.nodes), e = len(LCC_Graph.edges))
 		
 

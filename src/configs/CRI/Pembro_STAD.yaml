@@ -7,7 +7,7 @@ EXPERIMENT_PARAMS:
   num_hops: 1
   fdrThresh: 0.002
   minTPM: 0.0
-  num_iters: 20
+  num_iters: 50
   probThresh: 0.9
   subsamplePct: 0.75
   experiment_type: 'strict'
