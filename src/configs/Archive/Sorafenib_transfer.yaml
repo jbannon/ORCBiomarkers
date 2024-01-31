@@ -1,0 +1,27 @@
+EXPERIMENT_PARAMS:
+  drug: 'sorafenib'
+  sources: ['BRCA','LUAD']
+  targets: ['BRCA','LUAD','SKCM']
+  rng_seed: 12345
+  n_iters: 50
+  exp_types: ['strict']
+ 
+DIRECTORIES:
+  data_dir: "../data/expression"
+  geneset_dir: "../data/genesets/"
+  network_dir: "../data/networks/"
+  result_dir: "../results/"
+
+
+FEATURE_PARAMS:
+  edge_pv_threshs: [0.1,0.05]
+  node_pv_threshs: [0.1,0.05]
+  norm_node_pv_threshs: [0.1,0.05]
+
+
+MODEL_PARAMS:
+  model_name: "LogisticRegression"
+  min_C: 0.1
+  max_C: 2
+  C_step: 0.01
+  max_iter: 10000

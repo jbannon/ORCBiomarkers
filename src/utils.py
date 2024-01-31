@@ -162,7 +162,8 @@ def make_file_path(
 
 def harmonize_graph_and_geneset(
     G:nx.Graph,
-    gene_set:List[str]
+    gene_set:List[str],
+    lcc_only:bool = False
     ) -> nx.Graph:
     
 
@@ -170,11 +171,10 @@ def harmonize_graph_and_geneset(
     common_genes = [x for x in list(G.nodes) if x in gene_set]
     
     G.remove_nodes_from([n for n in G.nodes if n not in common_genes])
-
-    LCC_genes = sorted(list(max(nx.connected_components(G), key=len)))
-    G.remove_nodes_from([n for n in G.nodes if n not in LCC_genes])
     
-    
+    if lcc_only:
+        LCC_genes = sorted(list(max(nx.connected_components(G), key=len)))
+        G.remove_nodes_from([n for n in G.nodes if n not in LCC_genes])
     
     return G
 

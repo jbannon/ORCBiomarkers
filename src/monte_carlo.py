@@ -45,7 +45,8 @@ def main(
 	path_method, min_degree_base, min_degree_exp, min_distance_base, min_distance_exp, sinkhorn_thresh, epsilon = \
 		utils.unpack_parameters(config['CURVATURE_PARAMS'])
 
-	pvalue_thresh = utils.unpack_parameters(config['FEATURE_PARAMS'])
+	pvalue_thresh, lcc_only = utils.unpack_parameters(config['FEATURE_PARAMS'])
+	
 	topology, weighting = utils.unpack_parameters(config['NETWORK_PARAMS'])
 	
 
@@ -73,7 +74,7 @@ def main(
 
 		DE = pd.read_csv(diff_exp_file)
 		DE = DE[DE['Thresh.Value']==fdr_thresh]
-
+		
 		response = pd.read_csv(response_file)		
 		expression = pd.read_csv(expression_file)
 		
@@ -83,14 +84,20 @@ def main(
 		
 		
 		DE_gene_list = utils.empirical_bayes_gene_selection(DE,prob_thresh)
-		
+		stat_string = "\n\t{d} - {t}\n".format(d=drug, t= tissue)
+		stat_string += "\n\t{k} DE genes after filtering".format(k=len(DE_gene_list))
+		stat_string += "\n\t{p} patients in the dataset".format(p = response.shape[0])
+
 		# genes that are differentially expressed but also greater than tpm threshold in all entries
 		common_genes = [x for x in DE_gene_list if x in keep_genes]
 		DE_genes = [x for x in common_genes]
 
 		res_path = "".join([result_dir,"/".join(["classification",drug,tissue,exp_type]),"/"])
 		os.makedirs(res_path,exist_ok = True)
-		res_name = "{p}monte_carlo.csv".format(p=res_path)
+		
+		lcc_string = "_lcc" if lcc_only else ""
+		res_name = "{p}monte_carlo{l}.csv".format(p=res_path,l = lcc_string)
+		stat_name = "{p}stats{l}.txt".format(p=res_path, l=lcc_string)
 		
 		network_file = utils.make_file_path(network_dir,[dataset_string,topology],weighting,".pickle")
 		with open(network_file,"rb") as istream:
@@ -108,10 +115,14 @@ def main(
 		
 		# should be fine if we do a pandas unique for the LCC nodes, drug targets, and pre-common
 
-		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes)
+		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
+		print(tissue)
+		print(LCC_Graph)
+		continue
+		stat_string += "\n\tGraph has {n} nodes and {e} edges".format(n = len(LCC_Graph.nodes), e = len(LCC_Graph.edges))
 		
+
 		
-		#Graph with 75 nodes and 332 edges
 		keep_cols = [x for x in list(pd.unique([g for g in LCC_Graph.nodes()]+DE_genes+drug_targets))]
 		
 
@@ -121,6 +132,7 @@ def main(
 		LCC_Graph, gene_to_idx, idx_to_gene = utils.rename_nodes(LCC_Graph,rename_field)
 		subset_expression.set_index('Run_ID',inplace = True)
 
+		
 		gene_to_col = {}
 		
 		
@@ -164,8 +176,13 @@ def main(
 						epsilon = epsilon)
 			feature_selector.compute_curvatures()
 
-			for feature in ['targets','DE','edge','node', 'node-norm']:		
-				print(feature)
+			for feature in ['targets','DE','edge','node',
+				'node-norm',
+				'edge+targets','node+targets',
+				'node-norm+targets']:
+				
+
+				
 				if feature == 'targets':
 					names = ['targets']
 					indices = [[gene_to_col[x] for x in drug_targets]]
@@ -173,15 +190,19 @@ def main(
 					names = ["DiffExp"]
 					indices = [[gene_to_col[x] for x in DE_genes]]
 				else:
+					if feature[-8:]=="+targets":
+						feat_type = feature[:-8]
+					else:
+						feat_type = feature
+					genes, idxs  = feature_selector.get_features(feature_type = feat_type)
 
-					genes, idxs  = feature_selector.get_features(feature_type = feature)
-
-					# avoid_sampling = [x for x in idxs] + [gene_to_col[x] for x in drug_targets]
-					# possible_samples = [i for i in np.arange(X.shape[1]) if i not in avoid_sampling]
+					avoid_sampling = [x for x in idxs] + [gene_to_col[x] for x in drug_targets]
+					possible_samples = [i for i in np.arange(X.shape[1]) if i not in avoid_sampling]
+					
 					random_genes = np.random.choice(np.arange(X.shape[1]),len(idxs),replace = False)
 					names = [feature,feature+"-random"]
 					indices = [idxs,random_genes]
-					
+				
 				for feature_name, col_idxs in zip(names, indices):
 					if len(col_idxs)==0:
 						results['drug'].append(drug)
@@ -234,6 +255,8 @@ def main(
 		
 		results = pd.DataFrame(results)
 		results.to_csv(res_name)
+		with open(stat_name,"w") as ostream:
+			ostream.write(stat_string)
 
 
 

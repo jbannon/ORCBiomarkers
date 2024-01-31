@@ -32,6 +32,8 @@ def main(config:Dict):
 	path_method, min_degree_base, min_degree_exp, min_distance_base, min_distance_exp, sinkhorn_thresh, epsilon = \
 		utils.unpack_parameters(config['CURVATURE_PARAMS'])
 
+	pvalue_thresh, lcc_only = utils.unpack_parameters(config['FEATURE_PARAMS'])
+
 
 	min_degree = min_degree_base**min_degree_exp
 	min_distance = min_distance_base**min_distance_exp
@@ -100,7 +102,7 @@ def main(config:Dict):
 				common_genes = [x for x in one_hop]
 		
 		
-		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes)
+		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
 		
 		if len(LCC_Graph.edges)==0:
 			with open(res_path+"empty_graph.txt","w") as ostream:
@@ -224,9 +226,9 @@ def main(config:Dict):
 				
 		edge_results.to_csv(res_path+"edge_curvature_pvals.csv")
 				
-		edge_data.to_csv(res_path+"edge_curavtures.csv")
+		edge_data.to_csv(res_path+"edge_curvatures.csv")
 				
-		node_data.to_csv(res_path+"node_curavtures.csv")
+		node_data.to_csv(res_path+"node_curvatures.csv")
 		
 		stat_string = "alpha:\t{a}\nfdrThresh:\t{t}\nProb Thresh:\t{g}".format(a=alpha,t=fdr_thresh,g = prob_thresh)
 		stat_string = stat_string + "\nMinimum TPM:\t{m}".format(m=min_TPM)
