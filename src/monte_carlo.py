@@ -66,6 +66,7 @@ def main(
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
 	drug_targets = utils.fetch_drug_targets(drug)
+	lcc_string = "lcc_only" if lcc_only else "full_graph"
 
 	for tissue in tissues:
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, tissue],'expression','.csv')
@@ -92,12 +93,13 @@ def main(
 		common_genes = [x for x in DE_gene_list if x in keep_genes]
 		DE_genes = [x for x in common_genes]
 
-		res_path = "".join([result_dir,"/".join(["classification",drug,tissue,exp_type]),"/"])
+		res_path = "".join([result_dir,"/".join(["classification",drug,lcc_string,tissue]),"/"])
+		#res_path = "".join([result_dir,"/".join(["classification",exp_type,drug,tissue,lcc_string]),"/"])
 		os.makedirs(res_path,exist_ok = True)
 		
 		lcc_string = "_lcc" if lcc_only else ""
-		res_name = "{p}monte_carlo{l}.csv".format(p=res_path,l = lcc_string)
-		stat_name = "{p}stats{l}.txt".format(p=res_path, l=lcc_string)
+		res_name = "{p}monte_carlo.csv".format(p=res_path,l = lcc_string)
+		stat_name = "{p}stats.txt".format(p=res_path, l=lcc_string)
 		
 		network_file = utils.make_file_path(network_dir,[dataset_string,topology],weighting,".pickle")
 		with open(network_file,"rb") as istream:
