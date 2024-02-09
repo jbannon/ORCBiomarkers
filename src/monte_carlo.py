@@ -66,7 +66,7 @@ def main(
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
 	drug_targets = utils.fetch_drug_targets(drug)
-	lcc_string = "lcc_only" if lcc_only else "full_graph"
+	lcc_string = "lcc_only" if lcc_only else "full_graph"x`
 
 	for tissue in tissues:
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, tissue],'expression','.csv')
@@ -194,7 +194,10 @@ def main(
 						feat_type = feature[:-8]
 					else:
 						feat_type = feature
+					
 					genes, idxs  = feature_selector.get_features(feature_type = feat_type)
+					if feature[-8:]=="+targets":
+						idxs = idxs + [gene_to_col[x] for x in drug_targets]
 
 					avoid_sampling = [x for x in idxs] + [gene_to_col[x] for x in drug_targets]
 					possible_samples = [i for i in np.arange(X.shape[1]) if i not in avoid_sampling]
