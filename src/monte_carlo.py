@@ -66,7 +66,7 @@ def main(
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
 	drug_targets = utils.fetch_drug_targets(drug)
-	lcc_string = "lcc_only" if lcc_only else "full_graph"x`
+	lcc_string = "lcc_only" if lcc_only else "full_graph"
 
 	for tissue in tissues:
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, tissue],'expression','.csv')
