@@ -1,0 +1,6 @@
+
+	erlotinib - BRCA
+
+	5 DE genes after filtering
+	35 patients in the dataset
+	Graph has 23 nodes and 99 edges

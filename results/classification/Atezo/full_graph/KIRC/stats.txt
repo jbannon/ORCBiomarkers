@@ -1,0 +1,6 @@
+
+	Atezo - KIRC
+
+	44 DE genes after filtering
+	167 patients in the dataset
+	Graph has 243 nodes and 826 edges

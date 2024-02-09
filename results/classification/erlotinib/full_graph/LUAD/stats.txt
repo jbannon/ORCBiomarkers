@@ -1,0 +1,6 @@
+
+	erlotinib - LUAD
+
+	10 DE genes after filtering
+	61 patients in the dataset
+	Graph has 28 nodes and 50 edges

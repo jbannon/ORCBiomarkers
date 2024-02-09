@@ -1,0 +1,6 @@
+
+	Nivo - SKCM
+
+	42 DE genes after filtering
+	109 patients in the dataset
+	Graph has 173 nodes and 778 edges

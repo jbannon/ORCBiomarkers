@@ -1,0 +1,6 @@
+
+	Pembro - SKCM
+
+	13 DE genes after filtering
+	129 patients in the dataset
+	Graph has 49 nodes and 141 edges
