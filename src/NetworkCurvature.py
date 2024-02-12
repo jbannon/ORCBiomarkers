@@ -114,6 +114,8 @@ def _compute_single_edge_curvature(
 		OT_distance = ot.sinkhorn2(pmf_x, pmf_y, D,epsilon)
 	else:
 		OT_distance = ot.emd2(pmf_x, pmf_y,D)
+
+	# print("between node {u} and node {v} the W1 distance is: {w}".format(u = node1,v = node2, w= OT_distance))
 	if node1_to_node2_distance < min_distance:
 		kappa = 0
 	else:
@@ -243,6 +245,53 @@ class OllivierRicciCurvature:
 	def compute_curvatures(self)-> None:
 		self.compute_edge_curvatures()
 		self.compute_node_curvatures()
+
+
+
+if __name__ == '__main__':
+	G = nx.Graph()
+	# A nbhd
+	G.add_node(0,letter = "w")
+	G.add_node(1,letter = "a")
+	G.add_node(2,letter = "x")
+	G.add_edge(0,1, weight = 4)
+	G.add_edge(1,2, weight = 2)
+
+	# B neighborhood
+	G.add_node(3, letter = "b")
+	G.add_node(4, letter = "y")
+	G.add_node(5,letter = "z")
+	G.add_edge(3,4,weight = 5)
+	G.add_edge(3,5,weight = 1)
+
+	#Connect them
+	G.add_edge(1,3,weight = 3)
+
+	
+
+
+	# nx.draw(G,labels = {node:})
+	# plt.show()
+	rc  = OllivierRicciCurvature(G)
+	rc.compute_curvatures()
+	G_ = rc.G.copy()
+	for e in G_.edges(data = True):
+		print(e)
+
+	G.add_edge(1,5,weight = 1)
+	G.add_edge(0,4, weight = 0.5)
+	rc  = OllivierRicciCurvature(G)
+	rc.compute_curvatures()
+	G_ = rc.G.copy()
+	for e in G_.edges(data = True):
+		print(e)
+	(0, 1, {'weight': 4, 'ricci_curvature': 0.5326388888888889})                    
+(0, 4, {'weight': 0.5, 'ricci_curvature': -1.333333333333333})
+(1, 2, {'weight': 2, 'ricci_curvature': 0.02499999999999991})
+(1, 3, {'weight': 3, 'ricci_curvature': 0.3222222222222223})
+(1, 5, {'weight': 1, 'ricci_curvature': -0.6000000000000003})
+(3, 4, {'weight': 5, 'ricci_curvature': 0.747979797979798})
+(3, 5, {'weight': 1, 'ricci_curvature': -0.6944444444444444})
 
 
 

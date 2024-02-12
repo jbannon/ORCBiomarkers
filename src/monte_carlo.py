@@ -80,8 +80,15 @@ def main(
 		expression = pd.read_csv(expression_file)
 		
 		trimmed_expression = expression[expression.columns[1:]]
-		trimmed_expression = (trimmed_expression>=min_TPM).all(axis=0)
-		keep_genes = list(trimmed_expression[trimmed_expression].index)
+		
+		
+		trimmed_expression = np.sum(trimmed_expression>min_TPM,axis=0)/expression.shape[0]
+		trimmed_expression = trimmed_expression[trimmed_expression>0.9]
+		
+		# trimmed_expression = (trimmed_expression>min_TPM).all(axis=0)
+		# keep_genes = list(trimmed_expression[trimmed_expression].index)
+		keep_genes = list(trimmed_expression.index)
+		
 		
 		
 		DE_gene_list = utils.empirical_bayes_gene_selection(DE,prob_thresh)

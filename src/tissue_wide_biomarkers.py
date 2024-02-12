@@ -61,8 +61,16 @@ def main(config:Dict):
 		expression = pd.read_csv(expression_file)
 		
 		trimmed_expression = expression[expression.columns[1:]]
-		trimmed_expression = (trimmed_expression>=min_TPM).all(axis=0)
-		keep_genes = list(trimmed_expression[trimmed_expression].index)
+		
+		
+		trimmed_expression = np.sum(trimmed_expression>min_TPM,axis=0)/expression.shape[0]
+		trimmed_expression = trimmed_expression[trimmed_expression>0.9]
+		
+		# trimmed_expression = (trimmed_expression>min_TPM).all(axis=0)
+		# keep_genes = list(trimmed_expression[trimmed_expression].index)
+		
+		keep_genes = list(trimmed_expression.index)
+		
 		keep_cols = ['Run_ID'] + keep_genes
 		gene_list = utils.empirical_bayes_gene_selection(DE,prob_thresh)
 		
@@ -104,7 +112,7 @@ def main(config:Dict):
 		
 		
 		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
-		
+		print(LCC_Graph)
 		if len(LCC_Graph.edges)==0:
 			with open(res_path+"empty_graph.txt","w") as ostream:
 				ostream.writelines(["graph had no edges"])

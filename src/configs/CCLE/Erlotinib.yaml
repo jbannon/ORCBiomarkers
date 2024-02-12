@@ -4,9 +4,9 @@ EXPERIMENT_PARAMS:
   rng_seed: 12345
   alpha: 0.5
   do_hops: True
-  num_hops: 1
+  num_hops: 2
   fdrThresh: 0.01
-  minTPM: 0.0
+  minTPM: 0.1
   num_iters: 50
   probThresh: 0.9
   subsamplePct: 0.75
