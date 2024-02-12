@@ -285,13 +285,6 @@ if __name__ == '__main__':
 	G_ = rc.G.copy()
 	for e in G_.edges(data = True):
 		print(e)
-	(0, 1, {'weight': 4, 'ricci_curvature': 0.5326388888888889})                    
-(0, 4, {'weight': 0.5, 'ricci_curvature': -1.333333333333333})
-(1, 2, {'weight': 2, 'ricci_curvature': 0.02499999999999991})
-(1, 3, {'weight': 3, 'ricci_curvature': 0.3222222222222223})
-(1, 5, {'weight': 1, 'ricci_curvature': -0.6000000000000003})
-(3, 4, {'weight': 5, 'ricci_curvature': 0.747979797979798})
-(3, 5, {'weight': 1, 'ricci_curvature': -0.6944444444444444})
 
 
 

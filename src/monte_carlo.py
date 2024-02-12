@@ -58,7 +58,7 @@ def main(
 	min_degree = min_degree_base**min_degree_exp
 	min_distance = min_distance_base**min_distance_exp
 	
-	
+	print(density_field)
 	
 
 	rng = np.random.RandomState(rng_seed)
@@ -157,7 +157,7 @@ def main(
 		
 		results = defaultdict(list)
 		
-
+	
 		
 		for i in range(num_iters):
 			X_train, X_test, y_train, y_test = train_test_split(X,y, train_size = train_pct, 
@@ -181,6 +181,8 @@ def main(
 						min_degree = min_degree,
 						sinkhorn_thresh = sinkhorn_thresh,
 						epsilon = epsilon)
+
+
 			feature_selector.compute_curvatures()
 
 			for feature in ['targets','DE','edge','node',

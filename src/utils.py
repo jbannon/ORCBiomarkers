@@ -172,6 +172,9 @@ def harmonize_graph_and_geneset(
     
     G.remove_nodes_from([n for n in G.nodes if n not in common_genes])
     
+
+    G.remove_nodes_from([n for n in G.nodes if G.degree[n]==0])
+    
     if lcc_only:
         LCC_genes = sorted(list(max(nx.connected_components(G), key=len)))
         G.remove_nodes_from([n for n in G.nodes if n not in LCC_genes])

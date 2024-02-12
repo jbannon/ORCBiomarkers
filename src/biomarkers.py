@@ -72,6 +72,10 @@ class CurvatureFeatureSelector:
 		self
 		) -> None:
 
+		X_node = np.array([])
+		X_norm = np.array([])
+
+
 		
 		for i in tqdm.tqdm(range(self.X.shape[0])):
 			sample_response = self.y[i]
@@ -214,5 +218,68 @@ class CurvatureFeatureSelector:
 		genes = pd.unique(node_results['Gene'].values)
 		idxs = [self.gene_to_col[g] for g in genes]
 		return genes, idxs
+
+	def compute_and_store_node_curvatures(
+		self,
+		node_ids:List[str]
+		) -> None:
+
+		X_node = np.array([])
+		X_norm = np.array([])
+
+		
+		
+		for i in tqdm.tqdm(range(self.X.shape[0])):
+			sample_response = self.y[i]
+			
+			for edge in self.G.edges():
+				node1, node2 = edge[0], edge[1]
+				gene1, gene2 = self.node_num_to_gene[node1], self.node_num_to_gene[node1]
+				col1, col2 = self.gene_to_col[gene1],self.gene_to_col[gene2]
+				weight = np.round(np.log2(self.X[i,col1]+1)*np.log2(self.X[i,col2]+1),5)
+				self.G[node1][node2][self.weight_field] = weight
+
+			orc = nc.OllivierRicciCurvature(
+				G= self.G,
+				alpha = self.alpha, 
+				weight_field = self.weight_field,
+				path_method = self.path_method,
+				curvature_field = self.curvature_field,
+				node_field = self.node_field,
+				norm_node_field = self.norm_node_field,
+				measure_name = self.measure_name,
+				min_distance = self.min_distance,
+				min_degree = self.min_degree,
+				sinkhorn_thresh = self.sinkhorn_thresh,
+				epsilon = self.epsilon
+				)
+			
+			orc.compute_curvatures()
+			G = orc.G.copy()
+
+			
+			attrs = nx.get_node_attributes(G,self.node_field)
+			attr_vec =np.array([attrs[n] for n in node_ids])
+			
+			X_node = np.vstack((X_node,attr_vec)) if X_node.size else attr_vec
+			
+
+
+
+			attrs = nx.get_node_attributes(G,self.norm_node_field)
+			attr_vec =np.array([attrs[n] for n in node_ids])
+			X_norm = np.vstack((X_norm,attr_vec)) if X_norm.size else attr_vec
+			
+
+		self.X_node = X_node
+		self.X_norm = X_norm
+
+	
+		
+
+			
+			
+			
+		
 		
 	

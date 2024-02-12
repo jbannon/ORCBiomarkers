@@ -46,6 +46,8 @@ def main(config:Dict):
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
 	# drug_target = utils.TARGET_GENE_MAP[utils.DRUG_TARGET_MAP[drug]]
+
+	print(density_field)
 	lcc_string = "lcc_only" if lcc_only else "full_graph"
 	for tissue in tissues:
 		print('starting {t}'.format(t=tissue))
@@ -110,7 +112,7 @@ def main(config:Dict):
 					one_hop.extend([x for x in nbrs if x in keep_genes])
 				common_genes = [x for x in one_hop]
 		
-		
+		print(PPI_Graph)
 		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
 		print(LCC_Graph)
 		if len(LCC_Graph.edges)==0:
