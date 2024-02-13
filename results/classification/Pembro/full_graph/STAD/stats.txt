@@ -3,4 +3,4 @@
 
 	4 DE genes after filtering
 	45 patients in the dataset
-	Graph has 61 nodes and 464 edges
+	Graph has 166 nodes and 868 edges

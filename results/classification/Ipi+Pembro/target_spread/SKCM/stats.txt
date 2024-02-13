@@ -1,0 +1,2 @@
+
+	Graph has 23 nodes and 71 edges

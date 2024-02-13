@@ -5,6 +5,6 @@ Minimum TPM:	0.0
 Take Hops?	True
 Num Hops:	1
 Alpha	0.5
-LCC has 15 nodes and 38 edges
+LCC has 8 nodes and 12 edges
 Num DE Genes Before Filtering:	19
-Num DE Genes After Filtering:	19
+Num DE Genes After Filtering:	9

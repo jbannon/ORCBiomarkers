@@ -1,10 +1,10 @@
 alpha:	0.5
 fdrThresh:	0.02
 Prob Thresh:	0.9
-Minimum TPM:	0.0
+Minimum TPM:	0.5
 Take Hops?	True
-Num Hops:	1
+Num Hops:	2
 Alpha	0.5
-LCC has 173 nodes and 778 edges
+LCC has 784 nodes and 4414 edges
 Num DE Genes Before Filtering:	42
-Num DE Genes After Filtering:	42
+Num DE Genes After Filtering:	22
