@@ -16,4 +16,4 @@ module purge
 singularity exec --nv \
 	    --overlay /scratch/jjb509/ORCBiomarkers/src/ORC-Overlay.ext3:ro \
 	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif\
-	    /bin/bash -c "source /ext3/env.sh; python transfer_learning_experiments.py -config ./configs/CRI/Pembro_Transfer.yaml"
+	    /bin/bash -c "source /ext3/env.sh; python transfer_learning_experiments.py -config ./configs/CRI/Pembro_transfer.yaml"
