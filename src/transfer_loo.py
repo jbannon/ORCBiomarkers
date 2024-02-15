@@ -64,24 +64,28 @@ def main(
 	pval_map = {'edge':edge_pvs,'node':node_pvs,'norm-node':norm_node_pvs}
 	
 	model, param_grid = utils.make_model_and_param_grid(model_name,min_C,max_C,C_step,max_iter)
-	clf = GridSearchCV(model, param_grid)
+	if drug == 'Nivo':
+		clf = GridSearchCV(model, param_grid,cv = 2)
+	else:
+		clf = GridSearchCV(model, param_grid)
 	
 
 	rng = np.random.RandomState(rng_seed)
 	
 	exp_types = ['full_graph','lcc_only']
 	for source, target in tqdm.tqdm(it.product(sources,targets)):
+	
 		
 		if source == target:
 			continue
-		res_path = "../results/transfer/{d}/monte_carlo".format(d=drug)
+		res_path = "../results/transfer/{d}/loo/".format(d=drug)
 		os.makedirs(res_path, exist_ok = True)
 
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, target],'expression','.csv')
 		response_file = utils.make_file_path(data_dir,[dataset_string,drug,target],'response','.csv')
 		response = pd.read_csv(response_file)	
 		expression = pd.read_csv(expression_file)
-
+		
 		results = defaultdict(list)
 		for experiment_type in exp_types:
 			print("working on: {t}".format(t=experiment_type))
@@ -113,30 +117,20 @@ def main(
 					for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
 						
 						X = np.log2(expression[gene_names].values+1)
-						
-						
 						y = response['Response'].values
 						
+						loo = LeaveOneOut()
 
-
-						for i in tqdm.tqdm(range(n_iters)):
-							X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.25, random_state = rng,stratify= y)
+						for i, (train_idx, test_idx) in tqdm.tqdm(enumerate(loo.split(X)),total = X.shape[0]):
 							
+							X_train, X_test = X[train_idx,:], X[test_idx,:]
+							y_train, y_test = y[train_idx], y[test_idx]
+
 							clf.fit(X_train,y_train)
 					
-							train_preds_bin = clf.predict(X_train)
-							train_preds_prob = clf.predict_proba(X_train)
-
 							test_preds_bin = clf.predict(X_test)
 							test_preds_prob = clf.predict_proba(X_test)
-							train_acc = accuracy_score(y_train, train_preds_bin)
-							test_acc = accuracy_score(y_test, test_preds_bin) 
-
-							train_roc = roc_auc_score(y_train,train_preds_prob[:,1])
-							test_roc = roc_auc_score(y_test,test_preds_prob[:,1])
-
-							tn, fp, fn, tp = confusion_matrix(y_test, test_preds_bin,labels = [0,1]).ravel()
-
+							
 							results['drug'].append(drug)
 							results['source tissue'].append(source)
 							results['target tissue'].append(target)
@@ -145,14 +139,10 @@ def main(
 							results['pval'].append(pv)
 							results['iter'].append(i)
 							results['feature_dim'].append(len(gene_names))
-							results['Train Accuracy'].append(train_acc)
-							results['Train ROC_AUC'].append(train_roc)
-							results['Test Accuracy'].append(test_acc)
-							results['Test ROC_AUC'].append(test_roc)
-							results['Test TN'].append(tn)
-							results['Test FP'].append(fp)
-							results['Test FN'].append(fn)
-							results['Test TP'].append(tp)
+							results['predicted_class'].append(test_preds_bin[0])
+							results['predicted_prob'].append(test_preds_prob[:,1][0])
+							results['true_class'].append(y_test[0])
+
 		
 		df = pd.DataFrame(results)
 		df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)

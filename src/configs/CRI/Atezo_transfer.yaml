@@ -1,10 +1,9 @@
 EXPERIMENT_PARAMS:
   drug: 'Atezo'
-  sources: ['BLCA']
-  targets: ['KIRC']
+  sources: ['BLCA','KIRC']
+  targets: ['BLCA','KIRC']
   rng_seed: 12345
-  n_iters: 20
-  exp_types: ['strict','loose']
+  n_iters: 100
  
 DIRECTORIES:
   data_dir: "../data/expression"
@@ -14,9 +13,9 @@ DIRECTORIES:
 
 
 FEATURE_PARAMS:
-  edge_pv_threshs: [0.1,0.05]
-  node_pv_threshs: [0.1,0.05]
-  norm_node_pv_threshs: [0.1,0.05]
+  edge_pv_threshs: [0.1,0.05,0.01]
+  node_pv_threshs: [0.1,0.05,0.01]
+  norm_node_pv_threshs: [0.1,0.05,0.01]
 
 
 MODEL_PARAMS:
@@ -24,4 +23,4 @@ MODEL_PARAMS:
   min_C: 0.1
   max_C: 1
   C_step: 0.05
-  max_iter: 1000
+  max_iter: 100000

@@ -39,7 +39,8 @@ def main(
 		if os.path.isdir(dpath):
 			for graph_type in os.listdir(bpath+drug):
 				gpath = dpath + "/"+ graph_type
-				
+				if graph_type == "target_spread":
+					continue
 				if os.path.isdir(gpath):
 
 					for tissue in os.listdir(gpath):
@@ -55,7 +56,9 @@ def main(
 							dim_dict = {}
 							for feature_type in pd.unique(df['feature']):
 								feat_df = df[df['feature']==feature_type]
-								dim_dict[feature_type] = np.mean(feat_df['feature_dim'].values)
+								# print(feat_df.columns)
+								# sys.exit(1)
+								# dim_dict[feature_type] = np.mean(feat_df['feature_dim'].values)
 								
 								
 							
@@ -64,8 +67,8 @@ def main(
 							with open(figpath+"dropstats.txt","w") as ostream:
 								ostream.write(drop_stats)
 							
-							with open(figpath + "dim_stats.txt","w") as ostream:
-								ostream.writelines([k+"\t"+str(dim_dict[k])+"\n" for k in dim_dict.keys()])
+							# with open(figpath + "dim_stats.txt","w") as ostream:
+							# 	ostream.writelines([k+"\t"+str(dim_dict[k])+"\n" for k in dim_dict.keys()])
 							
 							for metric in metrics:
 								for k in Ls.keys():
@@ -87,28 +90,7 @@ def main(
 									plt.close()
 									
 									
-									
-									
-									
-									
-						
-								# fname = epath+"/"+f
-								# df = pd.read_csv(fname,index_col = 0)
-								# df = df[df['feature_dim']>=0]
-								# for metric in metrics:
-									# for k in Ls.keys():
-										# subdf = df[df['feature'].isin(Ls[k])][['feature',metric]]
-										# order = subdf.groupby('feature').median().sort_values(by = metric).index
-										# 
-										# fig = sns.boxplot(x="feature", y=metric,hue="feature",order = order,data=subdf, dodge = False)
-# 
-										# fig.set(title = "{d} {t} {l} Performance".format(d=drug.title(),t=tissue, l = etype.title()))
-										# fig.set(xlabel = "Feature", ylabel = metric)
-										# figpath = "../figs/classification/{d}/{t}/{e}/".format(d=drug,t=tissue,e=etype)
-										# os.makedirs(figpath,exist_ok=True)
-										# figname = figpath + k+"_"+metric+".png"
-										# plt.savefig(figname)
-										# plt.close()
+								
 										
 										
 										

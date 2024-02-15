@@ -22,7 +22,6 @@ def main(
 	# Config:Dict
 	) -> None:
 	
-
 	
 	Ls = {
 	'edge':['edge','edge-matched-random'],
@@ -31,29 +30,34 @@ def main(
 	'curvatures':['edge','node','norm-node']}
 
 	metrics = ["Test ROC_AUC","Test Accuracy"]
-	exps = {'Erlotinib (BRCA->LUAD) Transfer':("../results/transfer/erlotinib/BRCA_to_LUAD.csv",'Erlotinib'),
+	exps = {
 			'Atezo (BLCA->KIRC) Transfer': ("../results/transfer/Atezo/BLCA_to_KIRC.csv",'Atezo')
 	}
 
 	for key in exps.keys():
 		df = pd.read_csv(exps[key][0],index_col = 0)
-		for et in ['strict','loose']:
-			for metric in metrics:
 
-				for pval in [0.1] if key =="Erlotinib (BRCA->LUAD) Transfer'" else [0.1,0.05]:
+		for et in ['full_graph','lcc_only']:
+			for metric in metrics:
+				for pval in[0.1,0.05,0.01,0.005]:
 					for k in Ls.keys():
 						subdf = df[(df['pval']==pval) &(df['type']==et)]
 						subdf = subdf[subdf['feature'].isin(Ls[k])]
+						print(subdf)
+						print(subdf.columns)
+						
 						if subdf.shape[0]==0:
 							continue
-						order = subdf.groupby('feature').median().sort_values(by = metric).index
-						fig = sns.boxplot(x="feature", y=metric, hue="feature",data=subdf,order = order, dodge = False)
+						# order = subdf.groupby('feature').median().sort_values(by = metric).index
+						fig = sns.boxplot(x="feature", y=metric, hue="feature",data=subdf, dodge = False)
 						fig.set(title = key + " "+str(pval))
 						plt.legend([],[], frameon=False)
 						fig.set(xlabel = "Feature")
 						fig.set(ylabel = metric)
-						plt.savefig("../figs/{k}_{e}_{p}_{kk}_{m}_transfer.png".format(k=key, e = et, p = pval, kk = k,m=metric))
-						plt.close()
+						plt.show()
+						# sys.exit(1)
+						# plt.savefig("../figs/{k}_{e}_{p}_{kk}_{m}_transfer.png".format(k=key, e = et, p = pval, kk = k,m=metric))
+						# plt.close()
 						
 										
 										
