@@ -13,9 +13,9 @@ DIRECTORIES:
 
 
 FEATURE_PARAMS:
-  edge_pv_threshs: [0.1,0.05,0.01]
-  node_pv_threshs: [0.1,0.05,0.01]
-  norm_node_pv_threshs: [0.1,0.05,0.01]
+  edge_pv_threshs: [0.1,0.05,0.01,0.005]
+  node_pv_threshs: [0.1,0.05,0.01,0.005]
+  norm_node_pv_threshs: [0.1,0.05,0.01,0.005]
 
 
 MODEL_PARAMS:
