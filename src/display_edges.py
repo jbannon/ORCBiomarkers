@@ -37,54 +37,35 @@ import seaborn as sns
 
 
 #for drug in ['Pembro','Atezo','Nivo','Ipi+Pembro']:#,'erlotinib','crizotinib','sorafenib','sunitinib']:
-for drug in ['Ipi+Pembro']:
+for drug in ['Nivo']:
 	for graph_type in ['full_graph']:
 		tissues = os.listdir("../results/biomarkers/{d}/{gt}".format(d=drug,gt=graph_type))
 		for tissue in tissues:
-			# if tissue!= 'KIRC':
-			# 	continue
+			
 			if tissue[0]==".":
 				continue
 			print("\n---------------\n")
 			print("\nFor Drug {d} in tissue {t}:\n".format(d=drug, t=tissue))
-		
-			for curve, ctype in zip(['Edge','Node','Norm Node'],['edge_curvature_pvals.csv','node_curvature_pvals.csv','normalized_node_curvature_pvals.csv']):
-				if curve!= 'Norm Node':
-					continue
+			
+			for curve, ctype in zip(['Edge'],['edge_curvature_pvals.csv']):
+				
 				pvalue_file = "../results/biomarkers/{d}/{gt}/{t}/{c}".format(d=drug,gt=graph_type,t=tissue, c= ctype)
 				
 				pvalues = pd.read_csv(pvalue_file,index_col = 0)
-				print("\n")
-				print("\t{c}\n".format(c=curve))
+				
 				all_genes = []
-
+				prev_p = 0
 				for thresh in [0.005, 0.01, 0.05, 0.1]:
 					
-					p_  = pvalues[pvalues['adj_pvals']<=thresh]
+					p_  = pvalues[(pvalues['adj_pvals']<=thresh) & (pvalues['adj_pvals']>prev_p)]
+					prev_p = thresh
 					genes = []
-					
-
-					for idx, row in p_.iterrows():
-						if curve == 'Edge':
-							genes.extend(row['Edge'].split(";"))
-						else:
-							genes.append(row['Gene'])
-
-					genes = list(pd.unique(genes))
-					new_genes = list(set(genes).difference(set(all_genes)))
-					for x in new_genes:
-						print(x)
-
-					all_genes.extend(genes)
-				
-
-					print("At level {t} have {n} total genes".format(t=thresh,n=len(genes)))
-					print("have added:\n")
-					print(new_genes)
-					print(len(new_genes))
 					print("\n")
+					print(thresh)
+					for e in p_['Edge']:
+						print("{n1}\t{n2}	".format(n1 = e.split(";")[0],n2 = e.split(";")[1]))
 			
-			sys.exit(1)	
+			
 			
 	
 					

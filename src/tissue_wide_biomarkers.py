@@ -33,22 +33,20 @@ def main(config:Dict):
 		utils.unpack_parameters(config['CURVATURE_PARAMS'])
 
 	pvalue_thresh, lcc_only = utils.unpack_parameters(config['FEATURE_PARAMS'])
-
-
-	min_degree = min_degree_base**min_degree_exp
-	min_distance = min_distance_base**min_distance_exp
+	
 	topology, weighting = utils.unpack_parameters(config['NETWORK_PARAMS'])
 	
 	weight_field, rename_field, density_field, edge_curvature_field, node_curve_field, norm_node_curve_field = \
 		utils.unpack_parameters(config['FIELD_NAMES'])
 
 	rng = np.random.default_rng(rng_seed)
+	min_degree = min_degree_base**min_degree_exp
+	min_distance = min_distance_base**min_distance_exp
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
-	# drug_target = utils.TARGET_GENE_MAP[utils.DRUG_TARGET_MAP[drug]]
-
-	print(density_field)
+	
 	lcc_string = "lcc_only" if lcc_only else "full_graph"
+	
 	for tissue in tissues:
 		print('starting {t}'.format(t=tissue))
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, tissue],'expression','.csv')

@@ -5,8 +5,8 @@
 #SBATCH --cpus-per-task=3
 #SBATCH --time=96:00:00
 #SBATCH --mem=50GB
-#SBATCH --job-name=IpiPembro_TS
-#SBATCH --output=./slurmouts/IpiPembro_TS_%j.out
+#SBATCH --job-name=Pembro_STAD_Tissue
+#SBATCH --output=./slurmouts/Pembro_STAD_Tissue_%j.out
 #SBATCH --mail-type=TIME_LIMIT,END,FAIL
 #SBATCH --mail-user=jjb509@nyu.edu
 
@@ -16,4 +16,4 @@ module purge
 singularity exec --nv \
 	    --overlay /scratch/jjb509/ORCBiomarkers/src/ORC-Overlay.ext3:ro \
 	    /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif\
-	    /bin/bash -c "source /ext3/env.sh; python target_mc.py -config ./configs/CRI/IpiPembro.yaml"
+	    /bin/bash -c "source /ext3/env.sh; python tissue_wide_biomarkers.py -config ./configs/CRI/Pembro_STAD.yaml"

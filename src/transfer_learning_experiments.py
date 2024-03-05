@@ -74,14 +74,16 @@ def main(
 		
 		if source == target:
 			continue
-		res_path = "../results/transfer/{d}/monte_carlo".format(d=drug)
-		os.makedirs(res_path, exist_ok = True)
+		
 
 		expression_file = utils.make_file_path(data_dir,[dataset_string,drug, target],'expression','.csv')
 		response_file = utils.make_file_path(data_dir,[dataset_string,drug,target],'response','.csv')
 		response = pd.read_csv(response_file)	
 		expression = pd.read_csv(expression_file)
 
+
+		res_path = "../results/transfer/{d}/monte_carlo/".format(d=drug)
+		os.makedirs(res_path, exist_ok = True)
 		results = defaultdict(list)
 		for experiment_type in exp_types:
 			print("working on: {t}".format(t=experiment_type))
@@ -154,11 +156,8 @@ def main(
 							results['Test FN'].append(fn)
 							results['Test TP'].append(tp)
 		
-		df = pd.DataFrame(results)
-		df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)
-			
-			
-		# gene_names = pd.unique(signif_nodes)
+			df = pd.DataFrame(results)
+			df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)
 					
 
 		
