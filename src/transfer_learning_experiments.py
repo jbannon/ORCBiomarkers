@@ -69,7 +69,7 @@ def main(
 
 	rng = np.random.RandomState(rng_seed)
 	
-	exp_types = ['full_graph','lcc_only']
+
 	for source, target in tqdm.tqdm(it.product(sources,targets)):
 		
 		if source == target:
@@ -85,79 +85,77 @@ def main(
 		res_path = "../results/transfer/{d}/monte_carlo/".format(d=drug)
 		os.makedirs(res_path, exist_ok = True)
 		results = defaultdict(list)
-		for experiment_type in exp_types:
-			print("working on: {t}".format(t=experiment_type))
-			
-			pval_dir = "../results/biomarkers/{d}/{et}/{s}/".format(et= experiment_type,d=drug, s = source)
-			
-			for ct in ['edge','node','norm-node']:
-				pvalue_file = "{p}{c}_curvature_pvals.csv".format(p = pval_dir,c=ctype_map[ct])
-				pvalues = pd.read_csv(pvalue_file,index_col = 0)
-				
-				for pv in pval_map[ct]:
-					subset = pvalues[pvalues['adj_pvals']<pv]
-					if subset.shape[0]==0:
-						continue
-					if ct in ['node','norm-node']:
-						genes = list(pd.unique(subset['Gene']))
-					else:
-						genes = []
-						for e in subset['Edge'].values:
-							endpoints = [x for x in e.split(";")]
-							genes.extend(endpoints)
-						genes = [x for x in pd.unique(genes)]
-
-					avoid_sampling = [x for x in genes]
-					possible_samples = [i for i in expression.columns[1:] if i not in avoid_sampling]
-					random_genes = np.random.choice(possible_samples,len(genes),replace = False)
-					p = [x for x in possible_samples if x in genes]
-
-					for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
-						
-						X = np.log2(expression[gene_names].values+1)
-						
-						
-						y = response['Response'].values
-						
-
-
-						for i in tqdm.tqdm(range(n_iters)):
-							X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.25, random_state = rng,stratify= y)
-							
-							clf.fit(X_train,y_train)
-					
-							train_preds_bin = clf.predict(X_train)
-							train_preds_prob = clf.predict_proba(X_train)
-
-							test_preds_bin = clf.predict(X_test)
-							test_preds_prob = clf.predict_proba(X_test)
-							train_acc = accuracy_score(y_train, train_preds_bin)
-							test_acc = accuracy_score(y_test, test_preds_bin) 
-
-							train_roc = roc_auc_score(y_train,train_preds_prob[:,1])
-							test_roc = roc_auc_score(y_test,test_preds_prob[:,1])
-
-							tn, fp, fn, tp = confusion_matrix(y_test, test_preds_bin,labels = [0,1]).ravel()
-
-							results['drug'].append(drug)
-							results['source tissue'].append(source)
-							results['target tissue'].append(target)
-							results['type'].append(experiment_type)
-							results['feature'].append(feat_name)
-							results['pval'].append(pv)
-							results['iter'].append(i)
-							results['feature_dim'].append(len(gene_names))
-							results['Train Accuracy'].append(train_acc)
-							results['Train ROC_AUC'].append(train_roc)
-							results['Test Accuracy'].append(test_acc)
-							results['Test ROC_AUC'].append(test_roc)
-							results['Test TN'].append(tn)
-							results['Test FP'].append(fp)
-							results['Test FN'].append(fn)
-							results['Test TP'].append(tp)
 		
-			df = pd.DataFrame(results)
-			df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)
+			
+		pval_dir = "../results/biomarkers/{d}/{s}/".format(d=drug, s = source)
+			
+		for ct in ['edge','node','norm-node']:
+			pvalue_file = "{p}{c}_curvature_pvals.csv".format(p = pval_dir,c=ctype_map[ct])
+			pvalues = pd.read_csv(pvalue_file,index_col = 0)
+			
+			for pv in pval_map[ct]:
+				subset = pvalues[pvalues['adj_pvals']<pv]
+				if subset.shape[0]==0:
+					continue
+				if ct in ['node','norm-node']:
+					genes = list(pd.unique(subset['Gene']))
+				else:
+					genes = []
+					for e in subset['Edge'].values:
+						endpoints = [x for x in e.split(";")]
+						genes.extend(endpoints)
+					genes = [x for x in pd.unique(genes)]
+
+				avoid_sampling = [x for x in genes]
+				possible_samples = [i for i in expression.columns[1:] if i not in avoid_sampling]
+				random_genes = np.random.choice(possible_samples,len(genes),replace = False)
+				p = [x for x in possible_samples if x in genes]
+
+				for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
+					
+					X = np.log2(expression[gene_names].values+1)
+					
+					
+					y = response['Response'].values
+					
+
+
+					for i in tqdm.tqdm(range(n_iters)):
+						X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.25, random_state = rng,stratify= y)
+						
+						clf.fit(X_train,y_train)
+				
+						train_preds_bin = clf.predict(X_train)
+						train_preds_prob = clf.predict_proba(X_train)
+
+						test_preds_bin = clf.predict(X_test)
+						test_preds_prob = clf.predict_proba(X_test)
+						train_acc = accuracy_score(y_train, train_preds_bin)
+						test_acc = accuracy_score(y_test, test_preds_bin) 
+
+						train_roc = roc_auc_score(y_train,train_preds_prob[:,1])
+						test_roc = roc_auc_score(y_test,test_preds_prob[:,1])
+
+						tn, fp, fn, tp = confusion_matrix(y_test, test_preds_bin,labels = [0,1]).ravel()
+
+						results['drug'].append(drug)
+						results['source tissue'].append(source)
+						results['target tissue'].append(target)
+						results['feature'].append(feat_name)
+						results['pval'].append(pv)
+						results['iter'].append(i)
+						results['feature_dim'].append(len(gene_names))
+						results['Train Accuracy'].append(train_acc)
+						results['Train ROC_AUC'].append(train_roc)
+						results['Test Accuracy'].append(test_acc)
+						results['Test ROC_AUC'].append(test_roc)
+						results['Test TN'].append(tn)
+						results['Test FP'].append(fp)
+						results['Test FN'].append(fn)
+						results['Test TP'].append(tp)
+	
+		df = pd.DataFrame(results)
+		df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)
 					
 
 		

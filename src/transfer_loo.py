@@ -64,6 +64,8 @@ def main(
 	pval_map = {'edge':edge_pvs,'node':node_pvs,'norm-node':norm_node_pvs}
 	
 	model, param_grid = utils.make_model_and_param_grid(model_name,min_C,max_C,C_step,max_iter)
+	
+
 	if drug == 'Nivo':
 		clf = GridSearchCV(model, param_grid,cv = 2)
 	else:
@@ -72,7 +74,7 @@ def main(
 
 	rng = np.random.RandomState(rng_seed)
 	
-	exp_types = ['full_graph','lcc_only']
+	
 	for source, target in tqdm.tqdm(it.product(sources,targets)):
 	
 		
@@ -87,68 +89,62 @@ def main(
 		expression = pd.read_csv(expression_file)
 		
 		results = defaultdict(list)
-		for experiment_type in exp_types:
-			print("working on: {t}".format(t=experiment_type))
-			
-			pval_dir = "../results/biomarkers/{d}/{et}/{s}/".format(et= experiment_type,d=drug, s = source)
-			
-			for ct in ['edge','node','norm-node']:
-				pvalue_file = "{p}{c}_curvature_pvals.csv".format(p = pval_dir,c=ctype_map[ct])
-				pvalues = pd.read_csv(pvalue_file,index_col = 0)
-				
-				for pv in pval_map[ct]:
-					subset = pvalues[pvalues['adj_pvals']<pv]
-					if subset.shape[0]==0:
-						continue
-					if ct in ['node','norm-node']:
-						genes = list(pd.unique(subset['Gene']))
-					else:
-						genes = []
-						for e in subset['Edge'].values:
-							endpoints = [x for x in e.split(";")]
-							genes.extend(endpoints)
-						genes = [x for x in pd.unique(genes)]
-
-					avoid_sampling = [x for x in genes]
-					possible_samples = [i for i in expression.columns[1:] if i not in avoid_sampling]
-					random_genes = np.random.choice(possible_samples,len(genes),replace = False)
-					p = [x for x in possible_samples if x in genes]
-
-					for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
-						
-						X = np.log2(expression[gene_names].values+1)
-						y = response['Response'].values
-						
-						loo = LeaveOneOut()
-
-						for i, (train_idx, test_idx) in tqdm.tqdm(enumerate(loo.split(X)),total = X.shape[0]):
-							
-							X_train, X_test = X[train_idx,:], X[test_idx,:]
-							y_train, y_test = y[train_idx], y[test_idx]
-
-							clf.fit(X_train,y_train)
-					
-							test_preds_bin = clf.predict(X_test)
-							test_preds_prob = clf.predict_proba(X_test)
-							
-							results['drug'].append(drug)
-							results['source tissue'].append(source)
-							results['target tissue'].append(target)
-							results['type'].append(experiment_type)
-							results['feature'].append(feat_name)
-							results['pval'].append(pv)
-							results['iter'].append(i)
-							results['feature_dim'].append(len(gene_names))
-							results['predicted_class'].append(test_preds_bin[0])
-							results['predicted_prob'].append(test_preds_prob[:,1][0])
-							results['true_class'].append(y_test[0])
-
+		pval_dir = "../results/biomarkers/{d}/{s}/".format(d=drug, s = source)
 		
+		for ct in ['edge','node','norm-node']:
+			pvalue_file = "{p}{c}_curvature_pvals.csv".format(p = pval_dir,c=ctype_map[ct])
+			pvalues = pd.read_csv(pvalue_file,index_col = 0)
+			
+			for pv in pval_map[ct]:
+				subset = pvalues[pvalues['adj_pvals']<pv]
+				if subset.shape[0]==0:
+					continue
+				if ct in ['node','norm-node']:
+					genes = list(pd.unique(subset['Gene']))
+				else:
+					genes = []
+					for e in subset['Edge'].values:
+						endpoints = [x for x in e.split(";")]
+						genes.extend(endpoints)
+					genes = [x for x in pd.unique(genes)]
+
+				avoid_sampling = [x for x in genes]
+				possible_samples = [i for i in expression.columns[1:] if i not in avoid_sampling]
+				random_genes = np.random.choice(possible_samples,len(genes),replace = False)
+				p = [x for x in possible_samples if x in genes]
+
+				for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
+					
+					X = np.log2(expression[gene_names].values+1)
+					y = response['Response'].values
+					
+					loo = LeaveOneOut()
+
+					for i, (train_idx, test_idx) in tqdm.tqdm(enumerate(loo.split(X)),total = X.shape[0]):
+						
+						X_train, X_test = X[train_idx,:], X[test_idx,:]
+						y_train, y_test = y[train_idx], y[test_idx]
+
+						clf.fit(X_train,y_train)
+				
+						test_preds_bin = clf.predict(X_test)
+						test_preds_prob = clf.predict_proba(X_test)
+						
+						results['drug'].append(drug)
+						results['source tissue'].append(source)
+						results['target tissue'].append(target)
+						
+						results['feature'].append(feat_name)
+						results['pval'].append(pv)
+						results['iter'].append(i)
+						results['feature_dim'].append(len(gene_names))
+						results['predicted_class'].append(test_preds_bin[0])
+						results['predicted_prob'].append(test_preds_prob[:,1][0])
+						results['true_class'].append(y_test[0])
+
+	
 		df = pd.DataFrame(results)
 		df.to_csv("{p}{s}_to_{t}.csv".format(p=res_path, s=source, t=target),index = False)
-			
-			
-		# gene_names = pd.unique(signif_nodes)
 					
 
 		

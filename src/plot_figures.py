@@ -86,6 +86,7 @@ def main(
 									metstring = metric.split(" ")[1]
 									
 									figname = figpath + k+"_"+metstring+".png"
+									print(figname)
 									plt.savefig(figname)
 									plt.close()
 									
