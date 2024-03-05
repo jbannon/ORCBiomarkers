@@ -45,7 +45,7 @@ def main(config:Dict):
 	
 	dataset_string = utils.DRUG_DATASET_MAP[drug]
 	
-	lcc_string = "lcc_only" if lcc_only else "full_graph"
+	# lcc_string = "lcc_only" if lcc_only else "full_graph"
 	
 	for tissue in tissues:
 		print('starting {t}'.format(t=tissue))
@@ -84,8 +84,8 @@ def main(config:Dict):
 		filtered_DE = [x for x in common_genes]
 		num_filtered_DE = len(filtered_DE)
 		
-		res_path = "".join([result_dir,"/".join(["biomarkers",drug,lcc_string,tissue]),"/"])
-		#res_path = "".join([result_dir,"/".join(["biomarkers",exp_type,drug,tissue,lcc_string]),"/"])
+		res_path = "".join([result_dir,"/".join(["biomarkers",drug,tissue]),"/"])
+		
 		os.makedirs(res_path,exist_ok = True)
 
 		with open(res_path+"DE_genes.txt","w") as ostream:
