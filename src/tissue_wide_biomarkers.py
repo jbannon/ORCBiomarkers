@@ -101,18 +101,38 @@ def main(config:Dict):
 			PPI_Graph = pickle.load(istream)
 
 		if do_hops:
-			for hop in range(num_hops):
 			# print("doing one hop")
-				seeds = [x for x in common_genes if x in PPI_Graph.nodes()]
-				one_hop = [x for x in seeds]
-				for n in seeds:
-					nbrs = PPI_Graph.neighbors(n)
-					one_hop.extend([x for x in nbrs if x in keep_genes])
-				common_genes = [x for x in one_hop]
-		
-		print(PPI_Graph)
+			# gene_universe = []
+			seeds = [x for x in common_genes if x in PPI_Graph.nodes()]
+			gene_universe = [x for x in seeds]
+			for seed in seeds:
+				nbrs = nx.single_source_shortest_path_length(PPI_Graph, seed, cutoff=num_hops)
+				# print([(x,nbrs[x]) for x in nbrs.keys()])
+				additional_nodes = [k for k in nbrs.keys() if nbrs[k]>0 and k in keep_genes]
+				gene_universe.extend(additional_nodes)
+
+			common_genes = [x for x in gene_universe]
+			# print(PPI_Graph)
+			# LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,kring,lcc_only)
+			# print(LCC_Graph)
+			# sys.exit(1)
+			
+			# for hop in range(num_hops):
+			
+			# 	seeds = [x for x in common_genes if x in PPI_Graph.nodes()]
+			# 	one_hop = [x for x in seeds]
+			# 	for n in seeds:
+			# 		nbrs = PPI_Graph.neighbors(n)
+			# 		one_hop.extend([x for x in nbrs if x in keep_genes])
+			# 	common_genes = [x for x in one_hop]
+			# print(PPI_Graph)
+			# LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
+			# print(LCC_Graph)
+			# sys.exit(1)
+		# print(PPI_Graph)
 		LCC_Graph = utils.harmonize_graph_and_geneset(PPI_Graph,common_genes,lcc_only)
-		print(LCC_Graph)
+		# print(LCC_Graph)
+		# sys.exit(1)
 		if len(LCC_Graph.edges)==0:
 			with open(res_path+"empty_graph.txt","w") as ostream:
 				ostream.writelines(["graph had no edges"])
