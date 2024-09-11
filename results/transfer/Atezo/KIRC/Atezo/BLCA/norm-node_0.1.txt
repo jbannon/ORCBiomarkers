@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['CD8A' 'CD8B' 'TRAF1' 'CD274' 'TXNIP' 'PRF1' 'FLT3LG' 'TREM1' 'CARD11'
+ 'S100A8']
+For measure f_meas the 10 best are: ['CD8A' 'CD8B' 'TRAF1' 'CD274' 'IL15RA' 'IRF1' 'TREM1' 'TFRC' 'HLA-G'
+ 'CARD11']
+For measure mi the 10 best are: ['CD8A' 'CD3G' 'CD8B' 'TXNIP' 'IL2RB' 'PRF1' 'IL12RB1' 'CARD11' 'IL18BP'
+ 'CCL3L3']
+
+The intersection of all gives: {'CD8A', 'CD8B', 'CARD11'}
+The two count: ['CD8A', 'CARD11', 'CD8B', 'TRAF1', 'CD274', 'TXNIP', 'PRF1', 'TREM1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['CD8A' 'CD8B' 'TRAF1' 'CD274' 'PRF1' 'FLT3LG' 'TREM1' 'CARD11' 'CCL3L3'
+ 'S100A8']
+For measure f_meas the 10 best are: ['CD8A' 'CD8B' 'TRAF1' 'CD274' 'IL15RA' 'IRF1' 'TFRC' 'HLA-G' 'CARD11'
+ 'BATF']
+For measure mi the 10 best are: ['CD8A' 'CD3G' 'CD8B' 'TXNIP' 'IL2RB' 'PRF1' 'IL12RB1' 'CARD11' 'IL18BP'
+ 'CCL3L3']
+
+The intersection of all gives: {'CD8A', 'CD8B', 'CARD11'}
+The two count: ['CD8A', 'CARD11', 'CD8B', 'TRAF1', 'CD274', 'PRF1', 'CCL3L3']
+
+

@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 4 best are: ['CCR5' 'CXCR3' 'CCR1' 'CXCR6']
+For measure f_meas the 4 best are: ['CCR5' 'STAT1' 'CCR1' 'CXCR6']
+For measure mi the 4 best are: ['CD8A' 'STAT1' 'CCR1' 'CXCR6']
+
+The intersection of all gives: {'CXCR6', 'CCR1'}
+The two count: ['CCR1', 'CXCR6', 'CCR5', 'STAT1']
+
+
+ALL
+--------
+For measure chi2 the 4 best are: ['CCR5' 'CXCR3' 'CCR1' 'CXCR6']
+For measure f_meas the 4 best are: ['CCR5' 'STAT1' 'CCR1' 'CXCR6']
+For measure mi the 4 best are: ['CD8A' 'STAT1' 'CCR1' 'CXCR6']
+
+The intersection of all gives: {'CXCR6', 'CCR1'}
+The two count: ['CCR1', 'CXCR6', 'CCR5', 'STAT1']
+
+

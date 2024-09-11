@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['E2F1' 'HBEGF' 'CCNB2' 'BIRC5' 'CDC25A' 'CDC25C' 'H1-1' 'CBX8' 'CCNE1'
+ 'IL33']
+For measure f_meas the 10 best are: ['RBBP4' 'CDK2' 'E2F1' 'CTNNB1' 'HBEGF' 'CDK1' 'CDC6' 'H1-1' 'CBX8'
+ 'IL1RAP']
+For measure mi the 10 best are: ['EZH2' 'TLR4' 'KDM1A' 'H3C13' 'FOXO3' 'HBEGF' 'PCNA' 'DLGAP5' 'SUDS3'
+ 'HMMR']
+
+The intersection of all gives: {'HBEGF'}
+The two count: ['HBEGF', 'E2F1', 'H1-1', 'CBX8']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['E2F1' 'HBEGF' 'CCNB2' 'BIRC5' 'CDC25A' 'CDC25C' 'H1-1' 'CBX8' 'CCNE1'
+ 'IL33']
+For measure f_meas the 10 best are: ['RBBP4' 'CDK2' 'CTNNB1' 'HBEGF' 'BIRC5' 'CDK1' 'CDC6' 'H1-1' 'CBX8'
+ 'IL1RAP']
+For measure mi the 10 best are: ['EZH2' 'TLR4' 'KDM1A' 'H3C13' 'FOXO3' 'HBEGF' 'PCNA' 'DLGAP5' 'SUDS3'
+ 'HMMR']
+
+The intersection of all gives: {'HBEGF'}
+The two count: ['HBEGF', 'BIRC5', 'H1-1', 'CBX8']
+
+

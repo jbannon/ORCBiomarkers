@@ -1,0 +1,1143 @@
+"Run_ID"	"TCGA_Tissue"	"Response"	"OS_e"	"OS_d"	"PFS_e"	"PFS_d"	"Age"	"Sex"	"Race"	"ICI_Rx"	"ICI_Tx"	"Sample_Treated"	"FFPE"
+"Choueiri_CCR_2016-p014-ar-325"	"KIRC"	"Partial Response"	0	1025	1	541	59	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p018-ar-318"	"KIRC"	"Progressive Disease"	0	111	1	43	68	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p021-ar-301"	"KIRC"	"Stable Disease"	0	349	0	43	64	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p027-ar-866"	"KIRC"	"Progressive Disease"	0	968	1	35	59	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p041-ar-306"	"KIRC"	"Progressive Disease"	0	195	1	42	66	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p050-ar-551"	"KIRC"	"Stable Disease"	0	982	1	86	63	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p073-ar-324"	"KIRC"	"Progressive Disease"	1	178	1	58	77	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p090-ar-331"	"KIRC"	"Progressive Disease"	1	499	1	36	54	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p093-ar-345"	"KIRC"	"Partial Response"	1	684	1	500	64	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p096-ar-333"	"KIRC"	"Progressive Disease"	0	582	1	37	75	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p099-ar-320"	"KIRC"	"Progressive Disease"	1	41	1	41	50	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p102-ar-841"	"KIRC"	"Stable Disease"	0	165	1	108	64	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p105-ar-265"	"KIRC"	"Progressive Disease"	1	118	1	45	64	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p106-ar-300"	"KIRC"	"Partial Response"	0	870	0	821	61	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p115-ar-329"	"KIRC"	"Stable Disease"	0	366	1	87	60	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Choueiri_CCR_2016-p117-ar-327"	"KIRC"	"Stable Disease"	0	64	0	38	58	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Gide_Cell_2019-iP01-ar-887"	"SKCM"	"Progressive Disease"	0	689	1	15	42	"Female"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP01-ar-888"	"SKCM"	"Progressive Disease"	0	689	1	15	42	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP02-ar-898"	"SKCM"	"Progressive Disease"	0	530	1	34	41	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP04-ar-561"	"SKCM"	"Progressive Disease"	0	129	1	39	48	"Male"	""	"Ipi + Nivo"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP06-ar-924"	"SKCM"	"Progressive Disease"	1	108	1	41	75	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP07-ar-562"	"SKCM"	"Partial Response"	0	169	0	81	59	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP08-ar-926"	"SKCM"	"Progressive Disease"	0	637	1	81	55	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP09-ar-927"	"SKCM"	"Progressive Disease"	1	156	1	81	56	"Male"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP10-ar-889"	"SKCM"	"Progressive Disease"	1	176	1	81	51	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP12-ar-890"	"SKCM"	"Progressive Disease"	0	293	1	82	55	"Female"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP13-ar-891"	"SKCM"	"Partial Response"	1	357	0	108	68	"Female"	""	"Ipi + Nivo"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP13-ar-892"	"SKCM"	"Partial Response"	1	357	0	108	68	"Female"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP14-ar-893"	"SKCM"	"Stable Disease"	0	691	0	123	47	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP15-ar-894"	"SKCM"	"Stable Disease"	1	660	0	152	57	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP17-ar-895"	"SKCM"	"Partial Response"	0	196	0	196	48	"Female"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP19-ar-896"	"SKCM"	"Stable Disease"	0	635	0	301	56	"Male"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP19-ar-897"	"SKCM"	"Stable Disease"	0	635	0	301	56	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP20-ar-899"	"SKCM"	"Stable Disease"	0	538	0	386	57	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP21-ar-900"	"SKCM"	"Partial Response"	0	410	0	410	63	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP23-ar-901"	"SKCM"	"Partial Response"	0	506	0	506	51	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP24-ar-902"	"SKCM"	"Partial Response"	0	1203	0	509	34	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP25-ar-903"	"SKCM"	"Stable Disease"	1	518	0	518	67	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP26-ar-904"	"SKCM"	"Complete Response"	0	544	0	544	75	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP27-ar-905"	"SKCM"	"Complete Response"	0	546	0	546	49	"Male"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP27-ar-906"	"SKCM"	"Complete Response"	0	546	0	546	49	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP32-ar-907"	"SKCM"	"Complete Response"	0	597	0	597	71	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP33-ar-908"	"SKCM"	"Partial Response"	0	609	0	609	73	"Male"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP33-ar-909"	"SKCM"	"Partial Response"	0	609	0	609	73	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP34-ar-910"	"SKCM"	"Complete Response"	0	623	0	623	51	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP35-ar-911"	"SKCM"	"Complete Response"	0	627	0	627	72	"Male"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP35-ar-912"	"SKCM"	"Complete Response"	0	627	0	627	72	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP36-ar-913"	"SKCM"	"Complete Response"	0	637	0	637	74	"Female"	""	"Ipi + Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-iP36-ar-914"	"SKCM"	"Complete Response"	0	637	0	637	74	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP37-ar-915"	"SKCM"	"Partial Response"	0	637	0	637	76	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP38-ar-916"	"SKCM"	"Complete Response"	0	650	0	650	59	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP44-ar-918"	"SKCM"	"Partial Response"	0	695	0	695	68	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP45-ar-919"	"SKCM"	"Complete Response"	0	721	0	721	70	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP46-ar-920"	"SKCM"	"Complete Response"	0	721	0	721	54	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP47-ar-921"	"SKCM"	"Partial Response"	0	732	0	732	24	"Female"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP49-ar-922"	"SKCM"	"Complete Response"	0	775	0	775	36	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-iP50-ar-923"	"SKCM"	"Partial Response"	0	904	0	904	68	"Male"	""	"Ipi + Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD02-ar-941"	"SKCM"	"Progressive Disease"	1	65	1	13	61	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD03-ar-949"	"SKCM"	"Progressive Disease"	1	59	1	23	50	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD04-ar-564"	"SKCM"	"Progressive Disease"	1	22	1	23	84	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD05-ar-968"	"SKCM"	"Progressive Disease"	1	155	1	39	67	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD06-ar-973"	"SKCM"	"Progressive Disease"	1	94	1	42	68	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD07-ar-974"	"SKCM"	"Progressive Disease"	1	80	1	47	57	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD08-ar-975"	"SKCM"	"Progressive Disease"	1	58	1	58	85	"Female"	""	"Nivo"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD08-ar-565"	"SKCM"	"Progressive Disease"	1	58	1	58	85	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD09-ar-977"	"SKCM"	"Progressive Disease"	1	99	1	71	70	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD10-ar-928"	"SKCM"	"Progressive Disease"	0	551	1	76	90	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD10-ar-929"	"SKCM"	"Progressive Disease"	0	551	1	76	90	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD11-ar-930"	"SKCM"	"Progressive Disease"	1	166	1	78	66	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD12-ar-931"	"SKCM"	"Stable Disease"	1	199	0	80	52	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD13-ar-932"	"SKCM"	"Progressive Disease"	1	96	1	82	69	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD13-ar-933"	"SKCM"	"Progressive Disease"	1	96	1	82	69	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD14-ar-934"	"SKCM"	"Progressive Disease"	1	993	1	83	58	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD15-ar-935"	"SKCM"	"Progressive Disease"	1	300	1	84	76	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD16-ar-936"	"SKCM"	"Progressive Disease"	1	169	1	84	55	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD17-ar-937"	"SKCM"	"Progressive Disease"	1	258	1	96	37	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD17-ar-938"	"SKCM"	"Progressive Disease"	1	258	1	96	37	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD18-ar-939"	"SKCM"	"Progressive Disease"	1	228	1	100	62	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD19-ar-940"	"SKCM"	"Stable Disease"	1	385	0	125	54	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD21-ar-942"	"SKCM"	"Stable Disease"	1	551	0	166	67	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD23-ar-943"	"SKCM"	"Stable Disease"	1	191	0	191	40	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD25-ar-944"	"SKCM"	"Partial Response"	1	897	0	271	49	"Male"	""	"Nivo"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD25-ar-945"	"SKCM"	"Partial Response"	1	897	0	271	49	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD27-ar-946"	"SKCM"	"Partial Response"	1	1067	0	314	76	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD29-ar-947"	"SKCM"	"Stable Disease"	1	825	0	335	55	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD29-ar-948"	"SKCM"	"Stable Disease"	1	825	0	335	55	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD30-ar-563"	"SKCM"	"Stable Disease"	0	581	0	358	86	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD34-ar-951"	"SKCM"	"Partial Response"	1	878	0	544	78	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD35-ar-952"	"SKCM"	"Partial Response"	0	1091	0	586	55	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD36-ar-953"	"SKCM"	"Partial Response"	1	607	0	590	76	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD38-ar-954"	"SKCM"	"Partial Response"	0	1547	0	755	69	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD40-ar-956"	"SKCM"	"Partial Response"	0	845	0	845	78	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD41-ar-957"	"SKCM"	"Partial Response"	0	886	0	870	61	"Female"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD41-ar-958"	"SKCM"	"Partial Response"	0	886	0	870	61	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD42-ar-959"	"SKCM"	"Complete Response"	0	891	0	891	59	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD44-ar-960"	"SKCM"	"Partial Response"	0	1075	0	1075	45	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD45-ar-961"	"SKCM"	"Partial Response"	0	1085	0	1085	82	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD46-ar-962"	"SKCM"	"Partial Response"	0	1098	0	1098	71	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD47-ar-963"	"SKCM"	"Partial Response"	0	1174	0	1174	62	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD47-ar-964"	"SKCM"	"Partial Response"	0	1174	0	1174	62	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD48-ar-965"	"SKCM"	"Partial Response"	0	1189	0	1189	40	"Male"	""	"Pembro"	TRUE	TRUE	TRUE
+"Gide_Cell_2019-PD48-ar-966"	"SKCM"	"Partial Response"	0	1189	0	1189	40	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD49-ar-967"	"SKCM"	"Complete Response"	0	1328	0	1328	72	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD50-ar-969"	"SKCM"	"Complete Response"	0	1342	0	1342	86	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD52-ar-970"	"SKCM"	"Partial Response"	0	1553	0	1553	63	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD53-ar-971"	"SKCM"	"Complete Response"	0	1589	0	1589	71	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Gide_Cell_2019-PD54-ar-972"	"SKCM"	"Partial Response"	0	1603	0	1603	52	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"HugoLo_IPRES_2016-Pt01-ar-279"	"SKCM"	"Progressive Disease"	1	607	NA	NA	66	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt02-ar-280"	"SKCM"	"Partial Response"	0	927	NA	NA	55	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt04-ar-281"	"SKCM"	"Partial Response"	0	948	NA	NA	62	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt05-ar-282"	"SKCM"	"Partial Response"	0	439	NA	NA	61	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt06-ar-283"	"SKCM"	"Partial Response"	0	882	NA	NA	51	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt07-ar-284"	"SKCM"	"Progressive Disease"	1	662	NA	NA	55	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt08-ar-285"	"SKCM"	"Complete Response"	0	NA	NA	NA	69	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt09-ar-286"	"SKCM"	"Complete Response"	0	1054	NA	NA	68	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt10-ar-287"	"SKCM"	"Progressive Disease"	0	387	NA	NA	60	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt12-ar-288"	"SKCM"	"Progressive Disease"	1	327	NA	NA	59	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt13-ar-289"	"SKCM"	"Complete Response"	0	917	NA	NA	53	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt14-ar-290"	"SKCM"	"Progressive Disease"	0	54	NA	NA	27	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt15-ar-291"	"SKCM"	"Partial Response"	1	980	NA	NA	70	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt16-ar-292"	"SKCM"	"Progressive Disease"	1	186	NA	NA	19	"Male"	""	"Pembro"	TRUE	TRUE	NA
+"HugoLo_IPRES_2016-Pt19-ar-293"	"SKCM"	"Partial Response"	0	1060	NA	NA	45	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt20-ar-294"	"SKCM"	"Progressive Disease"	1	337	NA	NA	63	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt22-ar-295"	"SKCM"	"Progressive Disease"	1	182	NA	NA	55	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt23-ar-296"	"SKCM"	"Progressive Disease"	1	103	NA	NA	63	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt25-ar-297"	"SKCM"	"Progressive Disease"	1	262	NA	NA	74	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt27-ar-298"	"SKCM"	"Complete Response"	0	548	NA	NA	83	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt28-ar-300"	"SKCM"	"Partial Response"	1	439	NA	NA	82	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt29-ar-301"	"SKCM"	"Progressive Disease"	1	269	NA	NA	84	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt31-ar-302"	"SKCM"	"Progressive Disease"	0	704	NA	NA	47	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt32-ar-303"	"SKCM"	"Progressive Disease"	1	171	NA	NA	47	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt35-ar-304"	"SKCM"	"Partial Response"	0	427	NA	NA	65	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt37-ar-305"	"SKCM"	"Partial Response"	0	364	NA	NA	70	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"HugoLo_IPRES_2016-Pt38-ar-306"	"SKCM"	"Partial Response"	0	448	NA	NA	57	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"IMmotion150-p00064-ar-ea364"	"KIRC"	""	NA	NA	1	35.99999999875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p01155-ar-28f34"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p01316-ar-e5482"	"KIRC"	"Stable Disease"	NA	NA	1	114.999999992625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p01492-ar-b5c6d"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p03058-ar-c2dad"	"KIRC"	"Stable Disease"	NA	NA	1	248.000000015063	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p03170-ar-b28cd"	"KIRC"	"Stable Disease"	NA	NA	1	163.00000001125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p03363-ar-a74ac"	"KIRC"	"Progressive Disease"	NA	NA	1	83.0000000005	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p03418-ar-d867a"	"KIRC"	"Stable Disease"	NA	NA	1	159.000000004625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p03665-ar-04d83"	"KIRC"	"Partial Response"	NA	NA	0	657.000000129375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p04168-ar-9925b"	"KIRC"	"Progressive Disease"	NA	NA	1	78.999999993875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p04878-ar-a7863"	"KIRC"	""	NA	NA	1	82.0000000140625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p05096-ar-a365c"	"KIRC"	"Partial Response"	NA	NA	1	329.000000073125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p05361-ar-cd767"	"KIRC"	"Progressive Disease"	NA	NA	1	87.000000007125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p05370-ar-27be5"	"KIRC"	"Stable Disease"	NA	NA	1	175.000000000688	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p05544-ar-43b75"	"KIRC"	"Partial Response"	NA	NA	0	605.9999998775	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p05746-ar-0ce2a"	"KIRC"	"Progressive Disease"	NA	NA	1	47.00000000175	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p06184-ar-828f7"	"KIRC"	"Progressive Disease"	NA	NA	1	82.0000000140625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p07076-ar-d1382"	"KIRC"	"Stable Disease"	NA	NA	1	593.999999979375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p07343-ar-2bb4a"	"KIRC"	"Partial Response"	NA	NA	1	253.000000008125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p07499-ar-6cca2"	"KIRC"	"Stable Disease"	NA	NA	0	425.99999988375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p07850-ar-50704"	"KIRC"	"Stable Disease"	NA	NA	0	166.999999987438	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p08100-ar-c4519"	"KIRC"	"Stable Disease"	NA	NA	0	589.999999911875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p09050-ar-32c34"	"KIRC"	"Partial Response"	NA	NA	1	91.00000001375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p09186-ar-5e55f"	"KIRC"	"Stable Disease"	NA	NA	0	172.999999997375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p09246-ar-bc94b"	"KIRC"	"Stable Disease"	NA	NA	1	391.99999991875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p09644-ar-73874"	"KIRC"	"Partial Response"	NA	NA	0	343.000000005	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p09862-ar-3ec4d"	"KIRC"	"Partial Response"	NA	NA	1	507.000000033125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p10447-ar-3c1db"	"KIRC"	"Progressive Disease"	NA	NA	1	83.9999999869375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p10511-ar-acb8d"	"KIRC"	"Progressive Disease"	NA	NA	1	112.999999989313	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p10717-ar-0e5a9"	"KIRC"	"Partial Response"	NA	NA	0	616.00000004625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p11316-ar-e45c7"	"KIRC"	"Stable Disease"	NA	NA	1	161.000000007938	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p12053-ar-48bda"	"KIRC"	"Stable Disease"	NA	NA	1	418.000000053125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p12281-ar-43e99"	"KIRC"	"Progressive Disease"	NA	NA	1	112.000000002875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p12735-ar-9f773"	"KIRC"	"Complete Response"	NA	NA	0	590.99999992875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p12746-ar-430d5"	"KIRC"	"Partial Response"	NA	NA	1	255.000000011437	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p13588-ar-5af67"	"KIRC"	"Stable Disease"	NA	NA	0	690.0000000775	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p14021-ar-bd686"	"KIRC"	""	NA	NA	0	248.000000015063	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p14145-ar-3d65e"	"KIRC"	"Progressive Disease"	NA	NA	1	89.0000000104375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p14153-ar-71492"	"KIRC"	"Stable Disease"	NA	NA	1	168.99999999075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p14538-ar-1e0a2"	"KIRC"	"Stable Disease"	NA	NA	0	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p14593-ar-9020f"	"KIRC"	"Partial Response"	NA	NA	0	589.999999911875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p14998-ar-dc07b"	"KIRC"	"Stable Disease"	NA	NA	1	179.99999999375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p15605-ar-4047b"	"KIRC"	"Stable Disease"	NA	NA	1	264.999999997563	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p16333-ar-a2831"	"KIRC"	"Progressive Disease"	NA	NA	1	78.0000000074375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p16409-ar-85d99"	"KIRC"	"Partial Response"	NA	NA	0	496.000000151875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p16751-ar-7ebff"	"KIRC"	"Stable Disease"	NA	NA	1	168.99999999075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p17164-ar-56638"	"KIRC"	"Stable Disease"	NA	NA	1	163.00000001125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p17379-ar-faed6"	"KIRC"	"Stable Disease"	NA	NA	1	166.000000001	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p17426-ar-6ae0d"	"KIRC"	"Progressive Disease"	NA	NA	1	89.0000000104375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p17615-ar-f7d9d"	"KIRC"	"Progressive Disease"	NA	NA	1	96.0000000068125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p18226-ar-4f0a6"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p18256-ar-fbb29"	"KIRC"	"Progressive Disease"	NA	NA	1	78.999999993875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p18896-ar-ddffc"	"KIRC"	"Progressive Disease"	NA	NA	1	121.000000002563	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p19016-ar-c751b"	"KIRC"	"Partial Response"	NA	NA	0	755.99999997375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p19478-ar-bde50"	"KIRC"	"Stable Disease"	NA	NA	0	575.99999998	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p19507-ar-db0d1"	"KIRC"	"Stable Disease"	NA	NA	0	85.99999999025	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p20763-ar-edbe1"	"KIRC"	"Progressive Disease"	NA	NA	1	91.00000001375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p21222-ar-1418a"	"KIRC"	"Progressive Disease"	NA	NA	1	78.0000000074375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p21389-ar-a2f5d"	"KIRC"	"Stable Disease"	NA	NA	0	770.9999999225	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p21589-ar-55cc6"	"KIRC"	"Complete Response"	NA	NA	0	681.9999999425	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p24023-ar-0098b"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p24162-ar-fbc63"	"KIRC"	"Stable Disease"	NA	NA	1	424.999999866875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p25390-ar-fea96"	"KIRC"	"Partial Response"	NA	NA	1	708.000000076875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p25680-ar-91e8d"	"KIRC"	"Stable Disease"	NA	NA	1	217.000000009375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p25799-ar-49c4c"	"KIRC"	"Progressive Disease"	NA	NA	1	83.0000000005	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p26304-ar-d7dcd"	"KIRC"	"Complete Response"	NA	NA	0	495.000000135	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p26467-ar-a6506"	"KIRC"	"Stable Disease"	NA	NA	0	42.999999995125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p27487-ar-1478d"	"KIRC"	"Progressive Disease"	NA	NA	1	85.99999999025	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p27891-ar-5bf44"	"KIRC"	""	NA	NA	0	0.9999999864375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p28107-ar-fa9ff"	"KIRC"	"Progressive Disease"	NA	NA	1	103.000000003188	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p28132-ar-99560"	"KIRC"	"Progressive Disease"	NA	NA	1	78.0000000074375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p28238-ar-3482d"	"KIRC"	"Stable Disease"	NA	NA	0	170.999999994063	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p28281-ar-7b516"	"KIRC"	"Progressive Disease"	NA	NA	1	89.0000000104375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p29414-ar-ea037"	"KIRC"	"Partial Response"	NA	NA	0	509.000000066875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p30781-ar-4ae11"	"KIRC"	"Stable Disease"	NA	NA	1	356.999999936875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p31107-ar-a401d"	"KIRC"	"Partial Response"	NA	NA	0	634.000000045625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p32412-ar-d386a"	"KIRC"	"Stable Disease"	NA	NA	0	591.999999945625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p32553-ar-021e4"	"KIRC"	""	NA	NA	1	11.000000003	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p32845-ar-b9ecc"	"KIRC"	"Stable Disease"	NA	NA	0	78.999999993875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p32922-ar-6366a"	"KIRC"	"Stable Disease"	NA	NA	1	335.999999886875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p33581-ar-1342d"	"KIRC"	"Complete Response"	NA	NA	1	697.999999908125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p33602-ar-6d415"	"KIRC"	"Stable Disease"	NA	NA	1	764.00000010875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p33774-ar-27405"	"KIRC"	"Stable Disease"	NA	NA	1	226.000000009063	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p34223-ar-39de2"	"KIRC"	""	NA	NA	0	85.0000000038125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p34855-ar-89f86"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p35317-ar-355c3"	"KIRC"	"Partial Response"	NA	NA	0	588.999999895	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p35813-ar-90caf"	"KIRC"	"Complete Response"	NA	NA	0	1006.99999994813	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p36298-ar-fad25"	"KIRC"	"Progressive Disease"	NA	NA	1	85.99999999025	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p36954-ar-44107"	"KIRC"	"Stable Disease"	NA	NA	0	792.999999989375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p37011-ar-a4d25"	"KIRC"	"Stable Disease"	NA	NA	0	224.999999992188	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p37093-ar-3d98a"	"KIRC"	"Progressive Disease"	NA	NA	1	58.00000000475	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p37173-ar-293a5"	"KIRC"	"Partial Response"	NA	NA	1	659.999999875625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p38868-ar-e9e28"	"KIRC"	"Stable Disease"	NA	NA	1	253.999999994563	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p40536-ar-3579c"	"KIRC"	"Stable Disease"	NA	NA	1	532.000000150625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p41186-ar-1d209"	"KIRC"	"Progressive Disease"	NA	NA	1	82.0000000140625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p42765-ar-43295"	"KIRC"	"Stable Disease"	NA	NA	1	314.000000124375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p43066-ar-75026"	"KIRC"	"Stable Disease"	NA	NA	0	85.0000000038125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p43682-ar-c925d"	"KIRC"	"Stable Disease"	NA	NA	1	166.000000001	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p43872-ar-6c7f9"	"KIRC"	"Partial Response"	NA	NA	1	249.999999987937	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p44376-ar-ac07f"	"KIRC"	"Partial Response"	NA	NA	1	423.0000001375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p45459-ar-1af67"	"KIRC"	"Stable Disease"	NA	NA	0	332.00000012375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p45849-ar-d1f9e"	"KIRC"	"Partial Response"	NA	NA	1	663.999999943125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p45971-ar-4be0b"	"KIRC"	""	NA	NA	1	38.9999999885	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p46605-ar-eb284"	"KIRC"	"Partial Response"	NA	NA	0	597.00000003	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p47331-ar-ab299"	"KIRC"	"Partial Response"	NA	NA	1	527.00000006625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p47721-ar-71f6b"	"KIRC"	"Progressive Disease"	NA	NA	1	80.00000001075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p48663-ar-37ce7"	"KIRC"	"Stable Disease"	NA	NA	1	688.00000004375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p48954-ar-37f99"	"KIRC"	"Stable Disease"	NA	NA	1	428.999999934375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p49559-ar-84b89"	"KIRC"	"Partial Response"	NA	NA	0	585.000000131875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p49991-ar-5d93a"	"KIRC"	"Complete Response"	NA	NA	0	586.99999986125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p50066-ar-6c06c"	"KIRC"	"Stable Disease"	NA	NA	1	186.999999990125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p50332-ar-a77dd"	"KIRC"	"Stable Disease"	NA	NA	1	278.000000003875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p50697-ar-605a2"	"KIRC"	"Partial Response"	NA	NA	0	809.999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p50830-ar-c3b4a"	"KIRC"	"Stable Disease"	NA	NA	0	548.00000011625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p50976-ar-26f6d"	"KIRC"	"Stable Disease"	NA	NA	1	172.000000010938	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p51832-ar-890dd"	"KIRC"	"Progressive Disease"	NA	NA	1	33.000000009	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p51984-ar-c0646"	"KIRC"	"Stable Disease"	NA	NA	0	82.0000000140625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p52272-ar-5b320"	"KIRC"	"Complete Response"	NA	NA	0	594.99999999625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p52299-ar-8e4c5"	"KIRC"	"Progressive Disease"	NA	NA	1	78.999999993875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p52494-ar-9f2ad"	"KIRC"	"Stable Disease"	NA	NA	1	134.999999995313	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p52837-ar-02ccc"	"KIRC"	"Partial Response"	NA	NA	0	755.99999997375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p52932-ar-5c3b6"	"KIRC"	"Progressive Disease"	NA	NA	1	83.0000000005	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p53162-ar-05824"	"KIRC"	"Stable Disease"	NA	NA	0	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p53431-ar-d8ed2"	"KIRC"	"Progressive Disease"	NA	NA	1	89.999999996875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p53624-ar-5dd85"	"KIRC"	"Progressive Disease"	NA	NA	1	85.99999999025	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p53920-ar-8310d"	"KIRC"	""	NA	NA	0	568.000000149375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p54120-ar-0f1aa"	"KIRC"	"Complete Response"	NA	NA	0	788.999999921875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p54163-ar-57bf6"	"KIRC"	"Progressive Disease"	NA	NA	1	83.0000000005	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p54315-ar-edc42"	"KIRC"	"Stable Disease"	NA	NA	1	177.999999990438	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p54409-ar-fe8d6"	"KIRC"	"Complete Response"	NA	NA	1	763.000000091875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p54753-ar-83db1"	"KIRC"	"Partial Response"	NA	NA	0	504.999999999375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p55061-ar-46457"	"KIRC"	"Stable Disease"	NA	NA	0	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p55264-ar-0f158"	"KIRC"	"Progressive Disease"	NA	NA	1	83.9999999869375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p55684-ar-6de0a"	"KIRC"	"Partial Response"	NA	NA	0	506.00000001625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p55787-ar-a1497"	"KIRC"	"Progressive Disease"	NA	NA	1	83.9999999869375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p55814-ar-d3107"	"KIRC"	"Stable Disease"	NA	NA	0	202.999999986188	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p56237-ar-935a8"	"KIRC"	"Progressive Disease"	NA	NA	1	80.00000001075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p56291-ar-1d985"	"KIRC"	"Stable Disease"	NA	NA	1	213.999999989187	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p56741-ar-2a443"	"KIRC"	"Partial Response"	NA	NA	0	591.999999945625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p57764-ar-4767e"	"KIRC"	"Progressive Disease"	NA	NA	1	44.9999999984375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p57834-ar-689be"	"KIRC"	"Complete Response"	NA	NA	0	587.999999878125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p58299-ar-b22ec"	"KIRC"	"Stable Disease"	NA	NA	0	700.99999995875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p58399-ar-79085"	"KIRC"	"Partial Response"	NA	NA	1	528.000000083125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p59051-ar-41711"	"KIRC"	"Stable Disease"	NA	NA	0	152.999999994688	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p59055-ar-4260f"	"KIRC"	"Progressive Disease"	NA	NA	1	47.9999999881875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p59153-ar-41e20"	"KIRC"	"Partial Response"	NA	NA	0	708.000000076875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p59257-ar-6f921"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p59809-ar-82372"	"KIRC"	"Stable Disease"	NA	NA	1	315.00000014125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p60596-ar-f566c"	"KIRC"	"Progressive Disease"	NA	NA	1	38.9999999885	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p60772-ar-beb8e"	"KIRC"	"Partial Response"	NA	NA	0	251.99999999125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p60814-ar-1c2a5"	"KIRC"	"Progressive Disease"	NA	NA	1	83.9999999869375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p60815-ar-9d32a"	"KIRC"	"Stable Disease"	NA	NA	1	175.000000000688	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p60988-ar-3817a"	"KIRC"	"Stable Disease"	NA	NA	0	251.99999999125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p61622-ar-fa5bc"	"KIRC"	"Stable Disease"	NA	NA	0	801.000000124375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p61632-ar-73801"	"KIRC"	"Complete Response"	NA	NA	0	758.0000000075	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p61893-ar-51a00"	"KIRC"	"Partial Response"	NA	NA	0	561.00000003125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p62140-ar-b5aff"	"KIRC"	"Stable Disease"	NA	NA	0	803.999999870625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p62330-ar-58ebf"	"KIRC"	"Stable Disease"	NA	NA	0	170.000000007625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p62920-ar-68d5a"	"KIRC"	"Stable Disease"	NA	NA	1	347.0000000725	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p63636-ar-c0f7a"	"KIRC"	"Complete Response"	NA	NA	0	839.999999869375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p63840-ar-13a16"	"KIRC"	"Stable Disease"	NA	NA	1	248.000000015063	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p64208-ar-cb57a"	"KIRC"	"Progressive Disease"	NA	NA	1	78.999999993875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p64398-ar-86324"	"KIRC"	"Progressive Disease"	NA	NA	1	85.99999999025	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p64456-ar-59df0"	"KIRC"	"Progressive Disease"	NA	NA	1	87.9999999935625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p64990-ar-906fa"	"KIRC"	"Progressive Disease"	NA	NA	1	89.999999996875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p65110-ar-1da68"	"KIRC"	"Stable Disease"	NA	NA	0	674.000000111875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p65181-ar-d3009"	"KIRC"	"Stable Disease"	NA	NA	0	249.999999987937	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p65353-ar-df874"	"KIRC"	""	NA	NA	1	38.0000000020625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p66613-ar-01430"	"KIRC"	"Partial Response"	NA	NA	0	835.000000089375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p67597-ar-3e120"	"KIRC"	"Partial Response"	NA	NA	0	672.000000078125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p68239-ar-97ff2"	"KIRC"	"Progressive Disease"	NA	NA	1	45.999999984875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p69089-ar-657cc"	"KIRC"	"Stable Disease"	NA	NA	1	251.000000004813	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p69129-ar-219d6"	"KIRC"	"Partial Response"	NA	NA	0	583.000000098125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p69561-ar-e3544"	"KIRC"	"Complete Response"	NA	NA	0	840.99999988625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p69645-ar-a30d9"	"KIRC"	"Progressive Disease"	NA	NA	1	78.0000000074375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p69959-ar-57b15"	"KIRC"	"Partial Response"	NA	NA	0	760.00000004125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p69986-ar-f1402"	"KIRC"	"Stable Disease"	NA	NA	1	260.0000000045	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p71174-ar-486cd"	"KIRC"	"Partial Response"	NA	NA	0	249.0000000015	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p71337-ar-61b00"	"KIRC"	"Progressive Disease"	NA	NA	1	105.999999992938	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p71382-ar-b68f5"	"KIRC"	"Complete Response"	NA	NA	0	836.00000010625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p71388-ar-986de"	"KIRC"	"Partial Response"	NA	NA	0	1004.99999991438	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p71390-ar-6e278"	"KIRC"	"Partial Response"	NA	NA	0	873.000000121875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p71514-ar-e7bfc"	"KIRC"	"Stable Disease"	NA	NA	1	253.000000008125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p71570-ar-c122d"	"KIRC"	""	NA	NA	1	347.0000000725	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p72473-ar-24ab7"	"KIRC"	"Stable Disease"	NA	NA	0	840.99999988625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p72915-ar-60840"	"KIRC"	""	NA	NA	0	0.9999999864375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p73074-ar-379fe"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p73444-ar-3465e"	"KIRC"	"Partial Response"	NA	NA	0	586.00000014875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p73644-ar-34124"	"KIRC"	"Progressive Disease"	NA	NA	1	38.9999999885	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p74056-ar-e60f3"	"KIRC"	"Stable Disease"	NA	NA	0	415.0000000025	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p75429-ar-a2056"	"KIRC"	"Progressive Disease"	NA	NA	1	80.00000001075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p75903-ar-ea05a"	"KIRC"	"Progressive Disease"	NA	NA	1	62.9999999978125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p76620-ar-e3505"	"KIRC"	"Stable Disease"	NA	NA	1	163.00000001125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p76802-ar-cbba5"	"KIRC"	"Progressive Disease"	NA	NA	1	83.0000000005	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p77021-ar-244e0"	"KIRC"	"Progressive Disease"	NA	NA	1	78.0000000074375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p77103-ar-5a00b"	"KIRC"	"Partial Response"	NA	NA	0	591.999999945625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p77236-ar-c51eb"	"KIRC"	"Stable Disease"	NA	NA	1	344.000000021875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p77592-ar-348b3"	"KIRC"	"Complete Response"	NA	NA	0	926.000000103125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p77606-ar-73bce"	"KIRC"	"Stable Disease"	NA	NA	0	163.00000001125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p77642-ar-cbdf8"	"KIRC"	"Stable Disease"	NA	NA	1	253.000000008125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p77682-ar-10061"	"KIRC"	"Complete Response"	NA	NA	0	337.999999920625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p77957-ar-88277"	"KIRC"	"Progressive Disease"	NA	NA	1	83.9999999869375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p78200-ar-d4750"	"KIRC"	"Complete Response"	NA	NA	0	576.999999996875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p78532-ar-ec859"	"KIRC"	"Progressive Disease"	NA	NA	1	85.99999999025	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p78631-ar-e9937"	"KIRC"	"Stable Disease"	NA	NA	1	166.999999987438	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p78812-ar-68e58"	"KIRC"	"Progressive Disease"	NA	NA	1	89.999999996875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p78903-ar-d309d"	"KIRC"	"Progressive Disease"	NA	NA	1	36.9999999851875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p79175-ar-f553e"	"KIRC"	"Stable Disease"	NA	NA	0	345.00000003875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p79951-ar-09e55"	"KIRC"	""	NA	NA	1	71.0000000110625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p79994-ar-565e9"	"KIRC"	"Progressive Disease"	NA	NA	1	85.0000000038125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p80528-ar-6a28d"	"KIRC"	"Progressive Disease"	NA	NA	1	87.9999999935625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p80740-ar-0d631"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p81271-ar-ef040"	"KIRC"	"Partial Response"	NA	NA	1	237.000000012063	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p81830-ar-4876d"	"KIRC"	""	NA	NA	1	421.00000010375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p82037-ar-d9253"	"KIRC"	"Partial Response"	NA	NA	1	445.999999916875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p82438-ar-00760"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p82563-ar-e3ba6"	"KIRC"	"Stable Disease"	NA	NA	1	326.0000000225	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p82773-ar-35d10"	"KIRC"	"Stable Disease"	NA	NA	1	300.000000009875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p82892-ar-05ee2"	"KIRC"	"Progressive Disease"	NA	NA	1	87.9999999935625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p83356-ar-c889c"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p83425-ar-25f19"	"KIRC"	"Progressive Disease"	NA	NA	1	92.0000000001875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p83724-ar-0f26e"	"KIRC"	"Complete Response"	NA	NA	0	994.000000033125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p84637-ar-a617b"	"KIRC"	"Stable Disease"	NA	NA	1	163.00000001125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p84792-ar-cf28c"	"KIRC"	"Stable Disease"	NA	NA	1	103.000000003188	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p84809-ar-83d87"	"KIRC"	"Progressive Disease"	NA	NA	1	49.0000000050625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p84815-ar-e2bca"	"KIRC"	"Stable Disease"	NA	NA	0	211.999999985875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p84816-ar-4c97c"	"KIRC"	"Partial Response"	NA	NA	0	511.000000100625	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p84835-ar-0f59f"	"KIRC"	"Stable Disease"	NA	NA	1	163.00000001125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p84878-ar-4428f"	"KIRC"	"Stable Disease"	NA	NA	1	127.0000000125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p85141-ar-bc386"	"KIRC"	""	NA	NA	1	251.000000004813	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p86072-ar-eda1c"	"KIRC"	"Partial Response"	NA	NA	0	421.00000010375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p87325-ar-e7c59"	"KIRC"	"Stable Disease"	NA	NA	1	255.000000011437	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p87381-ar-053ea"	"KIRC"	"Stable Disease"	NA	NA	1	355.99999992	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p87557-ar-2060b"	"KIRC"	"Partial Response"	NA	NA	0	163.00000001125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p87690-ar-e7a69"	"KIRC"	"Stable Disease"	NA	NA	1	314.000000124375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p88355-ar-06384"	"KIRC"	"Partial Response"	NA	NA	0	812.000000005625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p89062-ar-97923"	"KIRC"	""	NA	NA	0	0.9999999864375	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p89981-ar-824ee"	"KIRC"	"Partial Response"	NA	NA	0	771.999999939375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p90170-ar-91593"	"KIRC"	"Stable Disease"	NA	NA	0	471.000000034375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p90215-ar-05e00"	"KIRC"	"Progressive Disease"	NA	NA	1	89.0000000104375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p90410-ar-aad5b"	"KIRC"	"Progressive Disease"	NA	NA	1	42.0000000086875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p90681-ar-3044c"	"KIRC"	"Progressive Disease"	NA	NA	1	87.9999999935625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p90969-ar-eb279"	"KIRC"	"Progressive Disease"	NA	NA	1	89.999999996875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p91058-ar-c92b5"	"KIRC"	"Progressive Disease"	NA	NA	1	103.000000003188	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p91392-ar-c1e57"	"KIRC"	"Partial Response"	NA	NA	1	415.0000000025	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p91851-ar-3e2a3"	"KIRC"	""	NA	NA	0	67.999999990875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p91890-ar-3f780"	"KIRC"	"Partial Response"	NA	NA	0	588.999999895	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p91915-ar-d7992"	"KIRC"	"Stable Disease"	NA	NA	1	174.00000001425	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p92137-ar-a61f4"	"KIRC"	"Complete Response"	NA	NA	0	596.000000013125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p92156-ar-acf8a"	"KIRC"	"Stable Disease"	NA	NA	0	83.0000000005	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p92869-ar-e2339"	"KIRC"	"Progressive Disease"	NA	NA	1	87.000000007125	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p93090-ar-65a4c"	"KIRC"	"Stable Disease"	NA	NA	1	249.0000000015	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p93939-ar-d03c1"	"KIRC"	"Progressive Disease"	NA	NA	1	78.999999993875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p94113-ar-dd107"	"KIRC"	"Progressive Disease"	NA	NA	1	42.999999995125	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p96212-ar-544d1"	"KIRC"	"Stable Disease"	NA	NA	1	170.000000007625	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p96831-ar-c6d32"	"KIRC"	"Partial Response"	NA	NA	1	500.999999931875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p97176-ar-62eac"	"KIRC"	"Partial Response"	NA	NA	1	679.99999990875	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p97280-ar-49afc"	"KIRC"	"Stable Disease"	NA	NA	0	163.999999997688	NA	""	""	"None"	FALSE	FALSE	NA
+"IMmotion150-p97816-ar-1270d"	"KIRC"	"Partial Response"	NA	NA	0	246.999999998188	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p97909-ar-c7295"	"KIRC"	"Progressive Disease"	NA	NA	1	80.9999999971875	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p98637-ar-bcb5a"	"KIRC"	"Stable Disease"	NA	NA	0	165.000000014563	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p98987-ar-12652"	"KIRC"	"Stable Disease"	NA	NA	1	168.99999999075	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMmotion150-p99039-ar-ef7b7"	"KIRC"	"Progressive Disease"	NA	NA	1	51.000000008375	NA	""	""	"Atezo"	TRUE	FALSE	NA
+"IMVigor210-00b9e5-ar-00b9e5c"	"BLCA"	""	1	57.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0257bb-ar-0257bbb"	"BLCA"	"Stable Disease"	1	476.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-025b45-ar-025b45c"	"BLCA"	"Progressive Disease"	1	267	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-032c64-ar-032c642"	"BLCA"	"Progressive Disease"	1	76.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-04c589-ar-04c589e"	"BLCA"	""	0	21	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0571f1-ar-0571f17"	"BLCA"	"Stable Disease"	1	138	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-065890-ar-0658907"	"BLCA"	"Complete Response"	0	611.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0684af-ar-0684af7"	"BLCA"	"Partial Response"	0	707.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-075e03-ar-075e037"	"BLCA"	"Partial Response"	0	649	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-07a93a-ar-07a93a2"	"BLCA"	"Partial Response"	0	390.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-08cce2-ar-08cce2f"	"BLCA"	"Stable Disease"	0	673.000000000002	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-09c84e-ar-09c84ec"	"BLCA"	"Progressive Disease"	1	198	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0a0f2b-ar-0a0f2ba"	"BLCA"	"Progressive Disease"	1	36.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0a7c20-ar-0a7c209"	"BLCA"	"Progressive Disease"	1	80.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0bdb34-ar-0bdb342"	"BLCA"	"Progressive Disease"	1	67.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0ce9c9-ar-0ce9c98"	"BLCA"	"Progressive Disease"	1	201	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0d855c-ar-0d855cf"	"BLCA"	"Progressive Disease"	1	86.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-0f956e-ar-0f956e7"	"BLCA"	"Progressive Disease"	1	317	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-110501-ar-110501d"	"BLCA"	"Progressive Disease"	1	130	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-12502d-ar-12502d9"	"BLCA"	"Stable Disease"	1	225	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-149386-ar-1493861"	"BLCA"	"Partial Response"	0	652.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-14df63-ar-14df63a"	"BLCA"	"Partial Response"	0	652.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-166a41-ar-166a419"	"BLCA"	"Progressive Disease"	1	164	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-17c45b-ar-17c45bf"	"BLCA"	""	1	82.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-180398-ar-1803982"	"BLCA"	"Progressive Disease"	1	44.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-181b63-ar-181b638"	"BLCA"	"Progressive Disease"	1	331	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-187e05-ar-187e056"	"BLCA"	"Progressive Disease"	1	69.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-18a4da-ar-18a4dab"	"BLCA"	"Progressive Disease"	1	501	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-18b935-ar-18b9351"	"BLCA"	"Progressive Disease"	1	483.000000000001	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-18bc10-ar-18bc107"	"BLCA"	"Progressive Disease"	1	210	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-18be5b-ar-18be5b3"	"BLCA"	"Progressive Disease"	1	274	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-19fec8-ar-19fec8f"	"BLCA"	"Progressive Disease"	1	301	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1a87df-ar-1a87df7"	"BLCA"	"Stable Disease"	1	164	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1ab1b2-ar-1ab1b28"	"BLCA"	"Progressive Disease"	1	63.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1abf01-ar-1abf01d"	"BLCA"	"Partial Response"	0	513	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1ac4e3-ar-1ac4e3d"	"BLCA"	"Progressive Disease"	1	168	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1bcc62-ar-1bcc62d"	"BLCA"	""	0	567	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1c0ecf-ar-1c0ecfb"	"BLCA"	"Progressive Disease"	1	178	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1c8b08-ar-1c8b086"	"BLCA"	"Progressive Disease"	1	632.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1dda30-ar-1dda30f"	"BLCA"	"Progressive Disease"	0	646.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1e9c4d-ar-1e9c4d1"	"BLCA"	"Progressive Disease"	1	378	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1f3c93-ar-1f3c938"	"BLCA"	""	1	44	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1f66db-ar-1f66db5"	"BLCA"	"Partial Response"	0	504.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1f83eb-ar-1f83ebd"	"BLCA"	"Progressive Disease"	1	107	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-1fa6bc-ar-1fa6bcb"	"BLCA"	"Progressive Disease"	0	692.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-203dcf-ar-203dcf1"	"BLCA"	"Complete Response"	0	589	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2070b4-ar-2070b41"	"BLCA"	"Stable Disease"	1	244	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-230959-ar-2309593"	"BLCA"	"Progressive Disease"	1	67.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-23aa15-ar-23aa15d"	"BLCA"	"Progressive Disease"	1	174	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-25510f-ar-25510f3"	"BLCA"	"Complete Response"	0	630	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2570ff-ar-2570ff4"	"BLCA"	"Partial Response"	0	680.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-26104d-ar-26104d5"	"BLCA"	"Stable Disease"	1	164	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-262422-ar-2624229"	"BLCA"	"Progressive Disease"	1	78.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-27299a-ar-27299ae"	"BLCA"	"Partial Response"	0	574	NA	NA	NA	"Female"	""	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-286870-ar-2868703"	"BLCA"	"Stable Disease"	0	657.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-28e603-ar-28e6031"	"BLCA"	"Stable Disease"	1	281	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-297c03-ar-297c030"	"BLCA"	"Progressive Disease"	1	246	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-29da92-ar-29da928"	"BLCA"	"Progressive Disease"	1	79	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2b672f-ar-2b672f4"	"BLCA"	"Stable Disease"	1	466	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2bba8c-ar-2bba8cb"	"BLCA"	"Progressive Disease"	1	319.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2c9586-ar-2c95861"	"BLCA"	"Progressive Disease"	1	342.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2dc3f0-ar-2dc3f04"	"BLCA"	"Progressive Disease"	1	310	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2dc578-ar-2dc578e"	"BLCA"	""	1	59.9999999999999	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2de7cf-ar-2de7cff"	"BLCA"	""	1	55.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2e7aa8-ar-2e7aa8f"	"BLCA"	"Progressive Disease"	1	235	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2e9ac0-ar-2e9ac0b"	"BLCA"	"Complete Response"	0	673.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2eb07d-ar-2eb07de"	"BLCA"	"Partial Response"	0	624.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-2f2289-ar-2f22893"	"BLCA"	"Progressive Disease"	1	240	NA	NA	NA	"Female"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-30b5c6-ar-30b5c6c"	"BLCA"	"Complete Response"	1	282	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-30cf07-ar-30cf07d"	"BLCA"	"Stable Disease"	1	355.000000000002	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-31291c-ar-31291c2"	"BLCA"	""	1	34.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-31d917-ar-31d9176"	"BLCA"	"Complete Response"	0	521	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-31f41d-ar-31f41dd"	"BLCA"	"Stable Disease"	1	252	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3330c0-ar-3330c03"	"BLCA"	"Progressive Disease"	0	584.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-34430e-ar-34430ef"	"BLCA"	"Progressive Disease"	0	552.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-36851b-ar-36851bc"	"BLCA"	"Stable Disease"	1	108	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-36a922-ar-36a9225"	"BLCA"	"Stable Disease"	0	725.000000000001	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-36d873-ar-36d8739"	"BLCA"	"Stable Disease"	0	720.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3779e9-ar-3779e97"	"BLCA"	""	1	40	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-378558-ar-3785587"	"BLCA"	""	1	215	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3894ac-ar-3894ac3"	"BLCA"	"Progressive Disease"	0	63.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-39eb94-ar-39eb94f"	"BLCA"	"Progressive Disease"	1	544.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3a1c96-ar-3a1c963"	"BLCA"	"Stable Disease"	0	488	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3b1066-ar-3b1066e"	"BLCA"	"Stable Disease"	0	476.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3b15b4-ar-3b15b4c"	"BLCA"	"Complete Response"	0	652.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3cb94b-ar-3cb94b0"	"BLCA"	"Progressive Disease"	1	154	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3e04eb-ar-3e04eb9"	"BLCA"	"Partial Response"	0	525.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3e8baf-ar-3e8baff"	"BLCA"	"Stable Disease"	1	212	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3ee5dc-ar-3ee5dcd"	"BLCA"	"Progressive Disease"	1	265	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3f2033-ar-3f2033c"	"BLCA"	""	1	25	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-3f4464-ar-3f44644"	"BLCA"	""	1	23	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-415f36-ar-415f36a"	"BLCA"	"Progressive Disease"	1	547	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4305ab-ar-4305ab9"	"BLCA"	"Progressive Disease"	1	42.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4501e4-ar-4501e41"	"BLCA"	"Progressive Disease"	1	34.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4581ba-ar-4581bac"	"BLCA"	""	0	610.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-45c8e6-ar-45c8e64"	"BLCA"	"Progressive Disease"	1	106	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-468a9e-ar-468a9e1"	"BLCA"	"Progressive Disease"	1	118	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-47fc46-ar-47fc46c"	"BLCA"	"Stable Disease"	0	570.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4918c5-ar-4918c52"	"BLCA"	""	0	19	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-491e34-ar-491e341"	"BLCA"	""	1	57.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-49d487-ar-49d4875"	"BLCA"	"Progressive Disease"	1	300	NA	NA	NA	"Male"	""	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-49f9b2-ar-49f9b2e"	"BLCA"	"Progressive Disease"	1	227	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4b0175-ar-4b0175e"	"BLCA"	"Progressive Disease"	1	63	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4b7ea0-ar-4b7ea01"	"BLCA"	"Progressive Disease"	1	403.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4caabd-ar-4caabd6"	"BLCA"	"Partial Response"	0	477.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-4edbe4-ar-4edbe45"	"BLCA"	""	1	32.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-523468-ar-5234688"	"BLCA"	"Progressive Disease"	1	179	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-52500c-ar-52500ca"	"BLCA"	"Stable Disease"	0	623	NA	NA	NA	"Female"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-52e3fa-ar-52e3fa3"	"BLCA"	"Progressive Disease"	1	242	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-548551-ar-548551e"	"BLCA"	"Partial Response"	0	525.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-54e58f-ar-54e58f1"	"BLCA"	"Progressive Disease"	1	133	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-553c3c-ar-553c3c3"	"BLCA"	"Progressive Disease"	1	204	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-557dde-ar-557dde1"	"BLCA"	"Progressive Disease"	1	204	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-560f23-ar-560f23d"	"BLCA"	"Complete Response"	0	651.000000000001	NA	NA	NA	"Male"	"Pacific Islander"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-563d62-ar-563d623"	"BLCA"	"Progressive Disease"	1	65	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-568ce1-ar-568ce16"	"BLCA"	"Stable Disease"	1	390.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-572f19-ar-572f197"	"BLCA"	"Complete Response"	0	511.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5767dd-ar-5767dd7"	"BLCA"	"Partial Response"	0	552.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-58e783-ar-58e7832"	"BLCA"	"Partial Response"	0	501	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-59289c-ar-59289ca"	"BLCA"	""	1	52	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-59b825-ar-59b8252"	"BLCA"	""	1	16	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-59f392-ar-59f3928"	"BLCA"	"Stable Disease"	1	541	NA	NA	NA	"Male"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-59fda9-ar-59fda90"	"BLCA"	"Progressive Disease"	1	114	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5a2347-ar-5a2347c"	"BLCA"	"Stable Disease"	1	149	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5b57e4-ar-5b57e47"	"BLCA"	"Progressive Disease"	1	117	NA	NA	NA	"Female"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5c139c-ar-5c139c5"	"BLCA"	"Progressive Disease"	1	220	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5cc2d9-ar-5cc2d90"	"BLCA"	"Progressive Disease"	1	173	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5cfa16-ar-5cfa169"	"BLCA"	"Progressive Disease"	0	482.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5d1dfd-ar-5d1dfd5"	"BLCA"	"Progressive Disease"	1	332	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5d989c-ar-5d989c8"	"BLCA"	"Progressive Disease"	1	105	NA	NA	NA	"Female"	""	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5e3bae-ar-5e3bae0"	"BLCA"	"Progressive Disease"	1	205	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5fc9ae-ar-5fc9ae0"	"BLCA"	""	1	19	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5fe7a8-ar-5fe7a81"	"BLCA"	"Progressive Disease"	1	520	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-5ffd7e-ar-5ffd7e4"	"BLCA"	""	1	36.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6083aa-ar-6083aac"	"BLCA"	"Partial Response"	0	628	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6157c8-ar-6157c8f"	"BLCA"	"Partial Response"	0	504.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-61b9d4-ar-61b9d4d"	"BLCA"	"Stable Disease"	0	651.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-61baf9-ar-61baf91"	"BLCA"	"Stable Disease"	1	475.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-62fb13-ar-62fb138"	"BLCA"	"Progressive Disease"	0	685.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-63405b-ar-63405b0"	"BLCA"	"Progressive Disease"	1	207	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-63b218-ar-63b2189"	"BLCA"	"Progressive Disease"	1	121	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-65afda-ar-65afda2"	"BLCA"	"Stable Disease"	1	246	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6662f5-ar-6662f51"	"BLCA"	"Progressive Disease"	0	586.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-670649-ar-670649e"	"BLCA"	"Complete Response"	0	672.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-675a12-ar-675a12a"	"BLCA"	"Progressive Disease"	1	88	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6780ed-ar-6780ed4"	"BLCA"	"Progressive Disease"	1	190	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6792d6-ar-6792d6e"	"BLCA"	"Progressive Disease"	1	183	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-681e4b-ar-681e4bf"	"BLCA"	"Partial Response"	0	712.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6964a6-ar-6964a6d"	"BLCA"	"Progressive Disease"	1	495.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-698d8d-ar-698d8d7"	"BLCA"	""	1	13	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6cb230-ar-6cb230f"	"BLCA"	"Partial Response"	0	706.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6cbc10-ar-6cbc10a"	"BLCA"	"Progressive Disease"	1	181	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6d2ae0-ar-6d2ae0c"	"BLCA"	"Progressive Disease"	0	673.000000000002	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6dd7ad-ar-6dd7ad1"	"BLCA"	"Progressive Disease"	1	586.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6f2a10-ar-6f2a102"	"BLCA"	"Complete Response"	0	586.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-6ff654-ar-6ff654a"	"BLCA"	"Complete Response"	0	564.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7114d9-ar-7114d99"	"BLCA"	"Progressive Disease"	1	329.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-714285-ar-714285a"	"BLCA"	""	1	19	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-716f54-ar-716f54e"	"BLCA"	"Stable Disease"	0	645.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-727c0e-ar-727c0e9"	"BLCA"	"Partial Response"	0	570.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-73663e-ar-73663ee"	"BLCA"	"Complete Response"	0	646.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-73b653-ar-73b653a"	"BLCA"	""	1	55.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-75142f-ar-75142fc"	"BLCA"	"Progressive Disease"	1	362.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7538ad-ar-7538ad9"	"BLCA"	"Stable Disease"	0	582	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-753d4b-ar-753d4bb"	"BLCA"	"Stable Disease"	1	346	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-75f12d-ar-75f12d1"	"BLCA"	"Stable Disease"	0	449.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-76a431-ar-76a431b"	"BLCA"	"Progressive Disease"	1	429.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-771445-ar-771445e"	"BLCA"	"Complete Response"	0	591.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7746b7-ar-7746b76"	"BLCA"	""	1	86.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7829a3-ar-7829a34"	"BLCA"	"Progressive Disease"	1	118	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-789319-ar-7893196"	"BLCA"	"Progressive Disease"	1	80.9999999999999	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7a9093-ar-7a9093b"	"BLCA"	""	1	55.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7aa01f-ar-7aa01fc"	"BLCA"	"Progressive Disease"	1	65	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7b4000-ar-7b40007"	"BLCA"	"Partial Response"	0	659.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7bff23-ar-7bff231"	"BLCA"	"Stable Disease"	1	312	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7c67b0-ar-7c67b05"	"BLCA"	"Stable Disease"	1	251	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7d2dfb-ar-7d2dfba"	"BLCA"	"Stable Disease"	1	387.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7d7c54-ar-7d7c546"	"BLCA"	"Partial Response"	0	645.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7edacb-ar-7edacb3"	"BLCA"	""	0	548	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7ee2b6-ar-7ee2b6e"	"BLCA"	""	1	52	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7f0d9c-ar-7f0d9cc"	"BLCA"	"Progressive Disease"	1	141	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7fb698-ar-7fb6987"	"BLCA"	"Progressive Disease"	0	694.999999999999	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-7fb7a1-ar-7fb7a13"	"BLCA"	"Progressive Disease"	1	51.0000000000001	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-80c618-ar-80c6183"	"BLCA"	"Progressive Disease"	0	449.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-81b715-ar-81b7152"	"BLCA"	"Progressive Disease"	1	65	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-822b22-ar-822b226"	"BLCA"	"Stable Disease"	0	525.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8533e5-ar-8533e5e"	"BLCA"	"Partial Response"	1	389.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-85e41e-ar-85e41e7"	"BLCA"	""	1	19	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-85f0a3-ar-85f0a3a"	"BLCA"	"Progressive Disease"	1	178	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-87a8e1-ar-87a8e18"	"BLCA"	"Progressive Disease"	1	84.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8884fe-ar-8884fe4"	"BLCA"	"Partial Response"	0	705.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8a1b0e-ar-8a1b0e0"	"BLCA"	"Complete Response"	0	625.999999999999	NA	NA	NA	"Male"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8a42c0-ar-8a42c0d"	"BLCA"	""	1	86.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8b4b8b-ar-8b4b8b0"	"BLCA"	"Stable Disease"	0	476.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8e43e9-ar-8e43e9c"	"BLCA"	""	1	15	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8e4698-ar-8e46983"	"BLCA"	"Progressive Disease"	1	113	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8e8ef2-ar-8e8ef23"	"BLCA"	"Progressive Disease"	1	137	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-8f2275-ar-8f2275c"	"BLCA"	"Stable Disease"	0	631.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-91c47b-ar-91c47b0"	"BLCA"	"Partial Response"	1	517.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9306c5-ar-9306c5c"	"BLCA"	"Progressive Disease"	0	470.000000000002	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9410b8-ar-9410b86"	"BLCA"	"Stable Disease"	1	205	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-943df5-ar-943df5c"	"BLCA"	"Progressive Disease"	1	65	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9448d8-ar-9448d85"	"BLCA"	""	1	61.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-94859b-ar-94859b4"	"BLCA"	"Progressive Disease"	1	406	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9539a4-ar-9539a4f"	"BLCA"	"Stable Disease"	1	242	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-957378-ar-957378b"	"BLCA"	"Progressive Disease"	1	67.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-95c704-ar-95c7049"	"BLCA"	""	1	11	NA	NA	NA	"Female"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-961d04-ar-961d04c"	"BLCA"	"Progressive Disease"	1	179	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-968145-ar-9681450"	"BLCA"	""	1	151	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-972530-ar-9725303"	"BLCA"	"Progressive Disease"	0	271	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-978a58-ar-978a587"	"BLCA"	"Progressive Disease"	1	63.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-97a00e-ar-97a00e0"	"BLCA"	"Partial Response"	0	387.000000000001	NA	NA	NA	"Male"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-99a46b-ar-99a46b9"	"BLCA"	"Progressive Disease"	1	110	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-99b1f6-ar-99b1f6a"	"BLCA"	""	1	15	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9a2cf3-ar-9a2cf3c"	"BLCA"	"Progressive Disease"	1	172	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9aa6a0-ar-9aa6a09"	"BLCA"	"Progressive Disease"	1	269	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9b9d48-ar-9b9d48b"	"BLCA"	""	1	88	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9cafb9-ar-9cafb90"	"BLCA"	"Progressive Disease"	1	232	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9d2494-ar-9d24941"	"BLCA"	"Progressive Disease"	1	44	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9dacca-ar-9daccaf"	"BLCA"	"Progressive Disease"	0	501	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9e11ec-ar-9e11ec6"	"BLCA"	"Stable Disease"	1	469.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9eebde-ar-9eebdef"	"BLCA"	""	1	25	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-9fb814-ar-9fb814c"	"BLCA"	"Stable Disease"	1	582	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a0ca02-ar-a0ca029"	"BLCA"	""	1	11	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a1871f-ar-a1871f4"	"BLCA"	"Progressive Disease"	1	53.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a1e62d-ar-a1e62d3"	"BLCA"	"Stable Disease"	1	321.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a32177-ar-a321770"	"BLCA"	"Progressive Disease"	0	215	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a424c7-ar-a424c75"	"BLCA"	"Progressive Disease"	1	108	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a535fc-ar-a535fcd"	"BLCA"	"Partial Response"	0	525.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a90d73-ar-a90d73f"	"BLCA"	"Progressive Disease"	1	31	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a913c6-ar-a913c61"	"BLCA"	"Stable Disease"	1	156	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-a9ca85-ar-a9ca853"	"BLCA"	"Stable Disease"	0	665.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-aabf4a-ar-aabf4af"	"BLCA"	"Progressive Disease"	1	80.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-aaf505-ar-aaf505c"	"BLCA"	"Partial Response"	0	625.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ab8052-ar-ab8052a"	"BLCA"	"Stable Disease"	1	405	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-abc151-ar-abc151b"	"BLCA"	"Progressive Disease"	1	17	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ad83c9-ar-ad83c9c"	"BLCA"	"Progressive Disease"	0	456.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ae0262-ar-ae02629"	"BLCA"	"Progressive Disease"	1	99.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ae1690-ar-ae16904"	"BLCA"	"Stable Disease"	1	644.000000000001	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ae4da2-ar-ae4da27"	"BLCA"	"Progressive Disease"	1	152	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-aec738-ar-aec7380"	"BLCA"	"Partial Response"	0	635	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-af42c1-ar-af42c15"	"BLCA"	"Stable Disease"	0	168	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-af7578-ar-af7578d"	"BLCA"	""	1	7.00000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-aff272-ar-aff2728"	"BLCA"	""	1	65	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b0a83e-ar-b0a83e5"	"BLCA"	"Stable Disease"	0	710	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b0d11d-ar-b0d11db"	"BLCA"	"Progressive Disease"	1	321.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b15ac6-ar-b15ac6e"	"BLCA"	"Partial Response"	0	609	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b15ad0-ar-b15ad09"	"BLCA"	"Progressive Disease"	1	118	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b2e4a0-ar-b2e4a08"	"BLCA"	"Progressive Disease"	1	133	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b2f1d0-ar-b2f1d0e"	"BLCA"	"Partial Response"	1	347.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b3c022-ar-b3c0229"	"BLCA"	"Partial Response"	0	681.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b419a8-ar-b419a8f"	"BLCA"	"Partial Response"	0	692.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b470eb-ar-b470eb8"	"BLCA"	"Complete Response"	0	611.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b4c7a0-ar-b4c7a00"	"BLCA"	"Progressive Disease"	1	97.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b8070b-ar-b8070b7"	"BLCA"	"Stable Disease"	1	639.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b8101c-ar-b8101c5"	"BLCA"	"Stable Disease"	1	408.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b8f13a-ar-b8f13a0"	"BLCA"	""	1	82.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-b963dd-ar-b963dda"	"BLCA"	"Progressive Disease"	1	84.0000000000001	NA	NA	NA	"Male"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ba1a34-ar-ba1a34b"	"BLCA"	"Progressive Disease"	1	390.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ba7176-ar-ba7176a"	"BLCA"	"Progressive Disease"	0	105	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bc8dc3-ar-bc8dc3a"	"BLCA"	"Progressive Disease"	1	449.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bcb07b-ar-bcb07ba"	"BLCA"	"Progressive Disease"	1	77	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bcbc79-ar-bcbc795"	"BLCA"	"Progressive Disease"	1	127	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bd8ee7-ar-bd8ee73"	"BLCA"	""	1	26	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bda79f-ar-bda79f9"	"BLCA"	"Stable Disease"	0	628	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-be25e2-ar-be25e2c"	"BLCA"	""	1	88.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-be83ea-ar-be83eae"	"BLCA"	"Progressive Disease"	1	82.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bf1a3a-ar-bf1a3ae"	"BLCA"	"Complete Response"	0	631.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bf91f2-ar-bf91f27"	"BLCA"	""	1	18	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-bfdffb-ar-bfdffb9"	"BLCA"	"Stable Disease"	1	204	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c0d625-ar-c0d625a"	"BLCA"	"Stable Disease"	1	403.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c0da5d-ar-c0da5d4"	"BLCA"	"Progressive Disease"	1	289	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c0ef41-ar-c0ef41a"	"BLCA"	"Progressive Disease"	1	291	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c1251c-ar-c1251c7"	"BLCA"	"Partial Response"	0	658.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c1b27b-ar-c1b27bc"	"BLCA"	"Partial Response"	0	735.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c2a182-ar-c2a1820"	"BLCA"	"Complete Response"	0	631.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c57ead-ar-c57eadb"	"BLCA"	"Progressive Disease"	1	244	NA	NA	NA	"Male"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c69253-ar-c692536"	"BLCA"	"Progressive Disease"	1	172	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c6eff0-ar-c6eff05"	"BLCA"	"Progressive Disease"	1	55.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c919ae-ar-c919aeb"	"BLCA"	"Partial Response"	0	631.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-c97f35-ar-c97f35a"	"BLCA"	""	0	25	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cabb6d-ar-cabb6d5"	"BLCA"	"Stable Disease"	0	617.000000000001	NA	NA	NA	"Female"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cb132b-ar-cb132b0"	"BLCA"	"Progressive Disease"	1	77	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cc4675-ar-cc4675f"	"BLCA"	"Progressive Disease"	1	95.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cc7a42-ar-cc7a42d"	"BLCA"	"Partial Response"	0	524.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ce39dd-ar-ce39dd7"	"BLCA"	"Progressive Disease"	1	191	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cee0fa-ar-cee0fa8"	"BLCA"	""	1	51.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-cf018f-ar-cf018fe"	"BLCA"	"Progressive Disease"	1	494	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d02712-ar-d027124"	"BLCA"	"Complete Response"	0	716	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d0e47b-ar-d0e47be"	"BLCA"	""	1	27	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d135d5-ar-d135d58"	"BLCA"	"Progressive Disease"	1	110	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d1bd63-ar-d1bd637"	"BLCA"	"Progressive Disease"	1	59.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d215b5-ar-d215b50"	"BLCA"	"Stable Disease"	0	52	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d2492b-ar-d2492b2"	"BLCA"	"Progressive Disease"	1	239	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d35318-ar-d353181"	"BLCA"	"Complete Response"	0	657.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d36012-ar-d360128"	"BLCA"	"Complete Response"	0	704	NA	NA	NA	"Male"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d3bd67-ar-d3bd679"	"BLCA"	"Complete Response"	0	633.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d43f89-ar-d43f893"	"BLCA"	"Partial Response"	0	609	NA	NA	NA	"Male"	""	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d4c083-ar-d4c0837"	"BLCA"	"Progressive Disease"	1	164	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d5ab7f-ar-d5ab7fb"	"BLCA"	""	0	551.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d636e3-ar-d636e34"	"BLCA"	"Progressive Disease"	1	319.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d697ba-ar-d697ba7"	"BLCA"	"Stable Disease"	1	644.000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d7d57e-ar-d7d57ee"	"BLCA"	"Complete Response"	0	617.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d86389-ar-d86389d"	"BLCA"	"Progressive Disease"	1	67	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-d98bac-ar-d98bac0"	"BLCA"	"Progressive Disease"	1	63	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-da4d89-ar-da4d892"	"BLCA"	"Progressive Disease"	0	429.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-dab9ca-ar-dab9ca8"	"BLCA"	"Progressive Disease"	0	5.99999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-dad5c2-ar-dad5c29"	"BLCA"	"Progressive Disease"	1	74.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-db3f50-ar-db3f50c"	"BLCA"	"Progressive Disease"	1	481	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-dcae54-ar-dcae54f"	"BLCA"	"Stable Disease"	1	190	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-dee101-ar-dee1011"	"BLCA"	"Progressive Disease"	1	119	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-df3e42-ar-df3e42c"	"BLCA"	"Progressive Disease"	1	223	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e07c45-ar-e07c456"	"BLCA"	"Progressive Disease"	0	63.9999999999999	NA	NA	NA	"Female"	"Other"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e0c49e-ar-e0c49ea"	"BLCA"	"Stable Disease"	1	126	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e1eb5d-ar-e1eb5d9"	"BLCA"	"Complete Response"	0	640.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e3210d-ar-e3210d3"	"BLCA"	"Progressive Disease"	1	65.9999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e3d426-ar-e3d4266"	"BLCA"	"Progressive Disease"	0	426	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e41b1e-ar-e41b1e7"	"BLCA"	"Progressive Disease"	1	26	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e50d15-ar-e50d15f"	"BLCA"	"Partial Response"	0	575	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e56c96-ar-e56c96c"	"BLCA"	"Progressive Disease"	1	297	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e5bc41-ar-e5bc417"	"BLCA"	"Progressive Disease"	1	186	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e71235-ar-e712352"	"BLCA"	"Partial Response"	0	673.000000000002	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e7bcab-ar-e7bcab0"	"BLCA"	"Stable Disease"	1	241	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e7bf6c-ar-e7bf6c0"	"BLCA"	"Progressive Disease"	1	95.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e7e4f7-ar-e7e4f7c"	"BLCA"	"Progressive Disease"	1	59.9999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e9475f-ar-e9475f7"	"BLCA"	"Stable Disease"	0	568	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e94c30-ar-e94c30c"	"BLCA"	"Stable Disease"	1	468.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e97af0-ar-e97af0f"	"BLCA"	"Progressive Disease"	1	338	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-e9ae8b-ar-e9ae8be"	"BLCA"	"Progressive Disease"	1	167	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-eaa477-ar-eaa477a"	"BLCA"	"Complete Response"	0	657.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-eb2962-ar-eb29625"	"BLCA"	"Progressive Disease"	1	95.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-eb587a-ar-eb587a6"	"BLCA"	"Stable Disease"	0	630	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ee3844-ar-ee3844c"	"BLCA"	"Progressive Disease"	1	98	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ef0e3d-ar-ef0e3d2"	"BLCA"	"Stable Disease"	1	307.999999999999	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-eff2ce-ar-eff2ce3"	"BLCA"	"Progressive Disease"	1	246	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f20b82-ar-f20b827"	"BLCA"	"Progressive Disease"	1	133	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f275eb-ar-f275eb8"	"BLCA"	"Partial Response"	0	745.000000000001	NA	NA	NA	"Male"	"African"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f28c01-ar-f28c015"	"BLCA"	"Stable Disease"	1	195	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f2aae1-ar-f2aae14"	"BLCA"	"Progressive Disease"	1	314.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f2ce19-ar-f2ce197"	"BLCA"	""	1	48	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f3a9bc-ar-f3a9bce"	"BLCA"	"Progressive Disease"	0	63.9999999999999	NA	NA	NA	"Female"	"Asian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-f82bbd-ar-f82bbdc"	"BLCA"	"Progressive Disease"	1	95.0000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-fb7aec-ar-fb7aec7"	"BLCA"	"Partial Response"	0	686.000000000001	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-fd9476-ar-fd94761"	"BLCA"	"Progressive Disease"	1	275	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-fddc35-ar-fddc359"	"BLCA"	""	1	59.0000000000001	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-fed609-ar-fed6099"	"BLCA"	"Progressive Disease"	0	625.999999999999	NA	NA	NA	"Female"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ff41c4-ar-ff41c4e"	"BLCA"	""	1	75	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"IMVigor210-ffa5c7-ar-ffa5c7c"	"BLCA"	"Partial Response"	1	473	NA	NA	NA	"Male"	"Caucasian"	"Atezo"	TRUE	FALSE	TRUE
+"Kim_NatMed_2018-p602-ar-987"	"STAD"	"Progressive Disease"	1	168	1	22	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p603-ar-988"	"STAD"	"Stable Disease"	1	101.2	1	77.6	46	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p604-ar-989"	"STAD"	"Progressive Disease"	1	26.4	1	17.6	43	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p605-ar-990"	"STAD"	"Partial Response"	0	253.2	1	84.4	42	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p618-ar-991"	"STAD"	"Progressive Disease"	1	108.4	1	32	64	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p619-ar-992"	"STAD"	"Partial Response"	0	203.2	0	203.2	69	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p620-ar-993"	"STAD"	"Partial Response"	0	208.4	0	208.4	77	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p621-ar-994"	"STAD"	"Partial Response"	0	202.8	1	196.4	71	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p622-ar-995"	"STAD"	"Stable Disease"	1	162	1	120	31	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p623-ar-000"	"STAD"	"Progressive Disease"	1	9.2	1	6.8	32	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p624-ar-996"	"STAD"	"Progressive Disease"	1	89.6	1	33.6	36	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p625-ar-997"	"STAD"	"Progressive Disease"	1	128	1	15.6	56	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p629-ar-998"	"STAD"	"Progressive Disease"	1	139.6	1	14.8	59	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p630-ar-999"	"STAD"	"Progressive Disease"	1	100	1	33.6	55	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p631-ar-033"	"STAD"	"Complete Response"	0	192.8	0	192.8	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p632-ar-001"	"STAD"	"Progressive Disease"	1	26	1	13.2	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p634-ar-002"	"STAD"	"Stable Disease"	1	46	1	30.4	46	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p635-ar-003"	"STAD"	"Progressive Disease"	1	78.4	1	16	53	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p637-ar-004"	"STAD"	"Stable Disease"	1	60	1	32.4	78	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p638-ar-005"	"STAD"	"Partial Response"	1	40.4	1	34.8	68	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p639-ar-006"	"STAD"	"Progressive Disease"	1	88	1	16	54	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p640-ar-007"	"STAD"	"Stable Disease"	0	191.2	1	66.8	69	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p641-ar-008"	"STAD"	"Progressive Disease"	1	21.6	1	15.2	52	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p642-ar-009"	"STAD"	"Stable Disease"	0	181.2	1	117.6	68	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p643-ar-010"	"STAD"	"Progressive Disease"	1	116.8	1	16	77	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p644-ar-011"	"STAD"	"Partial Response"	0	168.8	0	168.8	60	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p645-ar-012"	"STAD"	"Complete Response"	0	180.8	0	180.8	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p647-ar-013"	"STAD"	"Stable Disease"	1	36.8	1	34.8	61	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p648-ar-014"	"STAD"	"Partial Response"	0	155.2	0	155.2	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p649-ar-015"	"STAD"	"Stable Disease"	1	52	1	39.2	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p651-ar-016"	"STAD"	"Progressive Disease"	1	46	1	25.2	43	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p652-ar-019"	"STAD"	"Stable Disease"	0	143.6	1	49.2	41	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p654-ar-023"	"STAD"	"Stable Disease"	0	145.2	1	20.4	63	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p655-ar-018"	"STAD"	"Progressive Disease"	1	28	1	16.4	26	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p656-ar-020"	"STAD"	"Stable Disease"	0	146	1	47.6	72	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p657-ar-021"	"STAD"	"Progressive Disease"	1	57.2	1	32	61	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p659-ar-025"	"STAD"	"Partial Response"	0	137.6	1	64.4	57	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p660-ar-024"	"STAD"	"Progressive Disease"	0	138.4	1	14.8	45	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p662-ar-027"	"STAD"	"Stable Disease"	0	132.8	1	101.6	37	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p663-ar-028"	"STAD"	"Partial Response"	0	132.8	1	50.8	78	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p664-ar-026"	"STAD"	"Stable Disease"	0	136	1	103.2	71	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p666-ar-029"	"STAD"	"Stable Disease"	0	130	1	49.2	73	"Female"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p667-ar-030"	"STAD"	"Progressive Disease"	0	124.4	1	14.8	34	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p668-ar-031"	"STAD"	"Complete Response"	0	122.8	0	122.8	69	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Kim_NatMed_2018-p669-ar-032"	"STAD"	"Stable Disease"	1	40.8	1	28.4	54	"Male"	"Asian"	"Pembro"	TRUE	FALSE	FALSE
+"Liu_NatMed_2019-p001-ar-00001"	"SKCM"	"Progressive Disease"	1	283	1	93	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p004-ar-00012"	"SKCM"	"Complete Response"	1	600	1	574	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p006-ar-00567"	"SKCM"	"Stable Disease"	1	687	1	124	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p007-ar-00597"	"SKCM"	"Stable Disease"	1	269	1	217	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p008-ar-00594"	"SKCM"	"Stable Disease"	1	1005	1	955	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p009-ar-00574"	"SKCM"	"Progressive Disease"	0	963	1	21	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p010-ar-42352"	"SKCM"	"Partial Response"	1	1139	1	169	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p011-ar-42363"	"SKCM"	"Progressive Disease"	1	160	1	85	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p013-ar-42373"	"SKCM"	"Progressive Disease"	1	58	1	44	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p014-ar-00564"	"SKCM"	"Progressive Disease"	1	186	1	76	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p015-ar-99978"	"SKCM"	"Partial Response"	1	149	1	105	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p017-ar-99992"	"SKCM"	"Stable Disease"	1	686	1	202	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p018-ar-00020"	"SKCM"	"Progressive Disease"	1	130	1	86	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p020-ar-00560"	"SKCM"	"Progressive Disease"	1	242	1	84	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p021-ar-00021"	"SKCM"	"Partial Response"	0	906	0	906	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p022-ar-00577"	"SKCM"	"Progressive Disease"	1	253	1	91	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p023-ar-00568"	"SKCM"	"Progressive Disease"	0	975	1	77	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p024-ar-99999"	"SKCM"	"Progressive Disease"	1	137	1	31	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p025-ar-00546"	"SKCM"	"Partial Response"	0	1096	1	752	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p027-ar-99995"	"SKCM"	"Progressive Disease"	1	431	1	94	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p030-ar-00583"	"SKCM"	"Stable Disease"	1	213	1	133	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p031-ar-00552"	"SKCM"	"Progressive Disease"	1	426	1	85	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p032-ar-99993"	"SKCM"	"Progressive Disease"	1	53	1	49	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p033-ar-99975"	"SKCM"	"Partial Response"	0	1679	0	1679	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p034-ar-99996"	"SKCM"	"Partial Response"	0	1691	1	240	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p035-ar-99977"	"SKCM"	"Stable Disease"	1	968	1	181	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p036-ar-00003"	"SKCM"	"Progressive Disease"	1	451	1	63	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p037-ar-00557"	"SKCM"	"Progressive Disease"	1	275	1	77	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p038-ar-00590"	"SKCM"	"Progressive Disease"	1	343	1	98	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p040-ar-00595"	"SKCM"	"Progressive Disease"	1	468	1	63	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p042-ar-99979"	"SKCM"	"Complete Response"	0	1027	0	1027	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p044-ar-00579"	"SKCM"	"Partial Response"	0	922	0	922	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p045-ar-00548"	"SKCM"	"Partial Response"	0	1666	0	1666	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p047-ar-00006"	"SKCM"	"Progressive Disease"	0	937	1	74	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p048-ar-00578"	"SKCM"	"Progressive Disease"	1	53	1	50	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p051-ar-00576"	"SKCM"	"Partial Response"	0	1547	1	471	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p056-ar-00019"	"SKCM"	"Progressive Disease"	1	122	1	71	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p058-ar-99997"	"SKCM"	"Progressive Disease"	1	303	1	77	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p061-ar-00593"	"SKCM"	"Stable Disease"	0	987	0	987	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p062-ar-99983"	"SKCM"	"Partial Response"	0	1001	0	1001	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p063-ar-99998"	"SKCM"	"Progressive Disease"	1	178	1	89	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p067-ar-00563"	"SKCM"	"Progressive Disease"	1	136	1	94	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p072-ar-99991"	"SKCM"	"Progressive Disease"	0	395	1	67	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p073-ar-99994"	"SKCM"	"Progressive Disease"	1	846	1	85	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p075-ar-00562"	"SKCM"	"Partial Response"	0	891	1	891	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p077-ar-99985"	"SKCM"	"Progressive Disease"	1	444	1	95	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p078-ar-00575"	"SKCM"	"Progressive Disease"	1	356	1	86	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p079-ar-00573"	"SKCM"	"Progressive Disease"	0	849	1	84	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p082-ar-99980"	"SKCM"	"Progressive Disease"	1	131	1	89	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p083-ar-99984"	"SKCM"	"Progressive Disease"	1	71	1	71	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p086-ar-00571"	"SKCM"	"Stable Disease"	0	1327	1	1327	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p087-ar-00596"	"SKCM"	"Partial Response"	0	1263	1	1142	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p094-ar-00586"	"SKCM"	"Progressive Disease"	1	40	1	40	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p096-ar-00550"	"SKCM"	"Complete Response"	0	913	0	913	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p098-ar-00584"	"SKCM"	"Progressive Disease"	1	683	1	73	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p099-ar-00566"	"SKCM"	"Partial Response"	0	921	1	319	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p100-ar-42349"	"SKCM"	"Partial Response"	1	938	0	922	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p102-ar-42356"	"SKCM"	"Stable Disease"	0	785	1	176	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p105-ar-42347"	"SKCM"	"Stable Disease"	1	521	0	378	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p106-ar-41996"	"SKCM"	"Complete Response"	0	780	0	780	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p107-ar-42358"	"SKCM"	"Partial Response"	1	47	1	47	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p108-ar-42068"	"SKCM"	"Progressive Disease"	1	165	1	77	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p112-ar-41921"	"SKCM"	"Progressive Disease"	1	521	1	91	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p116-ar-42360"	"SKCM"	"Progressive Disease"	1	118	1	64	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p117-ar-42367"	"SKCM"	"Progressive Disease"	1	295	1	100	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p121-ar-42364"	"SKCM"	"Partial Response"	0	1306	1	1228	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p125-ar-42377"	"SKCM"	"Complete Response"	0	978	0	978	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p126-ar-42369"	"SKCM"	"Partial Response"	0	992	1	742	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p127-ar-42378"	"SKCM"	"Complete Response"	0	866	0	866	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p130-ar-42380"	"SKCM"	"Progressive Disease"	1	192	1	124	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p131-ar-42368"	"SKCM"	"Partial Response"	0	833	0	833	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p132-ar-42376"	"SKCM"	"Complete Response"	0	739	1	389	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p133-ar-42379"	"SKCM"	"Progressive Disease"	1	370	1	63	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p134-ar-42365"	"SKCM"	"Progressive Disease"	1	590	1	63	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p135-ar-42371"	"SKCM"	"Complete Response"	0	628	0	628	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p137-ar-42366"	"SKCM"	"Complete Response"	0	772	0	772	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p140-ar-42381"	"SKCM"	"Progressive Disease"	1	351	1	67	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p141-ar-42375"	"SKCM"	"Partial Response"	0	875	0	875	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p142-ar-99955"	"SKCM"	"Stable Disease"	0	996	0	996	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p143-ar-00559"	"SKCM"	"Progressive Disease"	0	630	1	153	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p144-ar-00018"	"SKCM"	"Partial Response"	0	662	0	662	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p145-ar-99986"	"SKCM"	"Complete Response"	0	833	0	833	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p146-ar-00580"	"SKCM"	"Complete Response"	0	612	0	612	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p147-ar-00553"	"SKCM"	"Complete Response"	0	960	0	960	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p148-ar-00014"	"SKCM"	"Partial Response"	0	792	0	792	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p149-ar-99973"	"SKCM"	"Stable Disease"	1	497	1	210	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p150-ar-00558"	"SKCM"	"Partial Response"	0	685	0	685	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p154-ar-00010"	"SKCM"	"Stable Disease"	0	635	1	251	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p155-ar-99989"	"SKCM"	"Progressive Disease"	0	475	1	113	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p156-ar-99967"	"SKCM"	"Progressive Disease"	1	87	1	80	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p158-ar-00561"	"SKCM"	"Partial Response"	0	194	1	162	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p159-ar-00565"	"SKCM"	"Stable Disease"	0	288	1	216	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p162-ar-00555"	"SKCM"	"Progressive Disease"	1	201	1	53	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p163-ar-99974"	"SKCM"	"Progressive Disease"	1	173	1	48	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p165-ar-00569"	"SKCM"	"Progressive Disease"	0	75	1	13	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p166-ar-00581"	"SKCM"	"Partial Response"	1	205	0	205	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p167-ar-00582"	"SKCM"	"Progressive Disease"	1	282	1	57	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p168-ar-00000"	"SKCM"	"Partial Response"	0	623	0	580	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p169-ar-00572"	"SKCM"	"Partial Response"	0	543	0	543	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p170-ar-00549"	"SKCM"	"Stable Disease"	0	347	0	347	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p172-ar-99987"	"SKCM"	"Stable Disease"	0	272	1	272	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p173-ar-00015"	"SKCM"	"Progressive Disease"	1	42	1	16	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p179-ar-00570"	"SKCM"	"Partial Response"	0	653	1	336	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p181-ar-99981"	"SKCM"	"Complete Response"	0	476	0	476	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p183-ar-00011"	"SKCM"	"Progressive Disease"	1	572	1	84	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p184-ar-00547"	"SKCM"	"Complete Response"	0	513	0	372	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p185-ar-00554"	"SKCM"	"Stable Disease"	0	203	0	203	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p187-ar-99988"	"SKCM"	"Complete Response"	0	617	0	617	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p188-ar-99976"	"SKCM"	"Progressive Disease"	1	74	1	23	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p189-ar-99982"	"SKCM"	"Partial Response"	0	718	1	406	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p191-ar-00008"	"SKCM"	"Partial Response"	0	658	0	658	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p192-ar-00591"	"SKCM"	"Partial Response"	0	290	1	249	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p193-ar-00002"	"SKCM"	"Stable Disease"	0	659	1	476	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p195-ar-00556"	"SKCM"	"Partial Response"	0	895	0	895	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p196-ar-00016"	"SKCM"	"Progressive Disease"	1	81	1	81	NA	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p197-ar-00551"	"SKCM"	"Partial Response"	0	960	1	89	NA	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p200-ar-00009"	"SKCM"	"Progressive Disease"	1	512	1	108	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p201-ar-00592"	"SKCM"	"Progressive Disease"	1	167	1	69	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p203-ar-99990"	"SKCM"	"Progressive Disease"	1	626	1	99	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p204-ar-00589"	"SKCM"	"Complete Response"	0	819	0	630	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p205-ar-00013"	"SKCM"	"Progressive Disease"	1	392	1	190	NA	"Female"	""	"Pembro"	TRUE	FALSE	TRUE
+"Liu_NatMed_2019-p206-ar-00585"	"SKCM"	"Progressive Disease"	1	90	1	42	NA	"Male"	""	"Pembro"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0005-ar-201"	"KIRC"	"Progressive Disease"	0	277	1	168	62	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0007-ar-200"	"KIRC"	"Partial Response"	0	448	0	448	60	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0010-ar-191"	"KIRC"	"Complete Response"	0	454	0	454	51	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0011-ar-202"	"KIRC"	"Progressive Disease"	1	327	1	205	40	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0012-ar-206"	"KIRC"	"Progressive Disease"	0	581	1	61	67	"Male"	""	"Atezo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0013-ar-204"	"KIRC"	"Partial Response"	0	399	0	399	66	"Male"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0014-ar-199"	"KIRC"	"Stable Disease"	0	433	0	433	68	"Female"	""	"Ipi + Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0015-ar-194"	"KIRC"	"Progressive Disease"	1	814	1	105	71	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0018-ar-195"	"KIRC"	"Partial Response"	1	1189	1	672	69	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0019-ar-196"	"KIRC"	"Stable Disease"	0	230	1	220	60	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0020-ar-193"	"KIRC"	"Progressive Disease"	0	203	1	47	64	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0021-ar-190"	"KIRC"	"Progressive Disease"	1	185	1	68	63	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0022-ar-198"	"KIRC"	"Progressive Disease"	0	247	1	80	66	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0023-ar-197"	"KIRC"	"Partial Response"	0	637	0	637	69	"Male"	""	"Atezo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0024-ar-192"	"KIRC"	"Progressive Disease"	1	304	1	41	52	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0025-ar-205"	"KIRC"	"Stable Disease"	0	1724	1	333	74	"Male"	""	"Nivo"	TRUE	FALSE	TRUE
+"Miao_Science_2018-p0026-ar-203"	"KIRC"	"Stable Disease"	0	377	1	171	70	"Female"	""	"Nivo"	TRUE	FALSE	TRUE
+"Prins_GBM_2019-DF02-ar-DF02"	"GBM"	"Progressive Disease"	1	265	1	74	60.7138888888889	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-DF03-ar-DF03"	"GBM"	"Stable Disease"	1	400	1	229	68.8083333333333	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF04-ar-DF04"	"GBM"	"Progressive Disease"	1	249	1	57	63.275	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF05-ar-DF05"	"GBM"	"Stable Disease"	0	575	1	414	67.0833333333333	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF06-ar-DF06"	"GBM"	"Progressive Disease"	0	572	1	72	66.7277777777778	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF07-ar-DF07"	"GBM"	"Progressive Disease"	1	88	1	71	61.0888888888889	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF10-ar-DF10"	"GBM"	"Progressive Disease"	1	117	1	77	66.6416666666667	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-DF11-ar-DF11"	"GBM"	""	1	51	1	51	65.9694444444445	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-DF12-ar-DF12"	"GBM"	"Progressive Disease"	1	398	1	81	54.9972222222222	"Male"	""	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF16-ar-DF16"	"GBM"	"Progressive Disease"	1	400	1	74	60.7027777777778	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF19-ar-DF19"	"GBM"	"Stable Disease"	0	476	0	455	35.025	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-DF22-ar-DF22"	"GBM"	"Progressive Disease"	1	113	1	60	72.8611111111111	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-DF26-ar-DF26"	"GBM"	"Stable Disease"	0	401	1	155	31.4277777777778	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-LA33-ar-LA33"	"GBM"	"Stable Disease"	1	180	1	109	58.9972222222222	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-MA15-ar-MA15"	"GBM"	"Progressive Disease"	1	102	1	63	57.325	"Male"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-MA23-ar-MA23"	"GBM"	"Progressive Disease"	1	161	1	82	55.1	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-MA31-ar-MA31"	"GBM"	"Progressive Disease"	1	79	1	51	67.8305555555556	"Male"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-MA35-ar-MA35"	"GBM"	"Progressive Disease"	0	266	1	79	65.5194444444445	"Male"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SF17-ar-SF17"	"GBM"	"Progressive Disease"	1	192	1	84	59.4527777777778	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SF20-ar-SF20"	"GBM"	"Progressive Disease"	1	340	1	125	68.7888888888889	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SF24-ar-SF24"	"GBM"	"Progressive Disease"	1	139	1	65	52.0388888888889	"Female"	""	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SF29-ar-SF29"	"GBM"	"Stable Disease"	0	376	1	307	30.3083333333333	"Female"	""	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SK08-ar-SK08"	"GBM"	"Stable Disease"	1	434	1	375	63.1583333333333	"Male"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-SK14-ar-SK14"	"GBM"	"Stable Disease"	0	493	1	257	71.6	"Female"	"African"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SK21-ar-SK21"	"GBM"	"Progressive Disease"	1	190	1	35	72.1055555555556	"Male"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-SK28-ar-SK28"	"GBM"	""	NA	NA	NA	NA	NA	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-SK30-ar-SK30"	"GBM"	"Progressive Disease"	1	368	1	71	56.3388888888889	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Prins_GBM_2019-TX27-ar-TX27"	"GBM"	"Stable Disease"	0	418	1	263	65.7333333333333	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-UT25-ar-UT25"	"GBM"	"Progressive Disease"	1	289	1	74	69.5916666666667	"Female"	"Caucasian"	"Pembro"	TRUE	FALSE	FALSE
+"Prins_GBM_2019-UT34-ar-UT34"	"GBM"	"Progressive Disease"	1	267	1	74	35.9444444444444	"Female"	"Caucasian"	"Pembro"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p001-ar-8814"	"SKCM"	"Progressive Disease"	1	160.00000002	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p001-ar-8813"	"SKCM"	"Progressive Disease"	1	160.00000002	NA	NA	NA	""	""	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p002-ar-8816"	"SKCM"	"Stable Disease"	1	275.00000003	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p002-ar-8815"	"SKCM"	"Stable Disease"	1	275.00000003	NA	NA	NA	""	""	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p003-ar-8877"	"SKCM"	"Partial Response"	0	1143.9999998	NA	NA	52	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p003-ar-8878"	"SKCM"	"Partial Response"	0	1143.9999998	NA	NA	52	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p004-ar-8879"	"SKCM"	"Stable Disease"	1	633.00000001	NA	NA	62	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p004-ar-8880"	"SKCM"	"Stable Disease"	1	633.00000001	NA	NA	62	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p005-ar-8882"	"SKCM"	"Progressive Disease"	1	221.99999997	NA	NA	58	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p005-ar-8883"	"SKCM"	"Progressive Disease"	1	221.99999997	NA	NA	58	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p008-ar-8914"	"SKCM"	"Progressive Disease"	1	259	NA	NA	40	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p008-ar-8915"	"SKCM"	"Progressive Disease"	1	259	NA	NA	40	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p009-ar-8886"	"SKCM"	"Progressive Disease"	1	91.99999998	NA	NA	46	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p009-ar-8885"	"SKCM"	"Progressive Disease"	1	91.99999998	NA	NA	46	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p010-ar-8888"	"SKCM"	"Stable Disease"	1	255.99999999	NA	NA	81	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p010-ar-8887"	"SKCM"	"Stable Disease"	1	255.99999999	NA	NA	81	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p011-ar-8916"	"SKCM"	"Progressive Disease"	1	837.0000002	NA	NA	61	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p011-ar-8917"	"SKCM"	"Progressive Disease"	1	837.0000002	NA	NA	61	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p013-ar-8918"	"SKCM"	"Progressive Disease"	1	280	NA	NA	67	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p016-ar-8919"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p017-ar-8890"	"SKCM"	"Progressive Disease"	1	57.000000001	NA	NA	48	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p017-ar-8889"	"SKCM"	"Progressive Disease"	1	57.000000001	NA	NA	48	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p018-ar-8891"	"SKCM"	"Partial Response"	0	1073.0000001	NA	NA	53	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p018-ar-8892"	"SKCM"	"Partial Response"	0	1073.0000001	NA	NA	53	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p023-ar-8817"	"SKCM"	""	1	52.000000003	NA	NA	53	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p023-ar-8818"	"SKCM"	""	1	52.000000003	NA	NA	53	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p024-ar-8906"	"SKCM"	"Progressive Disease"	0	149.00000003	NA	NA	63	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p026-ar-8921"	"SKCM"	"Stable Disease"	0	952	NA	NA	22	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p026-ar-8920"	"SKCM"	"Stable Disease"	0	952	NA	NA	22	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p027-ar-8907"	"SKCM"	"Progressive Disease"	1	475.00000002	NA	NA	65	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p027-ar-8908"	"SKCM"	"Progressive Disease"	1	475.00000002	NA	NA	65	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p028-ar-8922"	"SKCM"	"Progressive Disease"	1	739.9999999	NA	NA	79	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p028-ar-8923"	"SKCM"	"Progressive Disease"	1	739.9999999	NA	NA	79	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p029-ar-8909"	"SKCM"	"Progressive Disease"	1	273	NA	NA	57	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p030-ar-8911"	"SKCM"	"Complete Response"	0	1052.9999998	NA	NA	89	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p030-ar-8910"	"SKCM"	"Complete Response"	0	1052.9999998	NA	NA	89	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p031-ar-8913"	"SKCM"	"Progressive Disease"	0	961.0000001	NA	NA	56	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p031-ar-8912"	"SKCM"	"Progressive Disease"	0	961.0000001	NA	NA	56	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p032-ar-8893"	"SKCM"	"Progressive Disease"	0	114.00000003	NA	NA	34	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p034-ar-8929"	"SKCM"	"Partial Response"	0	833.9999997	NA	NA	71	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p034-ar-8928"	"SKCM"	"Partial Response"	0	833.9999997	NA	NA	71	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p035-ar-8930"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p036-ar-8899"	"SKCM"	"Stable Disease"	0	1080.9999998	NA	NA	58	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p036-ar-8898"	"SKCM"	"Stable Disease"	0	1080.9999998	NA	NA	58	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p037-ar-8903"	"SKCM"	"Stable Disease"	1	646.00000003	NA	NA	63	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p037-ar-8900"	"SKCM"	"Stable Disease"	1	646.00000003	NA	NA	63	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p038-ar-8894"	"SKCM"	"Stable Disease"	1	167.00000002	NA	NA	54	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p038-ar-8895"	"SKCM"	"Stable Disease"	1	167.00000002	NA	NA	54	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p039-ar-8819"	"SKCM"	"Progressive Disease"	1	165.99999997	NA	NA	NA	""	""	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p044-ar-8924"	"SKCM"	"Partial Response"	0	1092.9999997	NA	NA	61	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p044-ar-8925"	"SKCM"	"Partial Response"	0	1092.9999997	NA	NA	61	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p046-ar-8904"	"SKCM"	"Progressive Disease"	1	227.00000001	NA	NA	79	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p046-ar-8905"	"SKCM"	"Progressive Disease"	1	227.00000001	NA	NA	79	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p047-ar-8836"	"SKCM"	"Progressive Disease"	1	718.0000002	NA	NA	52	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p047-ar-8837"	"SKCM"	"Progressive Disease"	1	718.0000002	NA	NA	52	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p048-ar-8896"	"SKCM"	"Complete Response"	0	1045.9999998	NA	NA	44	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p048-ar-8897"	"SKCM"	"Complete Response"	0	1045.9999998	NA	NA	44	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p049-ar-8824"	"SKCM"	"Partial Response"	0	826.9999997	NA	NA	52	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p049-ar-8825"	"SKCM"	"Partial Response"	0	826.9999997	NA	NA	52	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p052-ar-8839"	"SKCM"	"Progressive Disease"	1	476	NA	NA	45	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p052-ar-8838"	"SKCM"	"Progressive Disease"	1	476	NA	NA	45	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p058-ar-8820"	"SKCM"	"Stable Disease"	1	499.00000003	NA	NA	53	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p059-ar-8821"	"SKCM"	"Stable Disease"	1	707.9999997	NA	NA	49	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p062-ar-8856"	"SKCM"	"Progressive Disease"	1	472.00000001	NA	NA	NA	""	""	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p062-ar-8855"	"SKCM"	"Progressive Disease"	1	472.00000001	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p065-ar-8858"	"SKCM"	"Stable Disease"	0	692.00000002	NA	NA	63	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p065-ar-8857"	"SKCM"	"Stable Disease"	0	692.00000002	NA	NA	63	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p066-ar-8826"	"SKCM"	"Progressive Disease"	1	542.00000001	NA	NA	49	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p067-ar-8840"	"SKCM"	"Stable Disease"	0	1031.9999998	NA	NA	33	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p067-ar-8841"	"SKCM"	"Stable Disease"	0	1031.9999998	NA	NA	33	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p068-ar-8859"	"SKCM"	"Partial Response"	0	842.0000001	NA	NA	69	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p069-ar-8860"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p072-ar-8861"	"SKCM"	"Partial Response"	1	770	NA	NA	43	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p076-ar-8827"	"SKCM"	""	1	10.000000003	NA	NA	60	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p077-ar-8847"	"SKCM"	"Stable Disease"	1	471.00000003	NA	NA	56	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p077-ar-8846"	"SKCM"	"Stable Disease"	1	471.00000003	NA	NA	56	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p078-ar-8862"	"SKCM"	"Progressive Disease"	1	77.99999998	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p078-ar-8864"	"SKCM"	"Progressive Disease"	1	77.99999998	NA	NA	NA	""	""	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p079-ar-8848"	"SKCM"	"Stable Disease"	1	217.99999998	NA	NA	64	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p079-ar-8849"	"SKCM"	"Stable Disease"	1	217.99999998	NA	NA	64	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p080-ar-8865"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p081-ar-8828"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p082-ar-8823"	"SKCM"	"Stable Disease"	1	429.00000003	NA	NA	60	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p082-ar-8822"	"SKCM"	"Stable Disease"	1	429.00000003	NA	NA	60	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p084-ar-8851"	"SKCM"	"Progressive Disease"	1	150.99999999	NA	NA	48	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p084-ar-8850"	"SKCM"	"Progressive Disease"	1	150.99999999	NA	NA	48	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p085-ar-8829"	"SKCM"	"Progressive Disease"	0	903.9999997	NA	NA	66	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p085-ar-8830"	"SKCM"	"Progressive Disease"	0	903.9999997	NA	NA	66	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p087-ar-8852"	"SKCM"	"Stable Disease"	0	973.9999997	NA	NA	68	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p089-ar-8831"	"SKCM"	"Stable Disease"	1	844.0000002	NA	NA	56	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p089-ar-8832"	"SKCM"	"Stable Disease"	1	844.0000002	NA	NA	56	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p090-ar-8866"	"SKCM"	"Progressive Disease"	1	174.00000002	NA	NA	60	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p092-ar-8867"	"SKCM"	"Stable Disease"	1	332.99999999	NA	NA	58	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p092-ar-8870"	"SKCM"	"Stable Disease"	1	332.99999999	NA	NA	58	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p093-ar-8833"	"SKCM"	"Progressive Disease"	0	849.0000001	NA	NA	52	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p094-ar-8842"	"SKCM"	"Complete Response"	0	980.9999997	NA	NA	41	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p094-ar-8843"	"SKCM"	"Complete Response"	0	980.9999997	NA	NA	41	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p098-ar-8854"	"SKCM"	"Stable Disease"	1	746.9999999	NA	NA	74	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p098-ar-8853"	"SKCM"	"Stable Disease"	1	746.9999999	NA	NA	74	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p101-ar-8835"	"SKCM"	"Partial Response"	0	833.9999997	NA	NA	47	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p101-ar-8834"	"SKCM"	"Partial Response"	0	833.9999997	NA	NA	47	"Female"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p103-ar-8872"	"SKCM"	"Progressive Disease"	0	483.99999998	NA	NA	52	"Female"	"Asian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p103-ar-8871"	"SKCM"	"Progressive Disease"	0	483.99999998	NA	NA	52	"Female"	"Asian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p105-ar-8844"	"SKCM"	""	NA	NA	NA	NA	NA	""	""	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p106-ar-8926"	"SKCM"	"Progressive Disease"	1	91	NA	NA	53	"Male"	"Caucasian"	"Nivo"	TRUE	FALSE	FALSE
+"Riaz_Nivolumab_2017-p106-ar-8927"	"SKCM"	"Progressive Disease"	1	91	NA	NA	53	"Male"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"Riaz_Nivolumab_2017-p108-ar-8845"	"SKCM"	"Stable Disease"	0	912.9999998	NA	NA	37	"Female"	"Caucasian"	"Nivo"	TRUE	TRUE	FALSE
+"VanAllen_antiCTLA4_2015-p002-ar-689710"	"SKCM"	"Stable Disease"	0	1632	1	538	42	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p004-ar-780275"	"SKCM"	"Partial Response"	0	987	0	646	71	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p004-ar-689711"	"SKCM"	"Partial Response"	0	987	0	646	71	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p006-ar-774280"	"SKCM"	"Progressive Disease"	1	161	1	77	33	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p008-ar-778361"	"SKCM"	"Progressive Disease"	1	140	1	73	73	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p014-ar-771207"	"SKCM"	"Progressive Disease"	1	163	1	84	48	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p015-ar-669446"	"SKCM"	"Progressive Disease"	1	50	1	31	32	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p016-ar-780299"	"SKCM"	"Progressive Disease"	1	811	1	84	68	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p019-ar-774182"	"SKCM"	"Progressive Disease"	1	175	1	21	59	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p020-ar-672095"	"SKCM"	"Progressive Disease"	1	116	1	71	78	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p025-ar-755094"	"SKCM"	"Progressive Disease"	1	325	1	67	69	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p027-ar-771617"	"SKCM"	"Progressive Disease"	0	1379	1	139	61	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p028-ar-660032"	"SKCM"	"Progressive Disease"	1	1184	1	77	77	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p029-ar-681702"	"SKCM"	""	0	1326	1	341	82	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p033-ar-779097"	"SKCM"	"Progressive Disease"	1	211	1	211	65	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p036-ar-777976"	"SKCM"	"Progressive Disease"	1	54	1	41	52	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p037-ar-778466"	"SKCM"	"Progressive Disease"	1	70	1	23	47	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p038-ar-778056"	"SKCM"	"Partial Response"	0	1539	1	302	45	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p039-ar-665516"	"SKCM"	"Complete Response"	0	1487	0	1487	67	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p040-ar-751521"	"SKCM"	"Progressive Disease"	1	34	1	34	74	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p041-ar-083584"	"SKCM"	"Progressive Disease"	1	128	1	54	64	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p043-ar-771286"	"SKCM"	"Progressive Disease"	1	37	1	37	75	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p044-ar-780123"	"SKCM"	"Progressive Disease"	1	271	1	62	57	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p045-ar-777065"	"SKCM"	"Progressive Disease"	1	89	1	61	68	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p046-ar-777217"	"SKCM"	"Progressive Disease"	1	160	1	36	36	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p047-ar-771707"	"SKCM"	"Complete Response"	0	1106	0	1106	78	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p049-ar-778078"	"SKCM"	"Stable Disease"	0	1034	1	163	36	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p050-ar-700736"	"SKCM"	"Progressive Disease"	1	65	1	65	77	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p079-ar-753064"	"SKCM"	"Partial Response"	1	801	1	405	69	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p080-ar-674135"	"SKCM"	"Stable Disease"	1	724	1	182	48	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p081-ar-661579"	"SKCM"	"Progressive Disease"	1	628	1	76	54	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p083-ar-778609"	"SKCM"	"Progressive Disease"	0	1027	1	107	22	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p085-ar-779183"	"SKCM"	"Progressive Disease"	1	458	1	83	83	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p086-ar-775133"	"SKCM"	"Stable Disease"	1	293	1	153	55	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p088-ar-712420"	"SKCM"	"Stable Disease"	0	989	0	665	60	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p090-ar-757338"	"SKCM"	"Partial Response"	0	1005	0	669	59	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p091-ar-701663"	"SKCM"	"Stable Disease"	1	680	0	680	81	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p098-ar-083781"	"SKCM"	"Progressive Disease"	1	140	1	77	57	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p118-ar-772780"	"SKCM"	"Progressive Disease"	1	313	1	120	43	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p119-ar-770872"	"SKCM"	"Progressive Disease"	0	808	1	108	61	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p123-ar-779596"	"SKCM"	"Stable Disease"	1	853	1	544	50	"Female"	""	"Ipi"	TRUE	FALSE	TRUE
+"VanAllen_antiCTLA4_2015-p126-ar-675767"	"SKCM"	"Partial Response"	0	641	1	187	77	"Male"	""	"Ipi"	TRUE	FALSE	TRUE
+"Zhao_NatMed_2019-Pt003-ar-228"	"GBM"	""	0	774	0	181	41	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt003-ar-231"	"GBM"	""	0	774	0	181	41	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt013-ar-224"	"GBM"	""	1	1692	NA	44	55	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt013-ar-225"	"GBM"	""	1	1692	NA	44	55	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt013-ar-222"	"GBM"	""	1	1692	NA	44	55	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt020-ar-219"	"GBM"	""	1	1033	1	110	63	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt020-ar-221"	"GBM"	""	1	1033	1	110	63	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt020-ar-218"	"GBM"	""	1	1033	1	110	63	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt021-ar-220"	"GBM"	""	1	312	NA	NA	59	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt021-ar-223"	"GBM"	""	1	312	NA	NA	59	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt024-ar-229"	"GBM"	""	0	1112	1	84	33	"Female"	""	"Pembro"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt025-ar-249"	"GBM"	""	1	1626	1	273	34	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt046-ar-237"	"GBM"	""	0	1380	0	315	63	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt046-ar-234"	"GBM"	""	0	1380	0	315	63	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt053-ar-226"	"GBM"	""	1	951	1	83	70	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt053-ar-236"	"GBM"	""	1	951	1	83	70	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt053-ar-227"	"GBM"	""	1	951	1	83	70	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt055-ar-248"	"GBM"	""	0	704	1	344	66	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt055-ar-247"	"GBM"	""	0	704	1	344	66	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt056-ar-233"	"GBM"	""	1	595	1	83	54	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt056-ar-230"	"GBM"	""	1	595	1	83	54	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt069-ar-232"	"GBM"	""	1	465	1	62	66	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt069-ar-235"	"GBM"	""	1	465	1	62	66	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt071-ar-246"	"GBM"	""	1	485	0	412	69	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt100-ar-244"	"GBM"	""	0	1425	1	151	31	"Male"	""	"Pembro"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt100-ar-245"	"GBM"	""	0	1425	1	151	31	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt101-ar-242"	"GBM"	""	1	1386	1	NA	32	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt101-ar-251"	"GBM"	""	1	1386	1	NA	32	"Male"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt101-ar-243"	"GBM"	""	1	1386	1	NA	32	"Male"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt102-ar-238"	"GBM"	""	0	729	0	519	64	"Female"	""	"Nivo"	TRUE	TRUE	NA
+"Zhao_NatMed_2019-Pt102-ar-250"	"GBM"	""	0	729	0	519	64	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt103-ar-239"	"GBM"	""	0	438	0	358	63	"Male"	""	"Pembro"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt104-ar-240"	"GBM"	""	0	1414	0	259	41	"Female"	""	"Nivo"	TRUE	FALSE	NA
+"Zhao_NatMed_2019-Pt104-ar-241"	"GBM"	""	0	1414	0	259	41	"Female"	""	"Nivo"	TRUE	TRUE	NA

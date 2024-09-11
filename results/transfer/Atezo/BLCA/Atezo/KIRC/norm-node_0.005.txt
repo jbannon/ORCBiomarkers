@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 2 best are: ['CHAF1A' 'KPNA2']
+For measure f_meas the 2 best are: ['CHAF1A' 'KPNA2']
+For measure mi the 2 best are: ['RANBP2' 'CHAF1B']
+
+The intersection of all gives: set()
+The two count: ['CHAF1A', 'KPNA2']
+
+
+ALL
+--------
+For measure chi2 the 2 best are: ['CHAF1A' 'KPNA2']
+For measure f_meas the 2 best are: ['CHAF1A' 'KPNA2']
+For measure mi the 2 best are: ['RANBP2' 'CHAF1B']
+
+The intersection of all gives: set()
+The two count: ['CHAF1A', 'KPNA2']
+
+

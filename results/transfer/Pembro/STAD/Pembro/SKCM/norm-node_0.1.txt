@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 6 best are: ['CCL5' 'CXCR3' 'GZMB' 'PRF1' 'CCR1' 'GNAI1']
+For measure f_meas the 6 best are: ['CCL5' 'CXCR3' 'GZMB' 'PRF1' 'A2M' 'GNAI1']
+For measure mi the 6 best are: ['CCR5' 'CXCR3' 'PRF1' 'CXCL9' 'CD36' 'GNAI1']
+
+The intersection of all gives: {'CXCR3', 'PRF1', 'GNAI1'}
+The two count: ['CXCR3', 'PRF1', 'GNAI1', 'CCL5', 'GZMB']
+
+
+ALL
+--------
+For measure chi2 the 6 best are: ['CCR5' 'CCL5' 'CXCR3' 'GZMB' 'PRF1' 'CCR1']
+For measure f_meas the 6 best are: ['CCL5' 'CXCR3' 'PRF1' 'A2M' 'CCR1' 'GNAI1']
+For measure mi the 6 best are: ['CCR5' 'CXCR3' 'PRF1' 'CXCL9' 'CD36' 'GNAI1']
+
+The intersection of all gives: {'CXCR3', 'PRF1'}
+The two count: ['CXCR3', 'PRF1', 'CCR5', 'CCL5', 'CCR1', 'GNAI1']
+
+

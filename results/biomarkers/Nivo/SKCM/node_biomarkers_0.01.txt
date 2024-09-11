@@ -1,0 +1,4 @@
+At threshold 0.005 we have the genes: ['CLSPN ', 'PLK3 ']
+At threshold 0.01 we have the genes: ['CLSPN ', 'PLK3 ']
+At threshold 0.05 we have the genes: ['CLSPN ', 'PLK3 ']
+At threshold 0.1 we have the genes: ['CLSPN ', 'PLK3 ']

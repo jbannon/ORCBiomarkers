@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 2 best are: ['CXCR3' 'CXCL8']
+For measure f_meas the 2 best are: ['CXCL8' 'IL6R']
+For measure mi the 2 best are: ['CXCL8' 'IL6R']
+
+The intersection of all gives: {'CXCL8'}
+The two count: ['CXCL8', 'IL6R']
+
+
+ALL
+--------
+For measure chi2 the 2 best are: ['CXCR3' 'CXCL8']
+For measure f_meas the 2 best are: ['CXCL9' 'IL6R']
+For measure mi the 2 best are: ['CXCL8' 'IL6R']
+
+The intersection of all gives: set()
+The two count: ['CXCL8', 'IL6R']
+
+

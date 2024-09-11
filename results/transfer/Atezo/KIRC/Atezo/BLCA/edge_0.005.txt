@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 2 best are: ['CXCL13' 'CXCL9']
+For measure f_meas the 2 best are: ['CXCL10' 'CXCL9']
+For measure mi the 2 best are: ['CXCL10' 'CXCL9']
+
+The intersection of all gives: {'CXCL9'}
+The two count: ['CXCL9', 'CXCL10']
+
+
+ALL
+--------
+For measure chi2 the 2 best are: ['CXCL13' 'CXCL9']
+For measure f_meas the 2 best are: ['CXCL10' 'CXCL9']
+For measure mi the 2 best are: ['CXCL10' 'CXCL9']
+
+The intersection of all gives: {'CXCL9'}
+The two count: ['CXCL9', 'CXCL10']
+
+

@@ -1,9 +1,10 @@
 EXPERIMENT_PARAMS:
   drug: 'Atezo'
-  sources: ['BLCA','KIRC']
-  targets: ['BLCA','KIRC']
+  target_drug: 'Atezo'
+  source_tissues: ['BLCA','KIRC']
+  target_tissues: ['BLCA','KIRC']
   rng_seed: 12345
-  n_iters: 100
+  n_iters: 50
  
 DIRECTORIES:
   data_dir: "../data/expression"

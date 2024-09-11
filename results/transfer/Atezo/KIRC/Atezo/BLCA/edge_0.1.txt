@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['CCL5' 'CXCL13' 'CXCL9' 'CD8A' 'IL6' 'KLRK1' 'TREM1' 'NLRP12' 'CXCL10'
+ 'EGR1']
+For measure f_meas the 10 best are: ['CCL5' 'CXCL13' 'CXCL9' 'STAT3' 'TREM1' 'NLRP12' 'STAT1' 'CXCL10' 'EGR1'
+ 'TAP1']
+For measure mi the 10 best are: ['CXCL9' 'CD8B' 'CD8A' 'CXCL8' 'CARD11' 'NLRP12' 'SLAMF1' 'IL2RB' 'HLA-B'
+ 'TAP1']
+
+The intersection of all gives: {'CXCL9', 'NLRP12'}
+The two count: ['NLRP12', 'CXCL9', 'CCL5', 'TAP1', 'CXCL13', 'CXCL10', 'EGR1', 'TREM1', 'CD8A']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['CCL5' 'CXCL13' 'CXCL9' 'CD8B' 'CD8A' 'IL6' 'KLRK1' 'TREM1' 'NLRP12'
+ 'CXCL10']
+For measure f_meas the 10 best are: ['CCL5' 'CXCL13' 'CXCL9' 'STAT3' 'CARD11' 'NLRP12' 'STAT1' 'CXCL10' 'EGR1'
+ 'TAP1']
+For measure mi the 10 best are: ['CXCL9' 'CD8B' 'CD8A' 'CXCL8' 'CARD11' 'NLRP12' 'SLAMF1' 'IL2RB' 'HLA-B'
+ 'TAP1']
+
+The intersection of all gives: {'CXCL9', 'NLRP12'}
+The two count: ['NLRP12', 'CXCL9', 'CCL5', 'TAP1', 'CARD11', 'CXCL13', 'CXCL10', 'CD8A', 'CD8B']
+
+

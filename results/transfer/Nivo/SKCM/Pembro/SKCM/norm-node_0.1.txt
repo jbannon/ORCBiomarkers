@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['WASL' 'MMP9' 'HGF' 'RUNX2' 'RUBCN' 'WIPI2' 'FCGR1A' 'PIK3AP1' 'MAST2'
+ 'DOCK8']
+For measure f_meas the 10 best are: ['FUNDC1' 'WASL' 'MMP9' 'TAF9B' 'RUNX2' 'ABCA1' 'WIPI2' 'PHLPP2' 'FCGR1A'
+ 'MAST2']
+For measure mi the 10 best are: ['NCF1' 'CYBB' 'STAT1' 'CLSPN' 'HGF' 'ITPR1' 'WIPI2' 'DYSF' 'PIK3AP1'
+ 'INPP5D']
+
+The intersection of all gives: {'WIPI2'}
+The two count: ['WIPI2', 'WASL', 'HGF', 'RUNX2', 'FCGR1A', 'PIK3AP1', 'MAST2', 'MMP9']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['FUNDC1' 'WASL' 'MMP9' 'HGF' 'RUNX2' 'ABCA1' 'RUBCN' 'TECPR1' 'FCGR1A'
+ 'MAST2']
+For measure f_meas the 10 best are: ['FUNDC1' 'WASL' 'HGF' 'TAF9B' 'RUNX2' 'ABCA1' 'WIPI2' 'PHLPP2' 'FCGR1A'
+ 'MAST2']
+For measure mi the 10 best are: ['NCF1' 'CYBB' 'STAT1' 'CLSPN' 'HGF' 'ITPR1' 'WIPI2' 'DYSF' 'PIK3AP1'
+ 'INPP5D']
+
+The intersection of all gives: {'HGF'}
+The two count: ['HGF', 'FUNDC1', 'RUNX2', 'ABCA1', 'FCGR1A', 'MAST2', 'WASL', 'WIPI2']
+
+

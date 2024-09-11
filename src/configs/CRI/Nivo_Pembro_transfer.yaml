@@ -1,0 +1,27 @@
+EXPERIMENT_PARAMS:
+  drug: 'Nivo'
+  target_drug: 'Pembro'
+  source_tissues: ['SKCM']
+  target_tissues: ['SKCM']
+  rng_seed: 12345
+  n_iters: 50
+ 
+DIRECTORIES:
+  data_dir: "../data/expression"
+  geneset_dir: "../data/genesets/"
+  network_dir: "../data/networks/"
+  result_dir: "../results/"
+
+
+FEATURE_PARAMS:
+  edge_pv_threshs: [0.1,0.05,0.01,0.005]
+  node_pv_threshs: [0.1,0.05,0.01,0.005]
+  norm_node_pv_threshs: [0.1,0.05,0.01,0.005]
+
+
+MODEL_PARAMS:
+  model_name: "LogisticRegression"
+  min_C: 0.1
+  max_C: 1
+  C_step: 0.05
+  max_iter: 100000

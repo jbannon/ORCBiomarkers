@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['MAD2L1' 'CDK1' 'E2F1' 'CCNB2' 'CDT1' 'H3C13' 'CDCA8' 'BIRC5' 'CDC25C'
+ 'H1-1']
+For measure f_meas the 10 best are: ['NFKB1' 'CDC6' 'CDK1' 'MCM4' 'CHAF1A' 'H3C13' 'BIRC5' 'IL1RAP' 'H1-1'
+ 'KPNA2']
+For measure mi the 10 best are: ['KDM1A' 'PCNA' 'MCM4' 'CDT1' 'H3C13' 'HMMR' 'CCNE2' 'CHAF1B' 'BUB1B'
+ 'SUDS3']
+
+The intersection of all gives: {'H3C13'}
+The two count: ['H3C13', 'CDT1', 'BIRC5', 'H1-1', 'CDK1', 'MCM4']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['MAD2L1' 'CDK1' 'CCNB2' 'H3C13' 'CDCA8' 'HMMR' 'BIRC5' 'CCNE2' 'CDC25C'
+ 'H1-1']
+For measure f_meas the 10 best are: ['NFKB1' 'CDC6' 'CDK1' 'MCM4' 'CHAF1A' 'H3C13' 'BIRC5' 'IL1RAP' 'H1-1'
+ 'KPNA2']
+For measure mi the 10 best are: ['KDM1A' 'PCNA' 'MCM4' 'CDT1' 'H3C13' 'HMMR' 'CCNE2' 'CHAF1B' 'BUB1B'
+ 'SUDS3']
+
+The intersection of all gives: {'H3C13'}
+The two count: ['H3C13', 'HMMR', 'BIRC5', 'CCNE2', 'H1-1', 'CDK1', 'MCM4']
+
+

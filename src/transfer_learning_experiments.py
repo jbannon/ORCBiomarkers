@@ -47,7 +47,7 @@ def main(
 	model_types:List[str] 
 	model_max_iters:int 
 
-	drug, sources, targets, rng_seed, n_iters = utils.unpack_parameters(config['EXPERIMENT_PARAMS'])
+	drug, _,sources, targets, rng_seed, n_iters = utils.unpack_parameters(config['EXPERIMENT_PARAMS'])
 	data_dir, geneset_dir, network_dir,result_dir = utils.unpack_parameters(config['DIRECTORIES'])
 
 	num_iters, c_min, c_max, c_step, model_max_iters = \
@@ -65,11 +65,19 @@ def main(
 	
 	model, param_grid = utils.make_model_and_param_grid(model_name,min_C,max_C,C_step,max_iter)
 	clf = GridSearchCV(model, param_grid)
+	print(clf)
+	sys.exit(1)
 	
 
 	rng = np.random.RandomState(rng_seed)
 	
+	with open("../data/genesets/kegg.txt", "r") as istream:
+		lines = istream.readlines()
 
+	kegg_genes = [x.rstrip() for x in lines]
+
+	
+	gene_lens = []
 	for source, target in tqdm.tqdm(it.product(sources,targets)):
 		
 		if source == target:
@@ -81,6 +89,8 @@ def main(
 		response = pd.read_csv(response_file)	
 		expression = pd.read_csv(expression_file)
 
+		_kegg = [x for x in kegg_genes if x in expression.columns]
+		gene_lens.append(('kegg',len(_kegg)))
 
 		res_path = "../results/transfer/{d}/monte_carlo/".format(d=drug)
 		os.makedirs(res_path, exist_ok = True)
@@ -89,7 +99,8 @@ def main(
 			
 		pval_dir = "../results/biomarkers/{d}/{s}/".format(d=drug, s = source)
 			
-		for ct in ['edge','node','norm-node']:
+		# for ct in ['edge','node','norm-node']:
+		for ct in ['edge']:	
 			pvalue_file = "{p}{c}_curvature_pvals.csv".format(p = pval_dir,c=ctype_map[ct])
 			pvalues = pd.read_csv(pvalue_file,index_col = 0)
 			
@@ -105,15 +116,21 @@ def main(
 						endpoints = [x for x in e.split(";")]
 						genes.extend(endpoints)
 					genes = [x for x in pd.unique(genes)]
+				
+				
+
 
 				avoid_sampling = [x for x in genes]
 				possible_samples = [i for i in expression.columns[1:] if i not in avoid_sampling]
 				random_genes = np.random.choice(possible_samples,len(genes),replace = False)
 				p = [x for x in possible_samples if x in genes]
-
+				intersection = [x for x in genes if x in _kegg]
 				for feat_name, gene_names in zip([ct,ct+"-matched-random"],[genes,random_genes]):
 					
-					X = np.log2(expression[gene_names].values+1)
+					if len(gene_names)==0:
+						continue
+					
+					X = np.log2(expression[[x for x in gene_names if x in expression.columns]].values+1)
 					
 					
 					y = response['Response'].values

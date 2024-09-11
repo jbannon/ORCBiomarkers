@@ -1,0 +1,16 @@
+iter,source drug,target drug,geneset,source tissue,target tissue,pval,Test Accuracy,Test ROC_AUC
+0,Atezo,Atezo,source biomarkers,KIRC,BLCA,0.05,0.6533333333333333,0.6855983772819473
+1,Atezo,Atezo,source biomarkers,KIRC,BLCA,0.05,0.72,0.652129817444219
+2,Atezo,Atezo,source biomarkers,KIRC,BLCA,0.05,0.6266666666666667,0.6501014198782962
+3,Atezo,Atezo,source biomarkers,KIRC,BLCA,0.05,0.68,0.7180527383367139
+4,Atezo,Atezo,source biomarkers,KIRC,BLCA,0.05,0.5733333333333334,0.6683569979716024
+0,Atezo,Atezo,drug targets,KIRC,BLCA,0.05,0.7066666666666667,0.7139959432048681
+1,Atezo,Atezo,drug targets,KIRC,BLCA,0.05,0.64,0.5943204868154158
+2,Atezo,Atezo,drug targets,KIRC,BLCA,0.05,0.64,0.6267748478701827
+3,Atezo,Atezo,drug targets,KIRC,BLCA,0.05,0.6666666666666666,0.6430020283975659
+4,Atezo,Atezo,drug targets,KIRC,BLCA,0.05,0.56,0.6440162271805274
+0,Atezo,Atezo,random sample,KIRC,BLCA,0.05,0.624,0.5671399594320488
+1,Atezo,Atezo,random sample,KIRC,BLCA,0.05,0.648,0.6306288032454361
+2,Atezo,Atezo,random sample,KIRC,BLCA,0.05,0.6,0.5385395537525355
+3,Atezo,Atezo,random sample,KIRC,BLCA,0.05,0.5786666666666667,0.4772819472616633
+4,Atezo,Atezo,random sample,KIRC,BLCA,0.05,0.6373333333333334,0.6158215010141987

@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['MAP1LC3A' 'PTPN6' 'WAS' 'EP300' 'MMP9' 'ABCA1' 'RUNX2' 'PHLPP2' 'PDGFRA'
+ 'CHEK1']
+For measure f_meas the 10 best are: ['ATG12' 'MAP1LC3A' 'EP300' 'ABCA1' 'RUNX2' 'NCOA1' 'PHLPP2' 'DYNC1I2'
+ 'TAF9B' 'TRRAP']
+For measure mi the 10 best are: ['GTF2A2' 'ITPR1' 'PLCB1' 'ACTB' 'MCM5' 'NCOA1' 'STAT1' 'DYSF' 'DYNC1H1'
+ 'ARHGEF7']
+
+The intersection of all gives: set()
+The two count: ['MAP1LC3A', 'EP300', 'ABCA1', 'RUNX2', 'PHLPP2', 'NCOA1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['FCGR1A' 'MAP1LC3A' 'PLCG2' 'MMP9' 'ABCA1' 'RUNX2' 'NCOA1' 'PHLPP2'
+ 'PDGFRA' 'CHEK1']
+For measure f_meas the 10 best are: ['ATG12' 'MAP1LC3A' 'ABCA1' 'RUNX2' 'NCOA1' 'PHLPP2' 'CHEK1' 'DYNC1I2'
+ 'TAF9B' 'TRRAP']
+For measure mi the 10 best are: ['GTF2A2' 'ITPR1' 'PLCB1' 'ACTB' 'MCM5' 'NCOA1' 'STAT1' 'DYSF' 'DYNC1H1'
+ 'ARHGEF7']
+
+The intersection of all gives: {'NCOA1'}
+The two count: ['NCOA1', 'ABCA1', 'RUNX2', 'PHLPP2', 'CHEK1', 'MAP1LC3A']
+
+

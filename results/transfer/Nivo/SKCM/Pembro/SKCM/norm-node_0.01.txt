@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 0 best are: []
+For measure f_meas the 0 best are: []
+For measure mi the 0 best are: []
+
+The intersection of all gives: set()
+The two count: []
+
+
+ALL
+--------
+For measure chi2 the 0 best are: []
+For measure f_meas the 0 best are: []
+For measure mi the 0 best are: []
+
+The intersection of all gives: set()
+The two count: []
+
+

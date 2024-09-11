@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['H3C13' 'TLR2' 'CDC6' 'CCNB2' 'FOXM1' 'E2F1' 'PLK1' 'MELK' 'IL1RAP'
+ 'KPNA2']
+For measure f_meas the 10 best are: ['H3C13' 'MCM4' 'CDKN1A' 'CDC6' 'CCNB2' 'E2F1' 'RBBP4' 'PLK1' 'IL1RAP'
+ 'KPNA2']
+For measure mi the 10 best are: ['MYC' 'KDM1A' 'H3C13' 'TLR4' 'PCNA' 'MCM4' 'RANBP2' 'RBBP4' 'CHAF1B'
+ 'RBL2']
+
+The intersection of all gives: {'H3C13'}
+The two count: ['H3C13', 'PLK1', 'RBBP4', 'KPNA2', 'IL1RAP', 'MCM4', 'E2F1', 'CCNB2', 'CDC6']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['H3C13' 'TLR2' 'CDK6' 'CDC6' 'CCNB2' 'FOXM1' 'E2F1' 'PLK1' 'MELK'
+ 'IL1RAP']
+For measure f_meas the 10 best are: ['H3C13' 'MCM4' 'CDKN1A' 'CDC6' 'E2F1' 'RBBP4' 'PLK1' 'RBL2' 'IL1RAP'
+ 'KPNA2']
+For measure mi the 10 best are: ['MYC' 'KDM1A' 'H3C13' 'TLR4' 'PCNA' 'MCM4' 'RANBP2' 'RBBP4' 'CHAF1B'
+ 'RBL2']
+
+The intersection of all gives: {'H3C13'}
+The two count: ['H3C13', 'E2F1', 'RBL2', 'RBBP4', 'IL1RAP', 'PLK1', 'MCM4', 'CDC6']
+
+

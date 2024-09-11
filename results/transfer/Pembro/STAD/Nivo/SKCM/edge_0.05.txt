@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['CCL14' 'CXCR3' 'GNAI1' 'CD8A' 'CD36' 'VWF' 'IL6R' 'PRF1' 'CXCR6' 'KIT']
+For measure f_meas the 10 best are: ['JUN' 'GNAI1' 'CD36' 'VWF' 'TBK1' 'STAT1' 'IL6R' 'PRF1' 'CXCR6' 'KIT']
+For measure mi the 10 best are: ['CCR5' 'CCL5' 'JUN' 'GNAI1' 'CD8A' 'STAT1' 'IL6R' 'CCR1' 'CXCR6' 'KIT']
+
+The intersection of all gives: {'CXCR6', 'GNAI1', 'KIT', 'IL6R'}
+The two count: ['GNAI1', 'IL6R', 'CXCR6', 'KIT', 'CD8A', 'CD36', 'VWF', 'PRF1', 'JUN', 'STAT1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['CCL14' 'CCR5' 'CXCR3' 'GNAI1' 'CD36' 'IL6R' 'PRF1' 'CCR1' 'CXCR6' 'KIT']
+For measure f_meas the 10 best are: ['JUN' 'GNAI1' 'CD36' 'VWF' 'TBK1' 'STAT1' 'IL6R' 'PRF1' 'CXCR6' 'KIT']
+For measure mi the 10 best are: ['CCR5' 'JUN' 'GNAI1' 'CD8A' 'STAT1' 'IL6R' 'PRF1' 'CCR1' 'CXCR6' 'KIT']
+
+The intersection of all gives: {'GNAI1', 'PRF1', 'CXCR6', 'KIT', 'IL6R'}
+The two count: ['GNAI1', 'IL6R', 'PRF1', 'CXCR6', 'KIT', 'CCR5', 'CD36', 'CCR1', 'JUN', 'STAT1']
+
+

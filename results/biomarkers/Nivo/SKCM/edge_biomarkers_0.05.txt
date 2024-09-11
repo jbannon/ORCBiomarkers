@@ -1,0 +1,4 @@
+At threshold 0.005 we have the genes: ['CLSPN ', 'NCF1 ', 'PLK3 ', 'STAT3 ']
+At threshold 0.01 we have the genes: ['CLSPN ', 'MCM2 ', 'NCF1 ', 'PLK3 ', 'STAT3 ']
+At threshold 0.05 we have the genes: ['CDC45 ', 'CLSPN ', 'CYBB ', 'EP300 ', 'HIF1A ', 'MCM2 ', 'MCM5 ', 'NCF1 ', 'PLK3 ', 'STAT3 ', 'WDHD1 ']
+At threshold 0.1 we have the genes: ['CDC45 ', 'CLSPN ', 'CYBB ', 'EP300 ', 'HIF1A ', 'MCM2 ', 'MCM5 ', 'NCF1 ', 'PLK3 ', 'STAT3 ', 'WDHD1 ']

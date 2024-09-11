@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['HBEGF' 'E2F1' 'BIRC5' 'CDK1' 'PLK1' 'CDC6' 'CDC25A' 'H1-1' 'CBX8'
+ 'IL1RAP']
+For measure f_meas the 10 best are: ['CTNNB1' 'HBEGF' 'RBBP4' 'CDK2' 'E2F1' 'CDK1' 'CDC6' 'CDC25A' 'CBX8'
+ 'IL1RAP']
+For measure mi the 10 best are: ['EZH2' 'TLR4' 'HMMR' 'KDM1A' 'H3C13' 'FOXO3' 'PCNA' 'DLGAP5' 'SUDS3'
+ 'SAP18']
+
+The intersection of all gives: set()
+The two count: ['HBEGF', 'CDK1', 'CDC6', 'CDC25A', 'CBX8', 'IL1RAP', 'E2F1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['HBEGF' 'E2F1' 'CCNB2' 'BIRC5' 'CDK1' 'CCNE1' 'CDC25A' 'H1-1' 'CBX8'
+ 'IL33']
+For measure f_meas the 10 best are: ['CTNNB1' 'HBEGF' 'RBBP4' 'CDK2' 'E2F1' 'CDK1' 'CDC6' 'H1-1' 'CBX8'
+ 'IL1RAP']
+For measure mi the 10 best are: ['TLR4' 'HMMR' 'KDM1A' 'H3C13' 'FOXO3' 'PCNA' 'CDC45' 'DLGAP5' 'SUDS3'
+ 'SAP18']
+
+The intersection of all gives: set()
+The two count: ['HBEGF', 'CDK1', 'H1-1', 'CBX8', 'E2F1']
+
+

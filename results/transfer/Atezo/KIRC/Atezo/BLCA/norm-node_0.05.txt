@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['CD8A' 'CTLA4' 'CD8B' 'TRAF1' 'IL15' 'FLT3LG' 'CXCL13' 'TREM1' 'KLRD1'
+ 'BATF']
+For measure f_meas the 10 best are: ['CD8A' 'CD8B' 'TRAF1' 'IL15RA' 'FLT3LG' 'TREM1' 'TFRC' 'KLRD1' 'IL18BP'
+ 'BATF']
+For measure mi the 10 best are: ['CD8A' 'CD3G' 'CD3D' 'CD8B' 'IL2RB' 'IL15' 'IL12RB1' 'HLA-E' 'TREM1'
+ 'IL18BP']
+
+The intersection of all gives: {'CD8A', 'CD8B', 'TREM1'}
+The two count: ['CD8A', 'TREM1', 'CD8B', 'IL18BP', 'KLRD1', 'BATF', 'FLT3LG', 'IL15', 'TRAF1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['CD8A' 'CTLA4' 'CD8B' 'TRAF1' 'IL15' 'FLT3LG' 'CXCL13' 'TREM1' 'KLRD1'
+ 'BATF']
+For measure f_meas the 10 best are: ['CD8A' 'CTLA4' 'CD8B' 'TRAF1' 'IL15RA' 'FLT3LG' 'TREM1' 'TFRC' 'IL18BP'
+ 'BATF']
+For measure mi the 10 best are: ['CD8A' 'CD3G' 'CD3D' 'CD8B' 'IL2RB' 'IL15' 'IL12RB1' 'HLA-E' 'TREM1'
+ 'IL18BP']
+
+The intersection of all gives: {'CD8A', 'CD8B', 'TREM1'}
+The two count: ['CD8A', 'TREM1', 'CD8B', 'IL18BP', 'CTLA4', 'BATF', 'FLT3LG', 'IL15', 'TRAF1']
+
+

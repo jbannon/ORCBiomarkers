@@ -1,0 +1,4 @@
+At threshold 0.005 we have the genes: ['A2M ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'GNAI1 ', 'VWF ']
+At threshold 0.01 we have the genes: ['A2M ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'GNAI1 ', 'VWF ']
+At threshold 0.05 we have the genes: ['A2M ', 'CCL5 ', 'CCR1 ', 'CCR5 ', 'CD36 ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'GNAI1 ', 'GZMB ', 'IL6R ', 'VWF ']
+At threshold 0.1 we have the genes: ['A2M ', 'CCL5 ', 'CCR1 ', 'CCR5 ', 'CD36 ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'CXCR3 ', 'GNAI1 ', 'GZMB ', 'IL6R ', 'PRF1 ', 'VWF ']

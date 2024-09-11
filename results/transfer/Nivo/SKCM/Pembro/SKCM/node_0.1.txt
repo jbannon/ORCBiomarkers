@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['UTRN' 'ITPR1' 'TAF9B' 'RUNX2' 'ABCA1' 'PHLPP2' 'FCGR1A' 'MAGI3'
+ 'EIF4EBP2' 'STK4']
+For measure f_meas the 10 best are: ['CLSPN' 'UTRN' 'WIPF1' 'ITPR1' 'TAF9B' 'RUNX2' 'TAF11' 'ABCA1' 'PHLPP2'
+ 'FCGR1A']
+For measure mi the 10 best are: ['NCF1' 'CYBB' 'CLSPN' 'WIPF1' 'ITPR1' 'APBB1IP' 'ANP32E' 'FCGR1A' 'DYSF'
+ 'INPP5D']
+
+The intersection of all gives: {'ITPR1', 'FCGR1A'}
+The two count: ['FCGR1A', 'ITPR1', 'UTRN', 'TAF9B', 'RUNX2', 'ABCA1', 'PHLPP2', 'CLSPN', 'WIPF1']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['UTRN' 'ITPR1' 'RUNX2' 'ABCA1' 'PHLPP2' 'FCGR1A' 'MAGI3' 'EIF4EBP2'
+ 'STK4' 'DYSF']
+For measure f_meas the 10 best are: ['CLSPN' 'UTRN' 'WIPF1' 'ITPR1' 'TAF9B' 'RUNX2' 'TAF11' 'ABCA1' 'PHLPP2'
+ 'FCGR1A']
+For measure mi the 10 best are: ['NCF1' 'CYBB' 'CLSPN' 'WIPF1' 'ITPR1' 'APBB1IP' 'ANP32E' 'FCGR1A' 'DYSF'
+ 'INPP5D']
+
+The intersection of all gives: {'ITPR1', 'FCGR1A'}
+The two count: ['FCGR1A', 'ITPR1', 'UTRN', 'WIPF1', 'CLSPN', 'DYSF', 'PHLPP2', 'ABCA1', 'RUNX2']
+
+

@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 1 best are: ['CXCL13']
+For measure f_meas the 1 best are: ['CXCL13']
+For measure mi the 1 best are: ['CXCL13']
+
+The intersection of all gives: {'CXCL13'}
+The two count: ['CXCL13']
+
+
+ALL
+--------
+For measure chi2 the 1 best are: ['CXCL13']
+For measure f_meas the 1 best are: ['CXCL13']
+For measure mi the 1 best are: ['CXCL13']
+
+The intersection of all gives: {'CXCL13'}
+The two count: ['CXCL13']
+
+

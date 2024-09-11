@@ -1,0 +1,4 @@
+At threshold 0.005 we have the genes: ['CXCL10 ', 'CXCL11 ', 'CXCL9 ']
+At threshold 0.01 we have the genes: ['CD8A ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ']
+At threshold 0.05 we have the genes: ['CAV1 ', 'CD36 ', 'CD8A ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'CXCR3 ', 'GZMB ']
+At threshold 0.1 we have the genes: ['CAV1 ', 'CD36 ', 'CD8A ', 'CXCL10 ', 'CXCL11 ', 'CXCL9 ', 'CXCR3 ', 'GZMB ']

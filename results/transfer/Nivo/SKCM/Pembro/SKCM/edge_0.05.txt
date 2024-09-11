@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 5 best are: ['CLSPN' 'CDC45' 'MCM2' 'EP300' 'WDHD1']
+For measure f_meas the 5 best are: ['MCM5' 'CLSPN' 'MCM2' 'EP300' 'HIF1A']
+For measure mi the 5 best are: ['NCF1' 'CYBB' 'MCM5' 'CLSPN' 'STAT3']
+
+The intersection of all gives: {'CLSPN'}
+The two count: ['CLSPN', 'MCM2', 'EP300', 'MCM5']
+
+
+ALL
+--------
+For measure chi2 the 5 best are: ['CLSPN' 'CDC45' 'MCM2' 'EP300' 'WDHD1']
+For measure f_meas the 5 best are: ['MCM5' 'CLSPN' 'MCM2' 'EP300' 'HIF1A']
+For measure mi the 5 best are: ['NCF1' 'CYBB' 'MCM5' 'CLSPN' 'STAT3']
+
+The intersection of all gives: {'CLSPN'}
+The two count: ['CLSPN', 'MCM2', 'EP300', 'MCM5']
+
+

@@ -1,0 +1,26 @@
+FILTERED
+--------
+For measure chi2 the 10 best are: ['CCL5' 'CXCL13' 'CD8A' 'CD8B' 'IL6' 'CD274' 'CXCL10' 'CXCL9' 'HLA-G'
+ 'KLRD1']
+For measure f_meas the 10 best are: ['CCL5' 'CXCL13' 'CD8A' 'CD8B' 'CD274' 'STAT3' 'CXCL10' 'CXCL9' 'IL18'
+ 'HLA-B']
+For measure mi the 10 best are: ['CD8A' 'CD8B' 'CCL2' 'CXCL8' 'IL12RB1' 'IL2RB' 'CXCL10' 'CXCL9' 'IL18BP'
+ 'HLA-B']
+
+The intersection of all gives: {'CXCL10', 'CD8B', 'CXCL9', 'CD8A'}
+The two count: ['CD8A', 'CD8B', 'CXCL10', 'CXCL9', 'CCL5', 'HLA-B', 'CD274', 'CXCL13']
+
+
+ALL
+--------
+For measure chi2 the 10 best are: ['CCL5' 'CXCL13' 'CD8A' 'CD8B' 'IL6' 'CD274' 'CXCL10' 'CXCL9' 'HLA-G'
+ 'KLRD1']
+For measure f_meas the 10 best are: ['CCL5' 'CXCL13' 'CD8A' 'CD8B' 'CD274' 'STAT3' 'CXCL10' 'CXCL9' 'IL18'
+ 'HLA-B']
+For measure mi the 10 best are: ['CD8A' 'CD8B' 'CCL2' 'CXCL8' 'IL12RB1' 'IL2RB' 'CXCL10' 'CXCL9' 'IL18BP'
+ 'HLA-B']
+
+The intersection of all gives: {'CXCL10', 'CD8B', 'CXCL9', 'CD8A'}
+The two count: ['CD8A', 'CD8B', 'CXCL10', 'CXCL9', 'CCL5', 'HLA-B', 'CD274', 'CXCL13']
+
+

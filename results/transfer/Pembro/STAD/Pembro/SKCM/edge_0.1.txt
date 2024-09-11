@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 9 best are: ['CCL14' 'CCR5' 'CXCL9' 'CCL5' 'CD8A' 'GZMB' 'A2M' 'CXCR6' 'IL1R1']
+For measure f_meas the 9 best are: ['CCL14' 'CCR5' 'CXCL9' 'CCL5' 'CD8A' 'GZMB' 'A2M' 'CXCR6' 'IL1R1']
+For measure mi the 9 best are: ['CXCL14' 'CCL14' 'CCR5' 'GNAI1' 'CD36' 'TBKBP1' 'STAT1' 'CXCR6' 'IL1R1']
+
+The intersection of all gives: {'CCR5', 'CXCR6', 'CCL14', 'IL1R1'}
+The two count: ['CCL14', 'CCR5', 'CXCR6', 'IL1R1', 'CXCL9', 'CCL5', 'CD8A', 'GZMB', 'A2M']
+
+
+ALL
+--------
+For measure chi2 the 9 best are: ['CCL14' 'CCR5' 'CXCL9' 'CCL5' 'GNAI1' 'CD8A' 'GZMB' 'CXCR6' 'IL1R1']
+For measure f_meas the 9 best are: ['CCL14' 'CCR5' 'CXCL9' 'CCL5' 'CD8A' 'GZMB' 'A2M' 'CXCR6' 'IL1R1']
+For measure mi the 9 best are: ['CXCL14' 'CCL14' 'CCR5' 'CXCL9' 'GNAI1' 'TBKBP1' 'STAT1' 'CXCR6' 'IL1R1']
+
+The intersection of all gives: {'CXCR6', 'IL1R1', 'CCR5', 'CXCL9', 'CCL14'}
+The two count: ['CCL14', 'CCR5', 'CXCL9', 'CXCR6', 'IL1R1', 'CCL5', 'GNAI1', 'CD8A', 'GZMB']
+
+

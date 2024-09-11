@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 3 best are: ['GZMB' 'CD36' 'CAV1']
+For measure f_meas the 3 best are: ['GZMB' 'CD36' 'CAV1']
+For measure mi the 3 best are: ['CD8A' 'CD36' 'CAV1']
+
+The intersection of all gives: {'CD36', 'CAV1'}
+The two count: ['CD36', 'CAV1', 'GZMB']
+
+
+ALL
+--------
+For measure chi2 the 3 best are: ['CXCR3' 'GZMB' 'CD36']
+For measure f_meas the 3 best are: ['GZMB' 'CD36' 'CAV1']
+For measure mi the 3 best are: ['CD8A' 'CD36' 'CAV1']
+
+The intersection of all gives: {'CD36'}
+The two count: ['CD36', 'GZMB', 'CAV1']
+
+

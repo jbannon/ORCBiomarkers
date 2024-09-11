@@ -1,0 +1,20 @@
+FILTERED
+--------
+For measure chi2 the 9 best are: ['H3C13' 'MCM4' 'CDK6' 'CCNA2' 'E2F1' 'PLK1' 'FOXM1' 'CDKN1A' 'KPNA2']
+For measure f_meas the 9 best are: ['KDM1A' 'H3C13' 'MCM4' 'E2F1' 'RBBP4' 'PLK1' 'RBL2' 'CDKN1A' 'KPNA2']
+For measure mi the 9 best are: ['KDM1A' 'H3C13' 'PCNA' 'MCM4' 'RANBP2' 'RBBP4' 'CHAF1B' 'RBL2' 'CCND1']
+
+The intersection of all gives: {'H3C13', 'MCM4'}
+The two count: ['H3C13', 'MCM4', 'E2F1', 'PLK1', 'CDKN1A', 'KPNA2', 'KDM1A', 'RBBP4', 'RBL2']
+
+
+ALL
+--------
+For measure chi2 the 9 best are: ['H3C13' 'MCM4' 'CDK6' 'CCNA2' 'E2F1' 'PLK1' 'FOXM1' 'CDKN1A' 'KPNA2']
+For measure f_meas the 9 best are: ['KDM1A' 'H3C13' 'MCM4' 'E2F1' 'RBBP4' 'PLK1' 'RBL2' 'CDKN1A' 'KPNA2']
+For measure mi the 9 best are: ['KDM1A' 'H3C13' 'PCNA' 'MCM4' 'RANBP2' 'RBBP4' 'CHAF1B' 'RBL2' 'CCND1']
+
+The intersection of all gives: {'H3C13', 'MCM4'}
+The two count: ['H3C13', 'MCM4', 'E2F1', 'PLK1', 'CDKN1A', 'KPNA2', 'KDM1A', 'RBBP4', 'RBL2']
+
+
